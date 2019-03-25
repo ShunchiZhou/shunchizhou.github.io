@@ -96,20 +96,22 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="追梦少年">
-<meta property="og:url" content="http://yoursite.com/categories/web/index.html">
+  <meta name="keywords" content="tags">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="追梦少年">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-25T20:02:02.914Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="追梦少年">
+<meta name="twitter:title" content="tags">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/web/">
+  <link rel="canonical" href="http://yoursite.com/tags/">
 
 
 
@@ -119,7 +121,7 @@
   };
 </script>
 
-  <title>Category: web | 追梦少年</title>
+  <title>tags | 追梦少年</title>
   
 
 
@@ -167,7 +169,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,7 +226,7 @@
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
 
     
     
@@ -262,7 +264,7 @@
         
         
           
-          <li class="menu-item menu-item-web menu-item-active">
+          <li class="menu-item menu-item-course">
 
     
     
@@ -274,7 +276,7 @@
       
     
 
-    <a href="/categories/web" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>web</a>
+    <a href="/categories/web" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>course</a>
 
   </li>
         
@@ -293,7 +295,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">1</span></a>
 
   </li>
 
@@ -360,57 +362,63 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>web<small>Category</small>
-        </h1>
-      </div>
+<h1 class="post-title" itemprop="name headline">tags
+
+</h1>
+
+<div class="post-meta">
+  
+  
+
+
+
+</div>
+
+</header>
 
       
+      
+      
+      <div class="post-body">
         
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/03/25/project1/" itemprop="url">
-            
-              <span itemprop="name">project1</span>
-            
-          </a>
+          
         
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-25T10:27:21-07:00" content="2019-03-25">
-          03-25
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
+      
+      
       
     </div>
+    
 
+
+
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -446,27 +454,12 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
 
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">categories</span>
-                  
-                </div>
               
 
               
@@ -623,6 +616,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -641,9 +638,46 @@
   <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/tags/index.html";
+    this.page.identifier = "tags/index.html";
+    this.page.title = 'tags';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        loadComments();
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
 
 
 
+
+
+  
 
 
   
