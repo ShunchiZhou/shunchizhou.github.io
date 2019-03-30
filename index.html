@@ -14,7 +14,7 @@
 
 <html class="theme-next gemini" lang>
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -154,7 +154,7 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -165,7 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
@@ -353,7 +353,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/29/how-to-use-latex-in-Hexo/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/29/how-to-use-Latex-in-Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -373,7 +373,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/29/how-to-use-latex-in-Hexo/" class="post-title-link" itemprop="url">how to use latex in Hexo</a>
+                <a href="/2019/03/29/how-to-use-Latex-in-Hexo/" class="post-title-link" itemprop="url">how to use latex in Hexo</a>
               
             
           </h1>
@@ -415,7 +415,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-30 01:40:21" itemprop="dateModified" datetime="2019-03-30T01:40:21-07:00">2019-03-30</time>
+                <time title="Modified: 2019-03-30 12:57:38" itemprop="dateModified" datetime="2019-03-30T12:57:38-07:00">2019-03-30</time>
               
             
           </span>
@@ -458,8 +458,8 @@
                 </span>
             
                 <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/03/29/how-to-use-latex-in-Hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/29/how-to-use-latex-in-Hexo/" itemprop="commentCount"></span>
+                <a href="/2019/03/29/how-to-use-Latex-in-Hexo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/29/how-to-use-Latex-in-Hexo/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -488,19 +488,16 @@
 
       
         
-          <p>Markdown中插入数学公式是常有的事，而Hexo博客框架主要是Markdown格式的文档，如果不能正常渲染Latex公式，那岂不gg……<br>
-下面来看看Hexo渲染数学公式遇到的问题以及解决方案。</p>
-<h2 id="渲染下划线的问题"><a class="markdownIt-Anchor" href="#渲染下划线的问题"></a> 渲染下划线的问题</h2>
-<p><code>_</code>在Latex公式中代表脚标，是非常常用的符号，而在Markdown中代表_斜体_，如果直接使用，将会产生公式无法渲染的问题，因为被Hexo强制渲染成了<code>&lt;em&gt;</code>标签。<br>
-如何解决呢？<strong>更换Hexo默认的Markdown渲染引擎！</strong><br>
-Hexo默认的渲染引擎为hexo-renderer-marked，这里将其更换为hexo-renderer-kramed，该引擎在前者的基础上修复了一些bug，具体操作：</p>
-<pre><code>	npm uninstall hexo-renderer-marked --save
-	npm install hexo-renderer-kramed --save
+          <p>Markdown中插入数学公式是常有的事，而Hexo博客框架主要是Markdown格式的文档，如果不能正常渲染Latex公式，那岂不gg……<br>下面来看看Hexo渲染数学公式遇到的问题以及解决方案。</p>
+<p>$$<br>\begin{eqnarray}<br>\nabla\cdot\vec{E} &amp;=&amp; \frac{\rho}{\epsilon_0} \notag\\<br>\nabla\cdot\vec{B} &amp;=&amp; 0 \\<br>\nabla\times\vec{E} &amp;=&amp; -\frac{\partial B}{\partial t} \\<br>\nabla\times\vec{B} &amp;=&amp; \mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t} \right)<br>\end{eqnarray}<br>$$</p>
+<h2 id="渲染下划线的问题"><a href="#渲染下划线的问题" class="headerlink" title="渲染下划线的问题"></a>渲染下划线的问题</h2><p><code>_</code>在Latex公式中代表脚标，是非常常用的符号，而在Markdown中代表_斜体_，如果直接使用，将会产生公式无法渲染的问题，因为被Hexo强制渲染成了<code>&lt;em&gt;</code>标签。<br>如何解决呢？<strong>更换Hexo默认的Markdown渲染引擎！</strong><br>Hexo默认的渲染引擎为hexo-renderer-marked，这里将其更换为hexo-renderer-kramed，该引擎在前者的基础上修复了一些bug，具体操作：</p>
+<pre><code>npm uninstall hexo-renderer-marked --save
+npm install hexo-renderer-kramed --save
 </code></pre>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/03/29/how-to-use-latex-in-Hexo/#more" rel="contents">
+              <a class="btn" href="/2019/03/29/how-to-use-Latex-in-Hexo/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -696,10 +693,7 @@ Hexo默认的渲染引擎为hexo-renderer-marked，这里将其更换为hexo-ren
       
         
           
-            <p><a href="https://www.jianshu.com/p/3a01cc514ce7" target="_blank" rel="noopener">Hexo和Next主题的相关设置</a><br>
-<a href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html" target="_blank" rel="noopener">HEXO+NEXT主题个性化配置</a><br>
-<a href="https://blog.csdn.net/daichanglin/article/details/1563299" target="_blank" rel="noopener">RGB 常用颜色列表</a><br>
-<a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化</a></p>
+            <p><a href="https://www.jianshu.com/p/3a01cc514ce7" target="_blank" rel="noopener">Hexo和Next主题的相关设置</a><br><a href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html" target="_blank" rel="noopener">HEXO+NEXT主题个性化配置</a><br><a href="https://blog.csdn.net/daichanglin/article/details/1563299" target="_blank" rel="noopener">RGB 常用颜色列表</a><br><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化</a></p>
 
           
         
@@ -818,7 +812,7 @@ Hexo默认的渲染引擎为hexo-renderer-marked，这里将其更换为hexo-ren
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-29 18:30:54" itemprop="dateModified" datetime="2019-03-29T18:30:54-07:00">2019-03-29</time>
+                <time title="Modified: 2019-03-30 12:05:42" itemprop="dateModified" datetime="2019-03-30T12:05:42-07:00">2019-03-30</time>
               
             
           </span>
@@ -1296,6 +1290,8 @@ Hexo默认的渲染引擎为hexo-renderer-marked，这里将其更换为hexo-ren
   
     
       
+        
+      
     
       
     
@@ -1303,6 +1299,46 @@ Hexo默认的渲染引擎为hexo-renderer-marked，这里将其更换为hexo-ren
     
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 
