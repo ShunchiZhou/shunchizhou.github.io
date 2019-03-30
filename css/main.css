@@ -1868,7 +1868,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #58ff1b;
+  background: #1ba7e0;
 }
 .feed-link,
 .chat {
@@ -3060,4 +3060,8 @@ body {
 }
 .footer-inner {
   color: #4682b4;
+}
+body {
+  line-height: 1.6;
+  font-size: 15px;
 }

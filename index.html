@@ -398,12 +398,24 @@
                 
               
 
-              <time title="Created: 2019-03-29 18:17:08 / Modified: 18:25:29" itemprop="dateCreated datePublished" datetime="2019-03-29T18:17:08-07:00">2019-03-29</time>
+              <time title="Created: 2019-03-29 18:17:08" itemprop="dateCreated datePublished" datetime="2019-03-29T18:17:08-07:00">2019-03-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-03-30 01:40:21" itemprop="dateModified" datetime="2019-03-30T01:40:21-07:00">2019-03-30</time>
               
             
           </span>
@@ -476,27 +488,20 @@
 
       
         
-          
-            <p>Markdown中插入数学公式是常有的事，而Hexo博客框架主要是Markdown格式的文档，如果不能正常渲染Latex公式，那岂不gg……<br>下面来看看Hexo渲染数学公式遇到的问题以及解决方案。</p>
+          <p>Markdown中插入数学公式是常有的事，而Hexo博客框架主要是Markdown格式的文档，如果不能正常渲染Latex公式，那岂不gg……<br>下面来看看Hexo渲染数学公式遇到的问题以及解决方案。</p>
 <h2 id="渲染下划线的问题"><a href="#渲染下划线的问题" class="headerlink" title="渲染下划线的问题"></a>渲染下划线的问题</h2><p><code>_</code>在Latex公式中代表脚标，是非常常用的符号，而在Markdown中代表_斜体_，如果直接使用，将会产生公式无法渲染的问题，因为被Hexo强制渲染成了<code>&lt;em&gt;</code>标签。<br>如何解决呢？<strong>更换Hexo默认的Markdown渲染引擎！</strong><br>Hexo默认的渲染引擎为hexo-renderer-marked，这里将其更换为hexo-renderer-kramed，该引擎在前者的基础上修复了一些bug，具体操作：</p>
 <pre><code>npm uninstall hexo-renderer-marked --save
 npm install hexo-renderer-kramed --save
-</code></pre><h2 id="行内公式的问题"><a href="#行内公式的问题" class="headerlink" title="行内公式的问题"></a>行内公式的问题</h2><p>执行上述操作后，虽然块状公式的渲染问题解决了，但发现行内公式仍然是老样子，无法成功渲染，这是因为hexo-renderer-kramed也有语义冲突的问题，这里我们直接修改转义即可。打开文件<code>\node_modules\kramed\lib\rules\inline.js</code>，修改其中一行</p>
-<pre><code>//  em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
-    em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
-</code></pre><p>把之前的<code>em</code>转义注释掉，添加新的即可完美解决。</p>
-<h2 id="双花括号的问题"><a href="#双花括号的问题" class="headerlink" title="双花括号的问题"></a>双花括号的问题</h2><p>除此之外，如果在公式内连续使用两个花括号，如</p>
-<pre><code>\frac{1}{{(2\pi)}^\frac{D}{2}}
-</code></pre><p>时会渲染失败  </p>
-<p><img src="//upload-images.jianshu.io/upload_images/5716183-4858d5b42d2a1d71.jpg" alt></p>
-<p>此时必须在两个花括号中间加一个<strong>空格</strong>，<code>\frac{1}{ {(2\pi)}^\frac{D}{2} }</code>即可正常渲染</p>
-<p><img src="https://math.jianshu.com/math?formula=%5Cfrac%7B1%7D%7B%20%7B(2%5Cpi" alt="\frac{1}{ {(2\pi)}^\frac{D}{2} }">%7D%5E%5Cfrac%7BD%7D%7B2%7D%20%7D)</p>
-<p><strong>注</strong>：上述操作完成后均需重启Hexo，即</p>
-<pre><code>hexo clean
-hexo g
-hexo s
 </code></pre>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/29/how-to-use-latex-in-Hexo/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -613,7 +618,7 @@ hexo s
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-30 00:17:19" itemprop="dateModified" datetime="2019-03-30T00:17:19-07:00">2019-03-30</time>
+                <time title="Modified: 2019-03-30 01:12:10" itemprop="dateModified" datetime="2019-03-30T01:12:10-07:00">2019-03-30</time>
               
             
           </span>
@@ -687,7 +692,7 @@ hexo s
       
         
           
-            <p><a href="https://www.jianshu.com/p/3a01cc514ce7" target="_blank" rel="noopener">Hexo和Next主题的相关设置</a><br><a href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html" target="_blank" rel="noopener">HEXO+NEXT主题个性化配置</a><br><a href="https://blog.csdn.net/daichanglin/article/details/1563299" target="_blank" rel="noopener">RGB 常用颜色列表</a></p>
+            <p><a href="https://www.jianshu.com/p/3a01cc514ce7" target="_blank" rel="noopener">Hexo和Next主题的相关设置</a><br><a href="http://mashirosorata.vicp.io/HEXO-NEXT%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE.html" target="_blank" rel="noopener">HEXO+NEXT主题个性化配置</a><br><a href="https://blog.csdn.net/daichanglin/article/details/1563299" target="_blank" rel="noopener">RGB 常用颜色列表</a><br><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化</a></p>
 
           
         
@@ -1071,7 +1076,7 @@ hexo s
                   
                     
                   
-                  <a href="https://www.google.com" title="Google &rarr; https://www.google.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
+                  <a href="https://www.linkedin.com/in/shunchi-zhou/" title="Linkedin &rarr; https://www.linkedin.com/in/shunchi-zhou/" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i>Linkedin</a>
                 </span>
               
             </div>
