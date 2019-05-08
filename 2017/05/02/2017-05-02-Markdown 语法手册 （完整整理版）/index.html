@@ -47,16 +47,16 @@
 <link rel="stylesheet" href="/css/main.css?v=7.0.1">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/favicon.png?v=7.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/favicon.png?v=7.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/favicon.png?v=7.0.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+  <link rel="mask-icon" href="/uploads/favicon.png?v=7.0.1" color="#222">
 
 
 
@@ -112,6 +112,8 @@
 <meta name="twitter:image" content="http://yoursite.com/2017/05/02/2017-05-02-Markdown%20语法手册%20（完整整理版）/图片地址%20“图片Title”">
 
 
+
+  <link rel="alternate" href="/atom.xml" title="逐梦少年" type="application/atom+xml">
 
 
 
@@ -519,7 +521,7 @@
 <h5 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3. 自动链接"></a>3.3. 自动链接</h5><p>语法说明：<br>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;http://example.com/&gt;</span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure>
 <p>view</p>
-<p><a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a><br><a href="mailto:&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#108;&#101;&#46;&#x63;&#111;&#x6d;" target="_blank" rel="noopener">&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#108;&#101;&#46;&#x63;&#111;&#x6d;</a></p>
+<p><a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a><br><a href="mailto:&#97;&#x64;&#100;&#x72;&#x65;&#x73;&#115;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#x6d;" target="_blank" rel="noopener">&#97;&#x64;&#100;&#x72;&#x65;&#x73;&#115;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#x6d;</a></p>
 <hr>
 <h4 id="4-锚点"><a href="#4-锚点" class="headerlink" title="4. 锚点"></a>4. 锚点</h4><p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
 <p>注意： </p>
@@ -1018,6 +1020,13 @@ int main(void)
             </nav>
           
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
