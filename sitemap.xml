@@ -2,44 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2019-09-18T00:09:50.154Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/CSE512/index.html</loc>
+    
+    <lastmod>2019-09-17T23:54:53.776Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/resume/index.html</loc>
     
     <lastmod>2019-09-17T22:33:33.724Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/05/08/Benefits%20of%20Hadoop%20and%20SparkSpark/</loc>
-    
-    <lastmod>2019-05-08T18:36:04.463Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/03/29/how-to-use-Latex-in-Hexo/</loc>
-    
-    <lastmod>2019-05-08T01:39:16.236Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/05/06/bash-self-customized-style/</loc>
-    
-    <lastmod>2019-05-06T23:21:08.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/03/31/Python/</loc>
-    
-    <lastmod>2019-04-26T06:05:27.446Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/03/31/job-tips/</loc>
-    
-    <lastmod>2019-03-31T21:17:48.000Z</lastmod>
     
   </url>
   
@@ -51,30 +30,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/03/30/Git-tutorial/</loc>
-    
-    <lastmod>2019-03-30T23:01:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/03/26/Hexo%E5%92%8CNext%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE/</loc>
-    
-    <lastmod>2019-03-30T08:12:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2019-03-26T07:25:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2019-03-26T06:25:35.000Z</lastmod>
     
   </url>
   
