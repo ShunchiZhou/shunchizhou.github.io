@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d669e0;
+  background: #2f2eec;
 }
 .feed-link,
 .chat {
@@ -3006,7 +3006,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("https://ws2.sinaimg.cn/large/006tKfTcly1g1ksqtwa90j31900u0kjl.jpg");
+  background: url("https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200303135334.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
