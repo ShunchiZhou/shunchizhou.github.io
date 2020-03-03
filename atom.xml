@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-03T17:35:37.666Z</updated>
+  <updated>2020-03-03T19:12:42.827Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Welcome to my website</title>
-    <link href="http://yoursite.com/2019/09/01/welcome/"/>
-    <id>http://yoursite.com/2019/09/01/welcome/</id>
-    <published>2019-09-01T07:00:03.000Z</published>
-    <updated>2020-03-03T17:35:37.666Z</updated>
+    <link href="http://yoursite.com/2029/09/01/welcome/"/>
+    <id>http://yoursite.com/2029/09/01/welcome/</id>
+    <published>2029-09-01T07:00:03.000Z</published>
+    <updated>2020-03-03T19:12:42.827Z</updated>
     
     <content type="html"><![CDATA[<!-- <center>**This is Shunchi Zhou, glad to see you here!**</center> --><p><img src="/uploads/Shunchi_Zhou_resume.png" alt></p><p><a href="https://shunchizhou.com/resume/" target="_blank" rel="noopener"><span style="color: #6495ED">Full Version</span></a><br><a href="/uploads/Shunchi_Zhou_Resume_2020.pdf"><span style="color: #6495ED">Download Resume</span></a></p>]]></content>
     
@@ -32,6 +32,90 @@
         &lt;!-- &lt;center&gt;**This is Shunchi Zhou, glad to see you here!**&lt;/center&gt; --&gt;
 &lt;p&gt;&lt;img src=&quot;/uploads/Shunchi_Zhou_resume.png&quot; alt&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>T-LeadLine Interactive Visual Analysis of Text Data</title>
+    <link href="http://yoursite.com/2020/03/03/CSE578/"/>
+    <id>http://yoursite.com/2020/03/03/CSE578/</id>
+    <published>2020-03-03T19:24:21.000Z</published>
+    <updated>2020-03-03T19:24:46.240Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/uploads/578/578_cover.png" alt><br><img src="/uploads/578/578_1.png" alt><br><img src="/uploads/578/578_2.png" alt><br><img src="/uploads/578/578_3.png" alt><br><img src="/uploads/578/578_4.png" alt><br><img src="/uploads/578/578_5.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/uploads/578/578_cover.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/578/578_1.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/578/578_2.png&quot; alt&gt;&lt;br&gt;&lt;img sr
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Human Activity Recognition from Myo sensors</title>
+    <link href="http://yoursite.com/2020/03/03/CSE572/"/>
+    <id>http://yoursite.com/2020/03/03/CSE572/</id>
+    <published>2020-03-03T19:22:46.000Z</published>
+    <updated>2020-03-03T19:23:28.603Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/uploads/572/572_1.png" alt><br><img src="/uploads/572/572_2.png" alt><br><img src="/uploads/572/572_3.png" alt><br><img src="/uploads/572/572_4.png" alt><br><img src="/uploads/572/572_5.png" alt><br><img src="/uploads/572/572_6.png" alt><br><img src="/uploads/572/572_7.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/uploads/572/572_1.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/572/572_2.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/572/572_3.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Geo-spatial Hotspot Analysis based on Hadoop and Spark Using Scala language</title>
+    <link href="http://yoursite.com/2020/03/03/CSE512/"/>
+    <id>http://yoursite.com/2020/03/03/CSE512/</id>
+    <published>2020-03-03T19:10:25.000Z</published>
+    <updated>2020-03-03T19:13:57.686Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/uploads/512/512_1.png" alt><br><img src="/uploads/512/512_2.png" alt><br><img src="/uploads/512/512_3.png" alt><br><img src="/uploads/512/512_4.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/uploads/512/512_1.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/512/512_2.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/512/512_3.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mental Health Topic Classification</title>
+    <link href="http://yoursite.com/2020/03/03/CSE472/"/>
+    <id>http://yoursite.com/2020/03/03/CSE472/</id>
+    <published>2020-03-03T19:10:00.000Z</published>
+    <updated>2020-03-03T19:27:40.109Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/uploads/472/472_1.png" alt><br><img src="/uploads/472/472_2.png" alt><br><img src="/uploads/472/472_3.png" alt><br><img src="/uploads/472/472_4.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/uploads/472/472_1.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/472/472_2.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/472/472_3.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/
       
     
     </summary>

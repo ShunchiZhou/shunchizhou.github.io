@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/03/CSE472/</loc>
+    
+    <lastmod>2020-03-03T19:27:40.109Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/resume/index.html</loc>
     
-    <lastmod>2020-03-03T18:27:46.653Z</lastmod>
+    <lastmod>2020-03-03T19:25:26.709Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/03/CSE578/</loc>
+    
+    <lastmod>2020-03-03T19:24:46.240Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/03/CSE572/</loc>
+    
+    <lastmod>2020-03-03T19:23:28.603Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/03/CSE512/</loc>
+    
+    <lastmod>2020-03-03T19:13:57.686Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2029/09/01/welcome/</loc>
+    
+    <lastmod>2020-03-03T19:12:42.827Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/uploads/CSE512.html</loc>
+    
+    <lastmod>2020-03-03T18:46:21.110Z</lastmod>
     
   </url>
   
@@ -16,44 +58,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/09/01/welcome/</loc>
-    
-    <lastmod>2020-03-03T17:35:37.666Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/CSE578/index.html</loc>
-    
-    <lastmod>2019-09-18T22:11:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/CSE472/index.html</loc>
-    
-    <lastmod>2019-09-18T01:16:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/CSE572/index.html</loc>
-    
-    <lastmod>2019-09-18T01:09:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/CSE575/index.html</loc>
     
     <lastmod>2019-09-18T00:33:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/CSE512/index.html</loc>
-    
-    <lastmod>2019-09-18T00:15:57.000Z</lastmod>
     
   </url>
   
