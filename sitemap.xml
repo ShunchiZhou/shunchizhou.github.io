@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-03-25T07:54:29.204Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/25/master-theorem/</loc>
+    
+    <lastmod>2020-03-25T07:49:55.716Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/resume/index.html</loc>
     
     <lastmod>2020-03-04T19:10:16.669Z</lastmod>
