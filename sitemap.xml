@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
+    <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-03-26T03:09:49.780Z</lastmod>
+    <lastmod>2020-03-26T04:09:38.004Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
+    <loc>http://yoursite.com/LeetCode/index.html</loc>
     
-    <lastmod>2020-03-26T02:40:38.841Z</lastmod>
+    <lastmod>2020-03-26T04:04:12.974Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
+    
+    <lastmod>2020-03-26T03:09:49.780Z</lastmod>
     
   </url>
   
