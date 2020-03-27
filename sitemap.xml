@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/25/master-theorem/</loc>
+    
+    <lastmod>2020-03-27T00:41:39.922Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/26/207-Course-Schedule/</loc>
     
-    <lastmod>2020-03-27T00:40:04.469Z</lastmod>
+    <lastmod>2020-03-27T00:41:34.262Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
+    
+    <lastmod>2020-03-27T00:41:31.225Z</lastmod>
     
   </url>
   
@@ -19,20 +33,6 @@
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-03-26T04:23:00.641Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
-    
-    <lastmod>2020-03-26T03:09:49.780Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/25/master-theorem/</loc>
-    
-    <lastmod>2020-03-25T07:49:55.716Z</lastmod>
     
   </url>
   
