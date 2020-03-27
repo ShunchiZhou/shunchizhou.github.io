@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Practice/index.html</loc>
+    
+    <lastmod>2020-03-27T01:40:41.446Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/26/207-Course-Schedule/</loc>
     
     <lastmod>2020-03-27T00:59:13.501Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
     
     <lastmod>2020-03-27T00:41:31.225Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Practice/index.html</loc>
-    
-    <lastmod>2020-03-27T00:38:43.894Z</lastmod>
     
   </url>
   
