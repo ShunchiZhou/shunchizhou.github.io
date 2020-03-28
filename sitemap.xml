@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-03-28T03:54:56.336Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/27/113-Path-Sum-II/</loc>
+    
+    <lastmod>2020-03-28T03:53:41.169Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-03-27T06:01:49.596Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/2020/03/26/109-Convert-Sorted-List-to-Binary-Search-Tree/</loc>
     
     <lastmod>2020-03-27T05:07:15.401Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-03-27T03:48:01.519Z</lastmod>
     
   </url>
   
