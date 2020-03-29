@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-03-29T20:23:33.061Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-03-29T20:06:28.888Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2020/03/29/union-find-algorithm/</loc>
     
     <lastmod>2020-03-29T19:00:31.768Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-03-29T18:34:25.173Z</lastmod>
     
   </url>
   
