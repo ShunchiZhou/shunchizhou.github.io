@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/03/26/207-Course-Schedule/</loc>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-03-29T04:05:57.044Z</lastmod>
+    <lastmod>2020-03-29T05:27:51.745Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/2020/03/28/684-Redundant-Connection/</loc>
     
-    <lastmod>2020-03-29T04:05:44.487Z</lastmod>
+    <lastmod>2020-03-29T05:26:01.649Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/26/207-Course-Schedule/</loc>
+    
+    <lastmod>2020-03-29T04:05:57.044Z</lastmod>
     
   </url>
   
