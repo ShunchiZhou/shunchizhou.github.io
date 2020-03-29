@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-03-29T06:10:08.851Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/28/684-Redundant-Connection/</loc>
     
     <lastmod>2020-03-29T05:30:25.458Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://yoursite.com/2020/03/28/Tries/</loc>
     
     <lastmod>2020-03-29T01:01:52.783Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-03-29T00:58:29.995Z</lastmod>
     
   </url>
   
