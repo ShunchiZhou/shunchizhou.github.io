@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/26/207-Course-Schedule/</loc>
+    
+    <lastmod>2020-03-29T04:05:57.044Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-03-29T02:57:59.624Z</lastmod>
+    <lastmod>2020-03-29T04:05:44.487Z</lastmod>
     
   </url>
   
@@ -68,13 +75,6 @@
     <loc>http://yoursite.com/2020/03/26/108-Convert-Sorted-Array-to-Binary-Search-Tree/</loc>
     
     <lastmod>2020-03-27T02:37:02.519Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/26/207-Course-Schedule/</loc>
-    
-    <lastmod>2020-03-27T02:16:21.225Z</lastmod>
     
   </url>
   
