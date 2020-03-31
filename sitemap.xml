@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/29/189-Rotate-Array/</loc>
+    
+    <lastmod>2020-03-31T19:43:49.431Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-03-31T19:35:02.632Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2020/03/29/MergeSort/</loc>
     
     <lastmod>2020-03-30T05:45:51.773Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/29/189-Rotate-Array/</loc>
-    
-    <lastmod>2020-03-30T03:07:37.427Z</lastmod>
     
   </url>
   
