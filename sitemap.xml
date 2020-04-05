@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-04-05T05:08:58.411Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/04/04/119-Pascal-s-Triangle-II/</loc>
+    
+    <lastmod>2020-04-05T05:06:58.628Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-04-01T04:48:12.698Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/2020/03/29/189-Rotate-Array/</loc>
     
     <lastmod>2020-03-31T19:43:49.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-03-31T19:12:28.584Z</lastmod>
     
   </url>
   

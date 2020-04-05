@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>119. Pascal&#39;s Triangle II</title>
+    <link href="http://yoursite.com/2020/04/04/119-Pascal-s-Triangle-II/"/>
+    <id>http://yoursite.com/2020/04/04/119-Pascal-s-Triangle-II/</id>
+    <published>2020-04-05T05:03:07.000Z</published>
+    <updated>2020-04-05T05:06:58.628Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/pascals-triangle-ii/" target="_blank" rel="noopener">https://leetcode.com/problems/pascals-triangle-ii/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200404220416.png" alt><br><strong>Recursion –&gt; top down DP memoization</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// int[][] memo;</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">getNum</span><span class="params">(<span class="keyword">int</span> row,<span class="keyword">int</span> col)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(row==<span class="number">0</span>||col==<span class="number">0</span>||col==row) <span class="keyword">return</span> <span class="number">1</span>; </span><br><span class="line">        <span class="comment">// if(memo[row][col]&gt;0) return memo[row][col];</span></span><br><span class="line">        <span class="keyword">return</span> memo[row][col]=getNum(row-<span class="number">1</span>,col-<span class="number">1</span>)+getNum(row-<span class="number">1</span>,col);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">getRow</span><span class="params">(<span class="keyword">int</span> rowIndex)</span> </span>&#123;</span><br><span class="line">        List&lt;Integer&gt; ans=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="comment">// memo = new int[rowIndex+1][rowIndex+1];</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=rowIndex;i++)&#123;</span><br><span class="line">            ans.add(getNum(rowIndex,i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/pascals-triangle-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/pascals-triangl
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>198. House Robber</title>
     <link href="http://yoursite.com/2020/03/31/198-House-Robber/"/>
     <id>http://yoursite.com/2020/03/31/198-House-Robber/</id>
@@ -411,27 +432,6 @@
       
       
         &lt;p&gt;&lt;img src=&quot;/uploads/578/578_cover.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/578/578_1.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/578/578_2.png&quot; alt&gt;&lt;br&gt;&lt;img sr
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Human Activity Recognition from Myo sensors</title>
-    <link href="http://yoursite.com/2020/03/03/CSE572/"/>
-    <id>http://yoursite.com/2020/03/03/CSE572/</id>
-    <published>2020-03-03T19:22:46.000Z</published>
-    <updated>2020-03-03T19:23:28.603Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/uploads/572/572_1.png" alt><br><img src="/uploads/572/572_2.png" alt><br><img src="/uploads/572/572_3.png" alt><br><img src="/uploads/572/572_4.png" alt><br><img src="/uploads/572/572_5.png" alt><br><img src="/uploads/572/572_6.png" alt><br><img src="/uploads/572/572_7.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/uploads/572/572_1.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/572/572_2.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/572/572_3.png&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/
       
     
     </summary>
