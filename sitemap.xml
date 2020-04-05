@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/04/04/119-Pascal-s-Triangle-II/</loc>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-04-05T05:14:51.653Z</lastmod>
+    <lastmod>2020-04-05T07:46:36.160Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/2020/04/05/120-Triangle/</loc>
     
-    <lastmod>2020-04-05T05:08:58.411Z</lastmod>
+    <lastmod>2020-04-05T07:44:46.499Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/04/04/119-Pascal-s-Triangle-II/</loc>
+    
+    <lastmod>2020-04-05T05:14:51.653Z</lastmod>
     
   </url>
   
