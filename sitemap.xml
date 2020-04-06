@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/General/index.html</loc>
+    
+    <lastmod>2020-04-06T19:54:03.257Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/04/06/127-Word-Ladder/</loc>
     
     <lastmod>2020-04-06T19:25:49.397Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-04-01T04:48:12.698Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/General/index.html</loc>
-    
-    <lastmod>2020-03-31T21:30:47.513Z</lastmod>
     
   </url>
   
