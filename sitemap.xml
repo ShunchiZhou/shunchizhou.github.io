@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-04-07T01:26:56.504Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/04/06/137-Single-Number-II/</loc>
+    
+    <lastmod>2020-04-07T01:25:50.360Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/04/06/127-Word-Ladder/</loc>
     
     <lastmod>2020-04-06T23:55:01.033Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/General/index.html</loc>
     
     <lastmod>2020-04-06T19:55:47.322Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-04-06T19:25:29.867Z</lastmod>
     
   </url>
   
