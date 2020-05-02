@@ -44,15 +44,15 @@
     <link href="http://yoursite.com/2020/05/02/Determine-if-a-number-is-2-to-the-power-of-n/"/>
     <id>http://yoursite.com/2020/05/02/Determine-if-a-number-is-2-to-the-power-of-n/</id>
     <published>2020-05-02T20:30:02.000Z</published>
-    <updated>2020-05-02T20:40:03.064Z</updated>
+    <updated>2020-05-02T20:50:16.861Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://stackoverflow.com/questions/600293/how-to-check-if-a-number-is-a-power-of-2" target="_blank" rel="noopener">Determine if a number is 2 to the power of n</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">IsPowerOfTwo</span><span class="params">(ulong x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (x != <span class="number">0</span>) &amp;&amp; ((x &amp; (x - <span class="number">1</span>)) == <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/" target="_blank" rel="noopener">Determine if a number is 2 to the power of n</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">IsPowerOfTwo</span><span class="params">(ulong x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (x != <span class="number">0</span>) &amp;&amp; ((x &amp; (x - <span class="number">1</span>)) == <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/600293/how-to-check-if-a-number-is-a-power-of-2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Determine if
+        &lt;p&gt;&lt;a href=&quot;https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Determine if a numbe
       
     
     </summary>
