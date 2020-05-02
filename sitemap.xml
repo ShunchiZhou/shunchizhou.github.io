@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-05-02T21:02:06.003Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/02/116-Populating-Next-Right-Pointers-in-Each-Node/</loc>
+    
+    <lastmod>2020-05-02T21:00:15.443Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/05/02/Determine-if-a-number-is-2-to-the-power-of-n/</loc>
     
     <lastmod>2020-05-02T20:50:16.861Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-04-14T05:42:46.734Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-04-07T01:26:56.504Z</lastmod>
     
   </url>
   
