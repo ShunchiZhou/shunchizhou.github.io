@@ -94,13 +94,19 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hi, this is Shunchi!">
-<meta property="og:url" content="http://yoursite.com/page/13/index.html">
+  <meta name="description" content="https://leetcode.com/problems/palindrome-partitioning/Classic Backtracking, list all possbile trails + backtrack when fails12345678910111213141516171819202122232425262728293031323334353637383940import">
+<meta property="og:type" content="article">
+<meta property="og:title" content="131. Palindrome Partitioning">
+<meta property="og:url" content="http://yoursite.com/2020/05/03/131-Palindrome-Partitioning/index.html">
 <meta property="og:site_name" content="Hi, this is Shunchi!">
+<meta property="og:description" content="https://leetcode.com/problems/palindrome-partitioning/Classic Backtracking, list all possbile trails + backtrack when fails12345678910111213141516171819202122232425262728293031323334353637383940import">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200503141316.png">
+<meta property="og:updated_time" content="2020-05-03T21:16:16.374Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hi, this is Shunchi!">
+<meta name="twitter:title" content="131. Palindrome Partitioning">
+<meta name="twitter:description" content="https://leetcode.com/problems/palindrome-partitioning/Classic Backtracking, list all possbile trails + backtrack when fails12345678910111213141516171819202122232425262728293031323334353637383940import">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200503141316.png">
 
 
 
@@ -109,7 +115,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/13/">
+  <link rel="canonical" href="http://yoursite.com/2020/05/03/131-Palindrome-Partitioning/">
 
 
 
@@ -119,7 +125,7 @@
   };
 </script>
 
-  <title>Hi, this is Shunchi!</title>
+  <title>131. Palindrome Partitioning | Hi, this is Shunchi!</title>
   
 
 
@@ -167,8 +173,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
-  page-home">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -386,9 +391,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -396,6 +401,8 @@
   
   
 
+  
+    <div class="reading-progress-bar"></div>
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -403,7 +410,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/04/119-Pascal-s-Triangle-II/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/131-Palindrome-Partitioning/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -420,10 +427,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/04/04/119-Pascal-s-Triangle-II/" class="post-title-link" itemprop="url">119. Pascal's Triangle II</a>
+          <h1 class="post-title" itemprop="name headline">131. Palindrome Partitioning
+
               
             
           </h1>
@@ -448,7 +453,7 @@
                 
               
 
-              <time title="Created: 2020-04-04 22:03:07 / Modified: 22:14:51" itemprop="dateCreated datePublished" datetime="2020-04-04T22:03:07-07:00">2020-04-04</time>
+              <time title="Created: 2020-05-03 14:12:28 / Modified: 14:16:16" itemprop="dateCreated datePublished" datetime="2020-05-03T14:12:28-07:00">2020-05-03</time>
             
 
             
@@ -465,6 +470,13 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -484,12 +496,8 @@
       
 
       
-        
-          
-            <p><a href="https://leetcode.com/problems/pascals-triangle-ii/" target="_blank" rel="noopener">https://leetcode.com/problems/pascals-triangle-ii/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200404220416.png" alt><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200404221425.png" alt><br><strong>Recursion –&gt; top down DP memoization</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// int[][] memo;</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">getNum</span><span class="params">(<span class="keyword">int</span> row,<span class="keyword">int</span> col)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(row==<span class="number">0</span>||col==<span class="number">0</span>||col==row) <span class="keyword">return</span> <span class="number">1</span>; </span><br><span class="line">        <span class="comment">// if(memo[row][col]&gt;0) return memo[row][col];</span></span><br><span class="line">        <span class="keyword">return</span> memo[row][col]=getNum(row-<span class="number">1</span>,col-<span class="number">1</span>)+getNum(row-<span class="number">1</span>,col);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">getRow</span><span class="params">(<span class="keyword">int</span> rowIndex)</span> </span>&#123;</span><br><span class="line">        List&lt;Integer&gt; ans=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="comment">// memo = new int[rowIndex+1][rowIndex+1];</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=rowIndex;i++)&#123;</span><br><span class="line">            ans.add(getNum(rowIndex,i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <p><a href="https://leetcode.com/problems/palindrome-partitioning/" target="_blank" rel="noopener">https://leetcode.com/problems/palindrome-partitioning/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200503141316.png" alt><br><strong>Classic Backtracking, list all possbile trails + backtrack when fails</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lt131</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> List&lt;List&lt;String&gt;&gt; partition(String s) &#123;</span><br><span class="line">        List&lt;List&lt;String&gt;&gt; res = <span class="keyword">new</span> ArrayList&lt;List&lt;String&gt;&gt;();</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">        dfs(s, <span class="number">0</span>, list, res);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(String s, <span class="keyword">int</span> pos, List&lt;String&gt; list, List&lt;List&lt;String&gt;&gt; res)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (pos == s.length())</span><br><span class="line">            res.add(<span class="keyword">new</span> ArrayList&lt;String&gt;(list));</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = pos; i &lt; s.length(); i++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (isPal(s, pos, i)) &#123;</span><br><span class="line">                    list.add(s.substring(pos, i + <span class="number">1</span>));</span><br><span class="line">                    dfs(s, i + <span class="number">1</span>, list, res);</span><br><span class="line">                    list.remove(list.size() - <span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isPal</span><span class="params">(String s, <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">while</span> (low &lt; high)</span><br><span class="line">            <span class="keyword">if</span> (s.charAt(low++) != s.charAt(high--))</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// *********************************************</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String s = <span class="string">"aaa"</span>;</span><br><span class="line">        <span class="keyword">for</span> (List&lt;String&gt; ls : partition(s))</span><br><span class="line">            System.out.println(ls);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
 
@@ -512,12 +520,84 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+              <div>
+                
+
+<script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css">
+
+
+  
+
+
+<div class="likely">
+	
+ 	 	<div class="twitter">Tweet</div>
+	
+ 	 	<div class="facebook">Share</div>
+	
+ 	 	<div class="linkedin">Link</div>
+	
+ 	 	<div class="gplus">Plus</div>
+	
+ 	 	<div class="vkontakte">Share</div>
+	
+ 	 	<div class="odnoklassniki">Class</div>
+	
+ 	 	<div class="telegram">Send</div>
+	
+ 	 	<div class="whatsapp">Send</div>
+	
+ 	 	<div class="pinterest">Pin</div>
+	
+</div>
+
+              </div>
+            
+            
+            
+          </div>
+        
+        </div>
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/03/Morris-Traversal/" rel="next" title="Morris Traversal">
+                <i class="fa fa-chevron-left"></i> Morris Traversal
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2029/09/01/welcome/" rel="prev" title="Welcome to my website!">
+                Welcome to my website! <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -527,14 +607,7 @@
   </article>
 
 
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/12/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/34/">34</a><a class="extend next" rel="next" href="/page/14/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -822,6 +895,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -858,10 +935,6 @@
   
 
   
-  
-    
-      
-    
   
 
   
@@ -927,7 +1000,7 @@
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#more");
   
   </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
