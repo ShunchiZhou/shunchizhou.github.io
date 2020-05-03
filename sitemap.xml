@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/02/129-Sum-Root-to-Leaf-Numbers/</loc>
+    
+    <lastmod>2020-05-03T18:34:52.450Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-05-03T17:54:47.826Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/2020/05/02/ThreadedBinaryTree/</loc>
     
     <lastmod>2020-05-03T02:41:12.634Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/05/02/129-Sum-Root-to-Leaf-Numbers/</loc>
-    
-    <lastmod>2020-05-03T00:15:31.917Z</lastmod>
     
   </url>
   
