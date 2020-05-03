@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-05-03T00:14:41.301Z</lastmod>
+    <lastmod>2020-05-03T00:18:10.165Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/05/02/129-Sum-Root-to-Leaf-Numbers/</loc>
     
-    <lastmod>2020-05-03T00:14:04.770Z</lastmod>
+    <lastmod>2020-05-03T00:15:31.917Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-05-03T00:14:41.301Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://yoursite.com/General/index.html</loc>
     
     <lastmod>2020-05-02T20:41:30.055Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-04-14T05:42:46.734Z</lastmod>
     
   </url>
   
