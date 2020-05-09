@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>144. Binary Tree Preorder Traversal</title>
+    <link href="http://yoursite.com/2020/05/08/144-Binary-Tree-Preorder-Traversal/"/>
+    <id>http://yoursite.com/2020/05/08/144-Binary-Tree-Preorder-Traversal/</id>
+    <published>2020-05-09T01:07:16.000Z</published>
+    <updated>2020-05-09T01:28:17.247Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/binary-tree-preorder-traversal/" target="_blank" rel="noopener">https://leetcode.com/problems/binary-tree-preorder-traversal/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200508180752.png" alt><br><strong>Time complexity: O(N), Space complexity: O(N)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * public class TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode left;</span></span><br><span class="line"><span class="comment"> *     TreeNode right;</span></span><br><span class="line"><span class="comment"> *     TreeNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int val, TreeNode left, TreeNode right) &#123;</span></span><br><span class="line"><span class="comment"> *         this.val = val;</span></span><br><span class="line"><span class="comment"> *         this.left = left;</span></span><br><span class="line"><span class="comment"> *         this.right = right;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// Recursion</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_1</span> </span>&#123;</span><br><span class="line">    List&lt;Integer&gt; ls=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">preorderTraversal</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            ls.add(root.val);</span><br><span class="line">            preorderTraversal(root.left);</span><br><span class="line">            preorderTraversal(root.right);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ls;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Iteration</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution_2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">preorderTraversal</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        List&lt;Integer&gt; ls=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        LinkedList&lt;TreeNode&gt; stack=<span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">        stack.push(root);</span><br><span class="line">        <span class="keyword">while</span>(!stack.isEmpty())&#123;</span><br><span class="line">            TreeNode node=stack.pop(); </span><br><span class="line">            <span class="keyword">if</span>(node!=<span class="keyword">null</span>)&#123;</span><br><span class="line">                ls.add(node.val);</span><br><span class="line">                <span class="comment">// be careful about the order. </span></span><br><span class="line">                <span class="comment">// Firstly push the right branch then push the left.</span></span><br><span class="line">                stack.push(node.right);</span><br><span class="line">                stack.push(node.left);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ls;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><strong>Morris traversal [Time complexity: O(N), Space complexity: O(1)]</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/binary-tree-preorder-traversal/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/bina
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>143. Reorder List</title>
     <link href="http://yoursite.com/2020/05/06/143-Reorder-List/"/>
     <id>http://yoursite.com/2020/05/06/143-Reorder-List/</id>
@@ -410,27 +431,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/pascals-triangle-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/pascals-triangl
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>198. House Robber</title>
-    <link href="http://yoursite.com/2020/03/31/198-House-Robber/"/>
-    <id>http://yoursite.com/2020/03/31/198-House-Robber/</id>
-    <published>2020-03-31T19:08:36.000Z</published>
-    <updated>2020-03-31T19:09:45.972Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/house-robber/" target="_blank" rel="noopener">https://leetcode.com/problems/house-robber/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200331120941.png" alt><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span>[] memo;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">rob</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        memo = <span class="keyword">new</span> <span class="keyword">int</span>[nums.length + <span class="number">1</span>];</span><br><span class="line">        Arrays.fill(memo, -<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">return</span> rob(nums, nums.length - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">rob</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (i &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(memo[i]&lt;<span class="number">0</span>) memo[i]= Math.max(rob(nums, i - <span class="number">2</span>) + nums[i], rob(nums, i - <span class="number">1</span>));</span><br><span class="line">        <span class="keyword">return</span> memo[i];  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/house-robber/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/house-robber/&lt;/a&gt;&lt;br&gt;&lt;
       
     
     </summary>
