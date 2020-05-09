@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/General/index.html</loc>
+    
+    <lastmod>2020-05-09T04:37:18.988Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/05/08/146-LRU-Cache/</loc>
     
     <lastmod>2020-05-09T04:35:58.636Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/2020/05/08/144-Binary-Tree-Preorder-Traversal/</loc>
     
     <lastmod>2020-05-09T02:09:00.483Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/General/index.html</loc>
-    
-    <lastmod>2020-05-09T01:57:39.741Z</lastmod>
     
   </url>
   
