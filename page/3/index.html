@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">49</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">48</span></a>
 
   </li>
         
@@ -403,7 +403,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/Radix-sort/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/Counting-sort/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -423,7 +423,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/05/09/Radix-sort/" class="post-title-link" itemprop="url">Radix sort</a>
+                <a href="/2020/05/09/Counting-sort/" class="post-title-link" itemprop="url">Counting sort</a>
               
             
           </h1>
@@ -448,7 +448,7 @@
                 
               
 
-              <time title="Created: 2020-05-09 10:02:41 / Modified: 10:03:55" itemprop="dateCreated datePublished" datetime="2020-05-09T10:02:41-07:00">2020-05-09</time>
+              <time title="Created: 2020-05-09 10:01:13 / Modified: 10:02:19" itemprop="dateCreated datePublished" datetime="2020-05-09T10:01:13-07:00">2020-05-09</time>
             
 
             
@@ -486,75 +486,7 @@
       
         
           
-            <p><code>`</code>java</p>
-<p>// Radix sort Java implementation<br>import java.io.<em>;<br>import java.util.</em>;</p>
-<p>class Radix {</p>
-<pre><code>// A utility function to get maximum value in arr[]
-static int getMax(int arr[], int n) {
-    int mx = arr[0];
-    for (int i = 1; i &lt; n; i++)
-        if (arr[i] &gt; mx)
-            mx = arr[i];
-    return mx;
-}
-
-// A function to do counting sort of arr[] according to
-// the digit represented by exp.
-static void countSort(int arr[], int n, int exp) {
-    int output[] = new int[n]; // output array
-    int i;
-    int count[] = new int[10];
-    Arrays.fill(count, 0);
-
-    // Store count of occurrences in count[]
-    for (i = 0; i &lt; n; i++)
-        count[(arr[i] / exp) % 10]++;
-
-    // Change count[i] so that count[i] now contains
-    // actual position of this digit in output[]
-    for (i = 1; i &lt; 10; i++)
-        count[i] += count[i - 1];
-
-    // Build the output array
-    for (i = n - 1; i &gt;= 0; i--) {
-        output[count[(arr[i] / exp) % 10] - 1] = arr[i];
-        count[(arr[i] / exp) % 10]--;
-    }
-
-    // Copy the output array to arr[], so that arr[] now
-    // contains sorted numbers according to curent digit
-    for (i = 0; i &lt; n; i++)
-        arr[i] = output[i];
-}
-
-// The main function to that sorts arr[] of size n using
-// Radix Sort
-static void radixsort(int arr[], int n) {
-    // Find the maximum number to know number of digits
-    int m = getMax(arr, n);
-
-    // Do counting sort for every digit. Note that instead
-    // of passing digit number, exp is passed. exp is 10^i
-    // where i is current digit number
-    for (int exp = 1; m / exp &gt; 0; exp *= 10)
-        countSort(arr, n, exp);
-}
-
-// A utility function to print an array
-static void print(int arr[], int n) {
-    for (int i = 0; i &lt; n; i++)
-        System.out.print(arr[i] + &quot; &quot;);
-}
-
-/* Driver function to check for above function */
-public static void main(String[] args) {
-    int arr[] = { 170, 45, 75, 90, 802, 24, 2, 66 };
-    int n = arr.length;
-    radixsort(arr, n);
-    print(arr, n);
-}
-</code></pre><p>}</p>
-
+            <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Counting_sort</span> </span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span>[] countingSort(<span class="keyword">int</span>[] a, <span class="keyword">int</span> maxValue) &#123;</span><br><span class="line">		<span class="keyword">int</span> c[] = <span class="keyword">new</span> <span class="keyword">int</span>[maxValue+<span class="number">1</span>];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++)</span><br><span class="line">			c[a[i]]++;</span><br><span class="line">			</span><br><span class="line">		<span class="keyword">int</span> b[] = <span class="keyword">new</span> <span class="keyword">int</span>[a.length];</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=maxValue;i++) &#123;</span><br><span class="line">			<span class="keyword">while</span> (c[i]&gt;<span class="number">0</span>) &#123;</span><br><span class="line">				b[count++]=i;</span><br><span class="line">				c[i]--;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> b;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//*********************************************</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] arr=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">8</span>,<span class="number">0</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">1</span>&#125;;		</span><br><span class="line">		System.out.println(Arrays.toString(countingSort(arr, <span class="number">8</span>)));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -599,7 +531,7 @@ public static void main(String[] args) {
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/49/">49</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/48/">48</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -643,7 +575,7 @@ public static void main(String[] args) {
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">49</span>
+                    <span class="site-state-item-count">48</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
