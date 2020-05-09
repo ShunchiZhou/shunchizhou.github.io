@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/05/09/Insertion-sort/</loc>
+    <loc>http://yoursite.com/2020/05/09/Swapping-sort/</loc>
     
-    <lastmod>2020-05-09T16:53:34.391Z</lastmod>
+    <lastmod>2020-05-09T16:56:44.664Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/29/MergeSort/</loc>
+    
+    <lastmod>2020-05-09T16:56:21.424Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-05-09T16:49:05.752Z</lastmod>
+    <lastmod>2020-05-09T16:54:23.544Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/09/Insertion-sort/</loc>
+    
+    <lastmod>2020-05-09T16:53:34.391Z</lastmod>
     
   </url>
   
@@ -180,13 +194,6 @@
     <loc>http://yoursite.com/2020/03/31/198-House-Robber/</loc>
     
     <lastmod>2020-03-31T19:09:45.972Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/29/MergeSort/</loc>
-    
-    <lastmod>2020-03-30T05:45:51.773Z</lastmod>
     
   </url>
   
