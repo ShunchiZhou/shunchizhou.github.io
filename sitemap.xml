@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/09/Radix-sort/</loc>
+    
+    <lastmod>2020-05-09T17:03:55.304Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-05-09T17:02:54.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/09/Counting-sort/</loc>
+    
+    <lastmod>2020-05-09T17:02:19.591Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/09/Bucket-sort/</loc>
+    
+    <lastmod>2020-05-09T17:00:28.005Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/09/Selection-sort/</loc>
+    
+    <lastmod>2020-05-09T16:58:27.234Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/05/09/Swapping-sort/</loc>
     
     <lastmod>2020-05-09T16:56:44.664Z</lastmod>
@@ -12,13 +47,6 @@
     <loc>http://yoursite.com/2020/03/29/MergeSort/</loc>
     
     <lastmod>2020-05-09T16:56:21.424Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-05-09T16:54:23.544Z</lastmod>
     
   </url>
   

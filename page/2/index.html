@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">44</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">48</span></a>
 
   </li>
         
@@ -403,7 +403,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/Swapping-sort/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/Radix-sort/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -423,7 +423,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/05/09/Swapping-sort/" class="post-title-link" itemprop="url">Swapping sort</a>
+                <a href="/2020/05/09/Radix-sort/" class="post-title-link" itemprop="url">Radix sort</a>
               
             
           </h1>
@@ -448,7 +448,7 @@
                 
               
 
-              <time title="Created: 2020-05-09 09:54:07 / Modified: 09:56:44" itemprop="dateCreated datePublished" datetime="2020-05-09T09:54:07-07:00">2020-05-09</time>
+              <time title="Created: 2020-05-09 10:02:41 / Modified: 10:03:55" itemprop="dateCreated datePublished" datetime="2020-05-09T10:02:41-07:00">2020-05-09</time>
             
 
             
@@ -486,8 +486,74 @@
       
         
           
-            <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//swapping sort including:</span></span><br><span class="line"><span class="comment">//1. bubble_sort</span></span><br><span class="line"><span class="comment">//2. quick_sort</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Swapping_sort</span></span>&#123;</span><br><span class="line">	<span class="comment">//---------------------------------------------bubble sorting</span></span><br><span class="line">	<span class="comment">//Time Complexity: O(n^2)</span></span><br><span class="line">	<span class="comment">//Space Complexity: O(1)</span></span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bubbleSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> len = arr.length;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;     <span class="comment">//i: 排序次数</span></span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; len - i; j++) &#123; <span class="comment">//j: 比较的位置</span></span><br><span class="line">				<span class="keyword">if</span> (arr[j] &gt; arr[j+<span class="number">1</span>]) &#123;        <span class="comment">// 相邻元素两两对比</span></span><br><span class="line">					<span class="keyword">int</span> temp = arr[j+<span class="number">1</span>];        <span class="comment">// 元素交换</span></span><br><span class="line">					arr[j+<span class="number">1</span>] = arr[j];</span><br><span class="line">					arr[j] = temp;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//---------------------------------------------bubble sorting with optimization</span></span><br><span class="line">	<span class="comment">//Worst Case Time Complexity [ Big-O ]: O(n^2)</span></span><br><span class="line">	<span class="comment">//Best Case Time Complexity [Big-omega]: O(n)</span></span><br><span class="line">	<span class="comment">//Average Time Complexity [Big-theta]: O(n^2)</span></span><br><span class="line">	<span class="comment">//Space Complexity: O(1)</span></span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bubbleSort_optimizaion</span><span class="params">(<span class="keyword">int</span> arr[])</span> </span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">int</span> n=arr.length;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n ; i++) &#123; </span><br><span class="line">			<span class="keyword">boolean</span> swapped = <span class="keyword">false</span>; </span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n - i ; j++) &#123; </span><br><span class="line">				<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>])  &#123; </span><br><span class="line">					<span class="comment">// swap arr[j] and arr[j+1] </span></span><br><span class="line">					<span class="keyword">int</span> temp = arr[j]; </span><br><span class="line">					arr[j] = arr[j + <span class="number">1</span>]; </span><br><span class="line">					arr[j + <span class="number">1</span>] = temp; </span><br><span class="line">					swapped = <span class="keyword">true</span>; </span><br><span class="line">				&#125; </span><br><span class="line">			&#125; </span><br><span class="line">			<span class="comment">// IF no two elements were  </span></span><br><span class="line">			<span class="comment">// swapped by inner loop, then break </span></span><br><span class="line">			<span class="keyword">if</span> (swapped == <span class="keyword">false</span>) <span class="keyword">break</span>; </span><br><span class="line">		&#125; </span><br><span class="line">	&#125; </span><br><span class="line">	</span><br><span class="line">	<span class="comment">//---------------------------------------------quick sorting</span></span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">qSort</span><span class="params">(<span class="keyword">int</span>[] arr, <span class="keyword">int</span> head, <span class="keyword">int</span> tail)</span> </span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(head&gt;=tail||arr==<span class="keyword">null</span>||arr.length&lt;=<span class="number">1</span>) <span class="keyword">return</span>;			</span><br><span class="line">			<span class="keyword">int</span> i=head,j=tail,pivot=arr[(head+tail)/<span class="number">2</span>];</span><br><span class="line">			<span class="keyword">while</span> (i&lt;=j) &#123;</span><br><span class="line">				<span class="keyword">while</span>(arr[i]&lt;pivot) i++;</span><br><span class="line">				<span class="keyword">while</span>(arr[j]&gt;pivot) j--;</span><br><span class="line">				<span class="keyword">if</span>(i&lt;j)&#123;</span><br><span class="line">					<span class="keyword">int</span> temp=arr[i];</span><br><span class="line">					arr[i]=arr[j];</span><br><span class="line">					arr[j]=temp;</span><br><span class="line">					i++;</span><br><span class="line">					j--;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span>(i==j) i++;		</span><br><span class="line">			&#125;</span><br><span class="line">			qSort(arr, head, j);</span><br><span class="line">			qSort(arr, i, tail);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">    <span class="comment">//*********************************************</span></span><br><span class="line">	<span class="comment">//main function</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span>[][] new_array=&#123;</span><br><span class="line">			&#123;<span class="number">1</span>,<span class="number">5</span>,<span class="number">8</span>,<span class="number">3</span>,<span class="number">2</span>&#125;,</span><br><span class="line">			&#123;<span class="number">9</span>,<span class="number">8</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">2</span>&#125;</span><br><span class="line">		&#125;;</span><br><span class="line"><span class="comment">//		for(int i=0;i&lt;2;i++)&#123;</span></span><br><span class="line"><span class="comment">//			for (int j=0;j&lt;10;j++) &#123;</span></span><br><span class="line"><span class="comment">//				new_array[i][j]=(int)(Math.random()*9+1);</span></span><br><span class="line"><span class="comment">//			&#125;</span></span><br><span class="line"><span class="comment">//		&#125;</span></span><br><span class="line">		<span class="comment">//bubble sorting test</span></span><br><span class="line">		System.out.print(<span class="string">"the original array is: "</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">0</span>])System.out.print(i);</span><br><span class="line">		System.out.println();	</span><br><span class="line">		System.out.print(<span class="string">"after insertion sorting: "</span>);	</span><br><span class="line">		bubbleSort_optimizaion(new_array[<span class="number">0</span>]);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">0</span>])System.out.print(i);</span><br><span class="line">		System.out.println();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//quick sorting test</span></span><br><span class="line">		System.out.println();		</span><br><span class="line">		System.out.print(<span class="string">"the original array is: "</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">1</span>])System.out.print(i);</span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.print(<span class="string">"after binary insertion sorting: \n"</span>);	</span><br><span class="line">		qSort(new_array[<span class="number">1</span>],<span class="number">0</span>,<span class="number">4</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">1</span>])System.out.print(i);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>QuickSort detailed explanation</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">quickSort</span><span class="params">(<span class="keyword">int</span> [] arr, <span class="keyword">int</span> left, <span class="keyword">int</span> right)</span> </span>&#123;   </span><br><span class="line">		<span class="keyword">if</span> (left &gt; right)  <span class="keyword">return</span>;  </span><br><span class="line">		<span class="keyword">int</span> pivot = arr[left]; <span class="comment">// pivot中存的就是基准数  </span></span><br><span class="line">		<span class="keyword">int</span> i = left;       <span class="comment">// 设置两个哨兵  </span></span><br><span class="line">		<span class="keyword">int</span> j = right;  	<span class="comment">// 设置两个哨兵</span></span><br><span class="line">		<span class="keyword">while</span> (i != j) &#123;  </span><br><span class="line">			<span class="comment">// 顺序很重要，要先从右边开始找  </span></span><br><span class="line">			<span class="keyword">while</span> (arr[j] &gt;= pivot &amp;&amp; i &lt; j)  j--;  </span><br><span class="line">			<span class="comment">// 再找左边的  </span></span><br><span class="line">			<span class="keyword">while</span> (arr[i] &lt;= pivot &amp;&amp; i &lt; j)  i++;  </span><br><span class="line">			<span class="comment">// 交换两个数在数组中的位置  </span></span><br><span class="line">			<span class="keyword">if</span> (i &lt; j) &#123;  </span><br><span class="line">				<span class="keyword">int</span> temp = arr[i];  </span><br><span class="line">				arr[i] = arr[j];  </span><br><span class="line">				arr[j] = temp;  </span><br><span class="line">			&#125;  </span><br><span class="line">		&#125;  </span><br><span class="line">		<span class="comment">// 最终将基准数归位  </span></span><br><span class="line">		arr[left] = arr[i];  </span><br><span class="line">		arr[i] = pivot;  </span><br><span class="line">	  </span><br><span class="line">		quickSort(arr, left, i - <span class="number">1</span>);<span class="comment">// 继续处理左边的，这里是一个递归的过程  </span></span><br><span class="line">		quickSort(arr, i + <span class="number">1</span>, right);<span class="comment">// 继续处理右边的 ，这里是一个递归的过程  </span></span><br><span class="line">	&#125;  </span><br><span class="line"></span><br><span class="line">	<span class="comment">//*********************************************</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] array = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">9</span>];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">9</span>;i++) &#123;</span><br><span class="line">			array[i]=(<span class="keyword">int</span>)(Math.random()*<span class="number">9</span>+<span class="number">1</span>);</span><br><span class="line">			System.out.print(array[i]+<span class="string">" "</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println();</span><br><span class="line">		</span><br><span class="line">		quickSort(array,<span class="number">0</span>,<span class="number">8</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)</span><br><span class="line">			System.out.print(array[i]+<span class="string">" "</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+            <p><code>`</code>java</p>
+<p>// Radix sort Java implementation<br>import java.io.<em>;<br>import java.util.</em>;</p>
+<p>class Radix {</p>
+<pre><code>// A utility function to get maximum value in arr[]
+static int getMax(int arr[], int n) {
+    int mx = arr[0];
+    for (int i = 1; i &lt; n; i++)
+        if (arr[i] &gt; mx)
+            mx = arr[i];
+    return mx;
+}
+
+// A function to do counting sort of arr[] according to
+// the digit represented by exp.
+static void countSort(int arr[], int n, int exp) {
+    int output[] = new int[n]; // output array
+    int i;
+    int count[] = new int[10];
+    Arrays.fill(count, 0);
+
+    // Store count of occurrences in count[]
+    for (i = 0; i &lt; n; i++)
+        count[(arr[i] / exp) % 10]++;
+
+    // Change count[i] so that count[i] now contains
+    // actual position of this digit in output[]
+    for (i = 1; i &lt; 10; i++)
+        count[i] += count[i - 1];
+
+    // Build the output array
+    for (i = n - 1; i &gt;= 0; i--) {
+        output[count[(arr[i] / exp) % 10] - 1] = arr[i];
+        count[(arr[i] / exp) % 10]--;
+    }
+
+    // Copy the output array to arr[], so that arr[] now
+    // contains sorted numbers according to curent digit
+    for (i = 0; i &lt; n; i++)
+        arr[i] = output[i];
+}
+
+// The main function to that sorts arr[] of size n using
+// Radix Sort
+static void radixsort(int arr[], int n) {
+    // Find the maximum number to know number of digits
+    int m = getMax(arr, n);
+
+    // Do counting sort for every digit. Note that instead
+    // of passing digit number, exp is passed. exp is 10^i
+    // where i is current digit number
+    for (int exp = 1; m / exp &gt; 0; exp *= 10)
+        countSort(arr, n, exp);
+}
+
+// A utility function to print an array
+static void print(int arr[], int n) {
+    for (int i = 0; i &lt; n; i++)
+        System.out.print(arr[i] + &quot; &quot;);
+}
+
+/* Driver function to check for above function */
+public static void main(String[] args) {
+    int arr[] = { 170, 45, 75, 90, 802, 24, 2, 66 };
+    int n = arr.length;
+    radixsort(arr, n);
+    print(arr, n);
+}
+</code></pre><p>}</p>
 
           
         
@@ -533,7 +599,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/44/">44</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/48/">48</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -577,7 +643,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">44</span>
+                    <span class="site-state-item-count">48</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
