@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/General/index.html</loc>
+    
+    <lastmod>2020-05-09T01:57:39.741Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-05-09T01:29:11.899Z</lastmod>
@@ -110,13 +117,6 @@
     <loc>http://yoursite.com/2020/05/02/Determine-if-a-number-is-2-to-the-power-of-n/</loc>
     
     <lastmod>2020-05-02T20:50:16.861Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/General/index.html</loc>
-    
-    <lastmod>2020-05-02T20:41:30.055Z</lastmod>
     
   </url>
   
