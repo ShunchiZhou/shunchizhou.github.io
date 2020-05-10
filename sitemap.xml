@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/General/index.html</loc>
+    
+    <lastmod>2020-05-10T07:43:48.247Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-05-10T07:19:28.544Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>http://yoursite.com/2020/05/08/146-LRU-Cache/</loc>
     
     <lastmod>2020-05-09T05:31:53.629Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/General/index.html</loc>
-    
-    <lastmod>2020-05-09T04:37:59.715Z</lastmod>
     
   </url>
   
