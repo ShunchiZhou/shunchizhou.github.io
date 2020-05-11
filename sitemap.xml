@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-05-11T01:28:11.605Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/10/Binary-Search/</loc>
+    
+    <lastmod>2020-05-11T01:27:31.687Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-05-10T18:06:56.211Z</lastmod>
@@ -61,13 +75,6 @@
     <loc>http://yoursite.com/2020/05/09/Radix-sort/</loc>
     
     <lastmod>2020-05-09T18:39:04.411Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-05-09T17:07:11.911Z</lastmod>
     
   </url>
   
