@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-05-11T01:55:46.354Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/10/153-Find-Minimum-in-Rotated-Sorted-Array/</loc>
+    
+    <lastmod>2020-05-11T01:55:03.421Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-05-11T01:30:31.850Z</lastmod>
+    <lastmod>2020-05-11T01:53:48.030Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/2020/05/10/Binary-Search/</loc>
     
     <lastmod>2020-05-11T01:27:31.687Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-05-10T18:06:56.211Z</lastmod>
     
   </url>
   
