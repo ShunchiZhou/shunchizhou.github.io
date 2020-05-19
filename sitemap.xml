@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-05-19T19:05:30.893Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/19/172-Factorial-Trailing-Zeroes/</loc>
+    
+    <lastmod>2020-05-19T19:04:14.490Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/05/15/Java-Interview/</loc>
     
     <lastmod>2020-05-19T16:27:56.775Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/2020/05/17/solid-mirror/</loc>
     
     <lastmod>2020-05-18T06:30:32.248Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-05-15T16:11:40.774Z</lastmod>
     
   </url>
   
