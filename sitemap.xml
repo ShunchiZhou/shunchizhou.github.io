@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/29/MergeSort/</loc>
+    
+    <lastmod>2020-05-20T06:57:13.580Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-05-20T06:22:27.461Z</lastmod>
@@ -201,13 +208,6 @@
     <loc>http://yoursite.com/2020/05/09/Bucket-sort/</loc>
     
     <lastmod>2020-05-09T17:00:28.005Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/29/MergeSort/</loc>
-    
-    <lastmod>2020-05-09T16:56:21.424Z</lastmod>
     
   </url>
   
