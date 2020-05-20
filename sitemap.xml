@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/09/Insertion-sort/</loc>
+    
+    <lastmod>2020-05-20T06:01:30.790Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/05/09/Swapping-sort/</loc>
     
     <lastmod>2020-05-20T02:30:18.561Z</lastmod>
@@ -173,13 +180,6 @@
     <loc>http://yoursite.com/2020/05/09/147-Insertion-Sort-List/</loc>
     
     <lastmod>2020-05-09T20:05:48.387Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/05/09/Insertion-sort/</loc>
-    
-    <lastmod>2020-05-09T18:47:46.916Z</lastmod>
     
   </url>
   
