@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">70</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">71</span></a>
 
   </li>
         
@@ -403,7 +403,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/15/170-Two-Sum-III-Data-structure-design/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/15/Java-Interview/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -423,7 +423,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/05/15/170-Two-Sum-III-Data-structure-design/" class="post-title-link" itemprop="url">170. Two Sum III - Data structure design</a>
+                <a href="/2020/05/15/Java-Interview/" class="post-title-link" itemprop="url">Java Interview</a>
               
             
           </h1>
@@ -448,12 +448,24 @@
                 
               
 
-              <time title="Created: 2020-05-15 09:09:46 / Modified: 09:10:49" itemprop="dateCreated datePublished" datetime="2020-05-15T09:09:46-07:00">2020-05-15</time>
+              <time title="Created: 2020-05-15 09:49:30" itemprop="dateCreated datePublished" datetime="2020-05-15T09:49:30-07:00">2020-05-15</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-05-19 09:27:56" itemprop="dateModified" datetime="2020-05-19T09:27:56-07:00">2020-05-19</time>
               
             
           </span>
@@ -486,8 +498,31 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/two-sum-iii-data-structure-design/" target="_blank" rel="noopener">https://leetcode.com/problems/two-sum-iii-data-structure-design/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200515091013.png" alt></p>
-<p><strong>HashTable</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TwoSum</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    HashMap&lt;Integer,Integer&gt; map;</span><br><span class="line">    <span class="comment">/** Initialize your data structure here. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">TwoSum</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        map=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Add the number to an internal data structure.. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> number)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.map.containsKey(number)) map.replace(number,map.get(number)+<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">else</span> map.put(number,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Find if there exists any pair of numbers which sum is equal to the value. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(Map.Entry&lt;Integer,Integer&gt; entry:map.entrySet())&#123;</span><br><span class="line">            <span class="keyword">int</span> complement=value-entry.getKey();</span><br><span class="line">            <span class="keyword">if</span>(complement!=entry.getKey())&#123;</span><br><span class="line">                <span class="keyword">if</span>(map.containsKey(complement)) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(map.get(complement)&gt;<span class="number">1</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your TwoSum object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * TwoSum obj = new TwoSum();</span></span><br><span class="line"><span class="comment"> * obj.add(number);</span></span><br><span class="line"><span class="comment"> * boolean param_2 = obj.find(value);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure></p>
+            <ul>
+<li><a href="https://www.java-success.com/core-java-interview-questions/" target="_blank" rel="noopener">Top 50+ Core Java interview Q&amp;As</a></li>
+<li><a href="https://github.com/Snailclimb/JavaGuide" target="_blank" rel="noopener">JavaGuide</a></li>
+</ul>
+<h1 id="SOLID-Principles"><a href="#SOLID-Principles" class="headerlink" title="SOLID Principles"></a>SOLID Principles</h1><ul>
+<li><a href="https://www.edureka.co/blog/solid-principles-in-java/" target="_blank" rel="noopener">ref.1</a> (<a href="https://shunchizhou.com/2020/05/17/solid-mirror/" target="_blank" rel="noopener">mirror</a>) <a href="https://stackify.com/solid-design-principles/" target="_blank" rel="noopener">| ref.2</a> <a href="https://www.oodesign.com/dependency-inversion-principle.html" target="_blank" rel="noopener">| ref.3 (clearer on DIP)</a></li>
+</ul>
+<h1 id="Design-Patterns"><a href="#Design-Patterns" class="headerlink" title="Design Patterns"></a>Design Patterns</h1><ul>
+<li><a href="https://www.oodesign.com/" target="_blank" rel="noopener">Design patterns</a></li>
+<li><a href="https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm" target="_blank" rel="noopener">MVC Pattern</a></li>
+</ul>
+<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a>Java Concurrency</h1><h3 id="Multithreading"><a href="#Multithreading" class="headerlink" title="Multithreading"></a>Multithreading</h3><ul>
+<li><a href="https://dzone.com/articles/java-thread-tutorial-creating-threads-and-multithr" target="_blank" rel="noopener">Java Thread Tutorial: Creating Threads and Multithreading in Java</a></li>
+<li><a href="https://www.javatpoint.com/java-multithreading-interview-questions" target="_blank" rel="noopener">Java Multithreading and Concurrency Interview Questions</a></li>
+</ul>
+<h3 id="Synchronization"><a href="#Synchronization" class="headerlink" title="Synchronization"></a>Synchronization</h3><ul>
+<li><a href="https://www.geeksforgeeks.org/volatile-keyword-in-java/?ref=rp" target="_blank" rel="noopener">volatile keyword in Java</a></li>
+</ul>
+<h1 id="Java-Collections"><a href="#Java-Collections" class="headerlink" title="Java Collections"></a>Java Collections</h1><ul>
+<li><a href="https://www.edureka.co/blog/java-collections/" target="_blank" rel="noopener">Java Collections </a></li>
+</ul>
+<h1 id="Java-Serialization"><a href="#Java-Serialization" class="headerlink" title="Java Serialization"></a>Java Serialization</h1><ul>
+<li><a href="https://www.geeksforgeeks.org/transient-keyword-java/" target="_blank" rel="noopener">transient keyword in Java</a></li>
+<li><a href="http://blog.clempinch.com/transient-and-final-instance-variables-in-java/" target="_blank" rel="noopener">TRANSIENT AND FINAL INSTANCE VARIABLES IN JAVA</a></li>
+</ul>
 
           
         
@@ -533,7 +568,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/70/">70</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/71/">71</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -577,7 +612,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">70</span>
+                    <span class="site-state-item-count">71</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
