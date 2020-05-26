@@ -94,13 +94,19 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hi, this is Shunchi!">
-<meta property="og:url" content="http://yoursite.com/page/72/index.html">
+  <meta name="description" content="https://leetcode.com/problems/happy-number/ Approach 1: Detect Cycles with a HashSet12345678910111213141516171819class Solution &amp;#123;    private int getNext(int n)&amp;#123;        int totalSum=0;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="202. Happy Number">
+<meta property="og:url" content="http://yoursite.com/2020/05/26/202-Happy-Number/index.html">
 <meta property="og:site_name" content="Hi, this is Shunchi!">
+<meta property="og:description" content="https://leetcode.com/problems/happy-number/ Approach 1: Detect Cycles with a HashSet12345678910111213141516171819class Solution &amp;#123;    private int getNext(int n)&amp;#123;        int totalSum=0;">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526141857.png">
+<meta property="og:updated_time" content="2020-05-26T21:25:45.286Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hi, this is Shunchi!">
+<meta name="twitter:title" content="202. Happy Number">
+<meta name="twitter:description" content="https://leetcode.com/problems/happy-number/ Approach 1: Detect Cycles with a HashSet12345678910111213141516171819class Solution &amp;#123;    private int getNext(int n)&amp;#123;        int totalSum=0;">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526141857.png">
 
 
 
@@ -109,7 +115,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/72/">
+  <link rel="canonical" href="http://yoursite.com/2020/05/26/202-Happy-Number/">
 
 
 
@@ -119,7 +125,7 @@
   };
 </script>
 
-  <title>Hi, this is Shunchi!</title>
+  <title>202. Happy Number | Hi, this is Shunchi!</title>
   
 
 
@@ -167,8 +173,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
-  page-home">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -386,9 +391,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -396,6 +401,8 @@
   
   
 
+  
+    <div class="reading-progress-bar"></div>
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -403,7 +410,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/25/master-theorem/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/26/202-Happy-Number/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -420,10 +427,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/03/25/master-theorem/" class="post-title-link" itemprop="url">master_theorem</a>
+          <h1 class="post-title" itemprop="name headline">202. Happy Number
+
               
             
           </h1>
@@ -448,24 +453,12 @@
                 
               
 
-              <time title="Created: 2020-03-25 00:49:01" itemprop="dateCreated datePublished" datetime="2020-03-25T00:49:01-07:00">2020-03-25</time>
+              <time title="Created: 2020-05-26 14:18:37 / Modified: 14:25:45" itemprop="dateCreated datePublished" datetime="2020-05-26T14:18:37-07:00">2020-05-26</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2020-03-26 17:41:39" itemprop="dateModified" datetime="2020-03-26T17:41:39-07:00">2020-03-26</time>
               
             
           </span>
@@ -477,6 +470,13 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -496,12 +496,10 @@
       
 
       
-        
-          
-            <p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200325004949.png" alt></p>
+        <p><a href="https://leetcode.com/problems/happy-number/" target="_blank" rel="noopener">https://leetcode.com/problems/happy-number/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526141857.png" alt></p>
+<p><strong>Approach 1: Detect Cycles with a HashSet</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">getNext</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> totalSum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> d=n%<span class="number">10</span>;</span><br><span class="line">            n/=<span class="number">10</span>;</span><br><span class="line">            totalSum+=d*d;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> totalSum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isHappy</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        Set&lt;Integer&gt; seen=<span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">1</span>&amp;&amp;!seen.contains(n))&#123;</span><br><span class="line">            seen.add(n);</span><br><span class="line">            n=getNext(n);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> n==<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>Approach 2: Floyd’s Cycle-Finding Algorithm</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">getNext</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> totalSum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> d=n%<span class="number">10</span>;</span><br><span class="line">            n/=<span class="number">10</span>;</span><br><span class="line">            totalSum+=d*d;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> totalSum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isHappy</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> slow=n,fast=getNext(n);</span><br><span class="line">        <span class="keyword">while</span>(fast!=<span class="number">1</span>&amp;&amp;slow!=fast)&#123;</span><br><span class="line">            slow=getNext(slow);</span><br><span class="line">            fast=getNext(getNext(fast));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> fast==<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
 
@@ -524,12 +522,84 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+              <div>
+                
+
+<script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css">
+
+
+  
+
+
+<div class="likely">
+	
+ 	 	<div class="twitter">Tweet</div>
+	
+ 	 	<div class="facebook">Share</div>
+	
+ 	 	<div class="linkedin">Link</div>
+	
+ 	 	<div class="gplus">Plus</div>
+	
+ 	 	<div class="vkontakte">Share</div>
+	
+ 	 	<div class="odnoklassniki">Class</div>
+	
+ 	 	<div class="telegram">Send</div>
+	
+ 	 	<div class="whatsapp">Send</div>
+	
+ 	 	<div class="pinterest">Pin</div>
+	
+</div>
+
+              </div>
+            
+            
+            
+          </div>
+        
+        </div>
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/26/201-Bitwise-AND-of-Numbers-Range/" rel="next" title="201. Bitwise AND of Numbers Range">
+                <i class="fa fa-chevron-left"></i> 201. Bitwise AND of Numbers Range
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2029/09/01/welcome/" rel="prev" title="Welcome to my website!">
+                Welcome to my website! <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -539,14 +609,7 @@
   </article>
 
 
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/71/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/71/">71</a><span class="page-number current">72</span><a class="page-number" href="/page/73/">73</a><span class="space">&hellip;</span><a class="page-number" href="/page/76/">76</a><a class="extend next" rel="next" href="/page/73/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -834,6 +897,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -870,10 +937,6 @@
   
 
   
-  
-    
-      
-    
   
 
   
@@ -939,7 +1002,7 @@
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#more");
   
   </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
