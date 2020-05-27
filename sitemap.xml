@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/15/Java-Interview/</loc>
+    
+    <lastmod>2020-05-27T06:19:16.264Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-05-27T06:13:23.724Z</lastmod>
@@ -145,13 +152,6 @@
     <loc>http://yoursite.com/2020/05/19/172-Factorial-Trailing-Zeroes/</loc>
     
     <lastmod>2020-05-19T19:04:14.490Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/05/15/Java-Interview/</loc>
-    
-    <lastmod>2020-05-19T16:27:56.775Z</lastmod>
     
   </url>
   
