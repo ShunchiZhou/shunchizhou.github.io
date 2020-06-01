@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/resume/index.html</loc>
+    
+    <lastmod>2020-06-01T07:50:13.788Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/05/15/Java-Core/</loc>
     
     <lastmod>2020-05-28T09:31:09.377Z</lastmod>
@@ -544,13 +551,6 @@
     <loc>http://yoursite.com/2020/03/25/master-theorem/</loc>
     
     <lastmod>2020-03-27T00:41:39.922Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/resume/index.html</loc>
-    
-    <lastmod>2020-03-04T19:10:16.669Z</lastmod>
     
   </url>
   
