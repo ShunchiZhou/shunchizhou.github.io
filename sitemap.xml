@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-06-03T20:46:16.894Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/03/210-Course-Schedule-II/</loc>
+    
+    <lastmod>2020-06-03T20:45:31.651Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/26/Topological-Sorting-of-a-DAG/</loc>
     
     <lastmod>2020-06-03T19:26:21.869Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/2020/03/26/207-Course-Schedule/</loc>
     
     <lastmod>2020-06-03T07:25:50.809Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-06-02T06:32:29.666Z</lastmod>
     
   </url>
   
