@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/06/04/216-Combination-Sum-III/</loc>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-06-04T09:02:27.365Z</lastmod>
+    <lastmod>2020-06-04T18:32:13.012Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/2020/06/04/217-Contains-Duplicate-219-Contains-Duplicate-II/</loc>
     
-    <lastmod>2020-06-04T09:01:35.876Z</lastmod>
+    <lastmod>2020-06-04T18:31:18.724Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/04/216-Combination-Sum-III/</loc>
+    
+    <lastmod>2020-06-04T09:02:27.365Z</lastmod>
     
   </url>
   

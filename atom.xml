@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>217. Contains Duplicate, 219. Contains Duplicate II</title>
+    <link href="http://yoursite.com/2020/06/04/217-Contains-Duplicate-219-Contains-Duplicate-II/"/>
+    <id>http://yoursite.com/2020/06/04/217-Contains-Duplicate-219-Contains-Duplicate-II/</id>
+    <published>2020-06-04T18:29:24.000Z</published>
+    <updated>2020-06-04T18:31:18.724Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.dropbox.com/s/6laha8hzeg29tcd/Screenshot%202020-06-04%2011.29.58.png?dl=0" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200604113014.png" alt><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">containsDuplicate</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Set&lt;Integer&gt; set=<span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:nums) set.add(i);</span><br><span class="line">        <span class="keyword">return</span> nums.length!=set.size();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><a href="https://leetcode.com/problems/contains-duplicate-ii/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200604113105.png" alt><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">containsNearbyDuplicate</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;=i+k&amp;&amp;j&lt;nums.length;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[i]==nums[j]) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/s/6laha8hzeg29tcd/Screenshot%202020-06-04%2011.29.58.png?dl=0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>216. Combination Sum III</title>
     <link href="http://yoursite.com/2020/06/04/216-Combination-Sum-III/"/>
     <id>http://yoursite.com/2020/06/04/216-Combination-Sum-III/</id>
@@ -410,27 +431,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/binary-search-tree-iterator/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/binary-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>172. Factorial Trailing Zeroes</title>
-    <link href="http://yoursite.com/2020/05/19/172-Factorial-Trailing-Zeroes/"/>
-    <id>http://yoursite.com/2020/05/19/172-Factorial-Trailing-Zeroes/</id>
-    <published>2020-05-19T18:35:30.000Z</published>
-    <updated>2020-05-19T19:04:14.490Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/factorial-trailing-zeroes/" target="_blank" rel="noopener">https://leetcode.com/problems/factorial-trailing-zeroes/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200519113612.png" alt></p><p>Explanation: <a href="https://leetcode.com/problems/factorial-trailing-zeroes/discuss/52371/My-one-line-solutions-in-3-languages" target="_blank" rel="noopener">ref.1</a> <a href="https://leetcode.com/problems/factorial-trailing-zeroes/discuss/196311/topic" target="_blank" rel="noopener">ref.2</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">trailingZeroes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n==<span class="number">0</span>?<span class="number">0</span>:n/<span class="number">5</span>+trailingZeroes(n/<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><hr><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* factorial -&gt; overflow</span></span><br><span class="line"><span class="comment">class Solution &#123;</span></span><br><span class="line"><span class="comment">    public int trailingZeroes(int n) &#123;</span></span><br><span class="line"><span class="comment">        String facNum=String.valueOf(fac((long)n));</span></span><br><span class="line"><span class="comment">        int cnt=0;</span></span><br><span class="line"><span class="comment">        for(int i=facNum.length()-1;i&gt;=0;i--)&#123;</span></span><br><span class="line"><span class="comment">            if(facNum.charAt(i)=='0') cnt++;</span></span><br><span class="line"><span class="comment">            if(facNum.charAt(i)!='0') break;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return cnt;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    public long fac(long n)&#123;</span></span><br><span class="line"><span class="comment">        if(n&lt;=1) return 1;</span></span><br><span class="line"><span class="comment">        return n*fac(n-1);</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/factorial-trailing-zeroes/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/factorial
       
     
     </summary>
