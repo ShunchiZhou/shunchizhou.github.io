@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/31/198-House-Robber/</loc>
+    
+    <lastmod>2020-06-04T03:50:55.115Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-06-04T03:36:08.006Z</lastmod>
@@ -495,13 +502,6 @@
     <loc>http://yoursite.com/2020/03/29/189-Rotate-Array/</loc>
     
     <lastmod>2020-03-31T19:43:49.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/31/198-House-Robber/</loc>
-    
-    <lastmod>2020-03-31T19:09:45.972Z</lastmod>
     
   </url>
   
