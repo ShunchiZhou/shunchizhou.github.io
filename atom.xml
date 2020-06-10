@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>2. Add Two Numbers</title>
+    <link href="http://yoursite.com/2020/06/10/2-Add-Two-Numbers/"/>
+    <id>http://yoursite.com/2020/06/10/2-Add-Two-Numbers/</id>
+    <published>2020-06-10T18:32:20.000Z</published>
+    <updated>2020-06-10T18:55:40.645Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200610113258.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        ListNode dummyHead = <span class="keyword">new</span> ListNode(-<span class="number">1</span>);</span><br><span class="line">        ListNode curr=dummyHead;</span><br><span class="line">        <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span>(l1!=<span class="keyword">null</span> || l2!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> x= l1==<span class="keyword">null</span>?<span class="number">0</span>:l1.val;</span><br><span class="line">            <span class="keyword">int</span> y= l2==<span class="keyword">null</span>?<span class="number">0</span>:l2.val;</span><br><span class="line">            <span class="keyword">int</span> sum=carry+x+y;</span><br><span class="line">            carry=sum/<span class="number">10</span>;</span><br><span class="line">            curr.next=<span class="keyword">new</span> ListNode(sum%<span class="number">10</span>);</span><br><span class="line">            curr=curr.next;</span><br><span class="line">            <span class="keyword">if</span>(l1!=<span class="keyword">null</span>)l1=l1.next;</span><br><span class="line">            <span class="keyword">if</span>(l2!=<span class="keyword">null</span>)l2=l2.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(carry==<span class="number">1</span>) curr.next=<span class="keyword">new</span> ListNode(<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">return</span> dummyHead.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/add-two-numbers/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubuserc
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>1. Two Sum</title>
     <link href="http://yoursite.com/2020/06/10/1-Two-Sum/"/>
     <id>http://yoursite.com/2020/06/10/1-Two-Sum/</id>
@@ -410,27 +431,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/bitwise-and-of-numbers-range/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/bitwis
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>190. Reverse Bits</title>
-    <link href="http://yoursite.com/2020/05/26/190-Reverse-Bits/"/>
-    <id>http://yoursite.com/2020/05/26/190-Reverse-Bits/</id>
-    <published>2020-05-26T17:52:49.000Z</published>
-    <updated>2020-05-26T18:43:52.551Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/reverse-bits/" target="_blank" rel="noopener">https://leetcode.com/problems/reverse-bits/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526105344.png" alt></p><p><strong>Approach 1: Bit by Bit</strong>\<br><a href="https://leetcode.com/problems/reverse-bits/discuss/54746/Java-Solution-and-Optimization" target="_blank" rel="noopener">Explanation</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// you need treat n as an unsigned value</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverseBits</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">32</span>;i++)&#123;</span><br><span class="line">            res+=n&amp;<span class="number">1</span>;</span><br><span class="line">            n&gt;&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(i&lt;<span class="number">31</span>) res&lt;&lt;=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526105456.png" alt></p><p><strong>Approach 3: Mask and Shift</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// you need treat n as an unsigned value</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverseBits</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        n = n &gt;&gt;&gt; <span class="number">16</span> | n &lt;&lt; <span class="number">16</span>;</span><br><span class="line">        n = (n &amp; <span class="number">0xff00ff00</span>) &gt;&gt;&gt; <span class="number">8</span> | (n &amp; <span class="number">0x00ff00ff</span>) &lt;&lt; <span class="number">8</span>;</span><br><span class="line">        n = (n &amp; <span class="number">0xf0f0f0f0</span>) &gt;&gt;&gt; <span class="number">4</span> | (n &amp; <span class="number">0x0f0f0f0f</span>) &lt;&lt; <span class="number">4</span>;</span><br><span class="line">        n = (n &amp; <span class="number">0xcccccccc</span>) &gt;&gt;&gt; <span class="number">2</span> | (n &amp; <span class="number">0x33333333</span>) &lt;&lt; <span class="number">2</span>;</span><br><span class="line">        n = (n &amp; <span class="number">0xaaaaaaaa</span>) &gt;&gt;&gt; <span class="number">1</span> | (n &amp; <span class="number">0x55555555</span>) &lt;&lt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> n;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526114346.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reverse-bits/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/reverse-bits/&lt;/a&gt;&lt;br&gt;&lt;
       
     
     </summary>
