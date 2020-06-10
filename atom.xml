@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>223. Rectangle Area</title>
+    <link href="http://yoursite.com/2020/06/09/223-Rectangle-Area/"/>
+    <id>http://yoursite.com/2020/06/09/223-Rectangle-Area/</id>
+    <published>2020-06-10T05:06:10.000Z</published>
+    <updated>2020-06-10T05:07:05.893Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/rectangle-area/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200609220653.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">computeArea</span><span class="params">(<span class="keyword">int</span> A, <span class="keyword">int</span> B, <span class="keyword">int</span> C, <span class="keyword">int</span> D, <span class="keyword">int</span> E, <span class="keyword">int</span> F, <span class="keyword">int</span> G, <span class="keyword">int</span> H)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> areaRectA=(C-A)*(D-B);</span><br><span class="line">        <span class="keyword">int</span> areaRectB=(G-E)*(H-F);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> left=Math.max(A,E);</span><br><span class="line">        <span class="keyword">int</span> right=Math.min(C,G);</span><br><span class="line">        <span class="keyword">int</span> top=Math.min(D,H);</span><br><span class="line">        <span class="keyword">int</span> bottom=Math.max(B,F);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// If overlap</span></span><br><span class="line">        <span class="keyword">int</span> overlap=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(left&lt;right&amp;&amp;bottom&lt;top) overlap=(right-left)*(top-bottom);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> areaRectA+areaRectB-overlap;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/rectangle-area/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubuserco
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>222. Count Complete Tree Nodes</title>
     <link href="http://yoursite.com/2020/06/09/222-Count-Complete-Tree-Nodes/"/>
     <id>http://yoursite.com/2020/06/09/222-Count-Complete-Tree-Nodes/</id>
@@ -410,27 +431,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reverse-words-in-a-string-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/revers
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>180. Consecutive Numbers</title>
-    <link href="http://yoursite.com/2020/05/23/180-Consecutive-Numbers/"/>
-    <id>http://yoursite.com/2020/05/23/180-Consecutive-Numbers/</id>
-    <published>2020-05-24T03:14:21.000Z</published>
-    <updated>2020-05-24T03:16:19.509Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/consecutive-numbers/" target="_blank" rel="noopener">https://leetcode.com/problems/consecutive-numbers/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200523201446.png" alt></p><p><a href="https://leetcode.com/problems/consecutive-numbers/discuss/321205/Runtime%3A-299-ms-faster-than-94.39" target="_blank" rel="noopener">Explanation</a></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Write your MySQL query statement below</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> <span class="keyword">Num</span> <span class="keyword">AS</span> ConsecutiveNums</span><br><span class="line"><span class="keyword">FROM</span> <span class="keyword">Logs</span></span><br><span class="line"><span class="keyword">WHERE</span> (<span class="keyword">Id</span>+<span class="number">1</span>,<span class="keyword">Num</span>) <span class="keyword">IN</span> (<span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">Logs</span>) <span class="keyword">AND</span> (<span class="keyword">Id</span>+<span class="number">2</span>,<span class="keyword">Num</span>) <span class="keyword">IN</span> (<span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">Logs</span>);</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/consecutive-numbers/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/problems/consecutive-num
       
     
     </summary>
