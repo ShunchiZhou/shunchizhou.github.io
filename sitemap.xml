@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-06-12T23:53:30.368Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
+    
+    <lastmod>2020-06-12T23:30:16.309Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-06-12T22:23:40.693Z</lastmod>
+    <lastmod>2020-06-12T23:28:52.475Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/12/4-Median-of-Two-Sorted-Arrays/</loc>
+    
+    <lastmod>2020-06-12T23:28:03.627Z</lastmod>
     
   </url>
   
@@ -75,13 +96,6 @@
     <loc>http://yoursite.com/2020/06/04/217-Contains-Duplicate-219-Contains-Duplicate-II/</loc>
     
     <lastmod>2020-06-09T18:48:58.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-06-04T18:37:48.539Z</lastmod>
     
   </url>
   
