@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>9. Palindrome Number</title>
+    <link href="http://yoursite.com/2020/06/13/9-Palindrome-Number/"/>
+    <id>http://yoursite.com/2020/06/13/9-Palindrome-Number/</id>
+    <published>2020-06-13T21:50:35.000Z</published>
+    <updated>2020-06-13T21:51:49.762Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/palindrome-number/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200613145121.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">long</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">long</span> i=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(x!=<span class="number">0</span>)&#123;</span><br><span class="line">            i=i*<span class="number">10</span>+x%<span class="number">10</span>;</span><br><span class="line">            x/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(x&lt;<span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> reverse(x)&gt;Integer.MAX_VALUE?<span class="keyword">false</span>:x==(<span class="keyword">int</span>)reverse(x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/palindrome-number/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubuse
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>8. String to Integer (atoi)</title>
     <link href="http://yoursite.com/2020/06/13/8-String-to-Integer-atoi/"/>
     <id>http://yoursite.com/2020/06/13/8-String-to-Integer-atoi/</id>
@@ -411,27 +432,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/kth-largest-element-in-an-array/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https:/
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>213. House Robber II</title>
-    <link href="http://yoursite.com/2020/06/03/213-House-Robber-II/"/>
-    <id>http://yoursite.com/2020/06/03/213-House-Robber-II/</id>
-    <published>2020-06-04T04:31:53.000Z</published>
-    <updated>2020-06-04T04:37:27.927Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/house-robber-ii/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200603213704.png" alt></p><p><strong>DP</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">robUtil</span><span class="params">(<span class="keyword">int</span>[] nums,<span class="keyword">int</span> start,<span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> prevMax=<span class="number">0</span>,currMax=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=start;i&lt;end;i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> tmp=currMax;</span><br><span class="line">            currMax=Math.max(prevMax+nums[i],currMax);</span><br><span class="line">            prevMax=tmp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> currMax;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">rob</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums.length==<span class="number">1</span>) <span class="keyword">return</span> nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">return</span> Math.max(robUtil(nums,<span class="number">0</span>,nums.length-<span class="number">1</span>),robUtil(nums,<span class="number">1</span>,nums.length));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/house-robber-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubuserc
       
     
     </summary>
