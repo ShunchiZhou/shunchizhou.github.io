@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/12/Manacher/</loc>
+    
+    <lastmod>2020-06-13T05:48:21.742Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-06-13T00:32:02.958Z</lastmod>
+    <lastmod>2020-06-13T05:13:50.949Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
     
-    <lastmod>2020-06-13T00:31:10.670Z</lastmod>
+    <lastmod>2020-06-13T03:26:16.078Z</lastmod>
     
   </url>
   

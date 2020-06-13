@@ -94,13 +94,17 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hi, this is Shunchi!">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="Youtube Explanation  Manacher’s Algorithm Explained— Longest Palindromic Substring1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Manacher">
+<meta property="og:url" content="http://yoursite.com/2020/06/12/Manacher/index.html">
 <meta property="og:site_name" content="Hi, this is Shunchi!">
+<meta property="og:description" content="Youtube Explanation  Manacher’s Algorithm Explained— Longest Palindromic Substring1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-06-13T05:48:21.742Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hi, this is Shunchi!">
+<meta name="twitter:title" content="Manacher">
+<meta name="twitter:description" content="Youtube Explanation  Manacher’s Algorithm Explained— Longest Palindromic Substring1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
 
 
 
@@ -109,7 +113,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/2/">
+  <link rel="canonical" href="http://yoursite.com/2020/06/12/Manacher/">
 
 
 
@@ -119,7 +123,7 @@
   };
 </script>
 
-  <title>Hi, this is Shunchi!</title>
+  <title>Manacher | Hi, this is Shunchi!</title>
   
 
 
@@ -167,8 +171,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
-  page-home">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -386,9 +389,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -396,6 +399,8 @@
   
   
 
+  
+    <div class="reading-progress-bar"></div>
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -420,10 +425,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/06/12/Manacher/" class="post-title-link" itemprop="url">Manacher</a>
+          <h1 class="post-title" itemprop="name headline">Manacher
+
               
             
           </h1>
@@ -466,6 +469,13 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
 
@@ -484,16 +494,12 @@
       
 
       
-        
-          
-            <p><a href="https://www.youtube.com/watch?v=nbTSfrEfo6M&amp;feature=emb_logo" target="_blank" rel="noopener">Youtube Explanation</a></p>
+        <p><a href="https://www.youtube.com/watch?v=nbTSfrEfo6M&amp;feature=emb_logo" target="_blank" rel="noopener">Youtube Explanation</a></p>
 <hr>
 <p><a href="https://medium.com/hackernoon/manachers-algorithm-explained-longest-palindromic-substring-22cb27a5e96f" target="_blank" rel="noopener">Manacher’s Algorithm Explained— Longest Palindromic Substring</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Manacher</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span>[] P;</span><br><span class="line">    String s;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">manachersAlgorithm</span><span class="params">(String s, <span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">        String str = getModifiedString(s, N);</span><br><span class="line">        <span class="keyword">int</span> len = (<span class="number">2</span> * N) + <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// int[] P = new int[len];</span></span><br><span class="line">        P = <span class="keyword">new</span> <span class="keyword">int</span>[len];</span><br><span class="line">        <span class="keyword">int</span> c = <span class="number">0</span>; <span class="comment">// stores the center of the longest palindromic substring until now</span></span><br><span class="line">        <span class="keyword">int</span> r = <span class="number">0</span>; <span class="comment">// stores the right boundary of the longest palindromic substring until now</span></span><br><span class="line">        <span class="keyword">int</span> maxLen = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">            <span class="comment">// get mirror index of i</span></span><br><span class="line">            <span class="keyword">int</span> mirror = (<span class="number">2</span> * c) - i;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// see if the mirror of i is expanding beyond the left boundary of current</span></span><br><span class="line">            <span class="comment">// longest palindrome at center c</span></span><br><span class="line">            <span class="comment">// if it is, then take r - i as P[i]</span></span><br><span class="line">            <span class="comment">// else take P[mirror] as P[i]</span></span><br><span class="line">            <span class="keyword">if</span> (i &lt; r) &#123;</span><br><span class="line">                P[i] = Math.min(r - i, P[mirror]);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// expand at i</span></span><br><span class="line">            <span class="keyword">int</span> a = i + (<span class="number">1</span> + P[i]);</span><br><span class="line">            <span class="keyword">int</span> b = i - (<span class="number">1</span> + P[i]);</span><br><span class="line">            <span class="keyword">while</span> (a &lt; len &amp;&amp; b &gt;= <span class="number">0</span> &amp;&amp; str.charAt(a) == str.charAt(b)) &#123;</span><br><span class="line">                P[i]++;</span><br><span class="line">                a++;</span><br><span class="line">                b--;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// check if the expanded palindrome at i is expanding beyond the right boundary</span></span><br><span class="line">            <span class="comment">// of current longest palindrome at center c</span></span><br><span class="line">            <span class="comment">// if it is, the new center is i</span></span><br><span class="line">            <span class="keyword">if</span> (i + P[i] &gt; r) &#123;</span><br><span class="line">                c = i;</span><br><span class="line">                r = i + P[i];</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> (P[i] &gt; maxLen) &#123; <span class="comment">// update maxlen</span></span><br><span class="line">                    maxLen = P[i];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxLen;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">String <span class="title">getModifiedString</span><span class="params">(String s, <span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">        StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++) &#123;</span><br><span class="line">            sb.append(<span class="string">"#"</span>);</span><br><span class="line">            sb.append(s.charAt(i));</span><br><span class="line">        &#125;</span><br><span class="line">        sb.append(<span class="string">"#"</span>);</span><br><span class="line">        <span class="keyword">return</span> sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// longest palindromic substring</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">longestPalindromicSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.s=s;</span><br><span class="line">        <span class="keyword">this</span>.manachersAlgorithm(<span class="keyword">this</span>.s, <span class="keyword">this</span>.s.length());</span><br><span class="line">        <span class="keyword">int</span> length = <span class="number">0</span>; <span class="comment">// length of longest palindromic substring</span></span><br><span class="line">        <span class="keyword">int</span> center = <span class="number">0</span>; <span class="comment">// center of longest palindromic substring</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; P.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (P[i] &gt; length) &#123;</span><br><span class="line">                length = P[i];</span><br><span class="line">                center = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"center: "</span>+center+<span class="string">", length: "</span>+length);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.s.substring((center  - length) / <span class="number">2</span>, (center  + length) / <span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Drive method</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String s = <span class="string">"asdfgfdsaa"</span>;</span><br><span class="line">        System.out.println(<span class="keyword">new</span> Manacher().longestPalindromicSubstring(s));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <hr>
 <p><a href="https://algs4.cs.princeton.edu/53substring/Manacher.java.html" target="_blank" rel="noopener">Manacher.java</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/******************************************************************************</span></span><br><span class="line"><span class="comment"> *  Compilation:  javac Manacher.java</span></span><br><span class="line"><span class="comment"> *  Execution:    java Manacher text</span></span><br><span class="line"><span class="comment"> *  Dependencies: StdOut.java</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *  Computes the longest palindromic substring in linear time</span></span><br><span class="line"><span class="comment"> *  using Manacher's algorithm.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *  Credits: The code is lifted from the following excellent reference</span></span><br><span class="line"><span class="comment"> *  http://www.leetcode.com/2011/11/longest-palindromic-substring-part-ii.html</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> ******************************************************************************/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Manacher</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[]  p;  <span class="comment">// p[i] = length of longest palindromic substring of t, centered at i</span></span><br><span class="line">    <span class="keyword">private</span> String s;  <span class="comment">// original string</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">char</span>[] t;  <span class="comment">// transformed string</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Manacher</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.s = s;</span><br><span class="line">        preprocess();</span><br><span class="line">        p = <span class="keyword">new</span> <span class="keyword">int</span>[t.length];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> center = <span class="number">0</span>, right = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; t.length-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> mirror = <span class="number">2</span>*center - i;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (right &gt; i)</span><br><span class="line">                p[i] = Math.min(right - i, p[mirror]);</span><br><span class="line"> </span><br><span class="line">            <span class="comment">// attempt to expand palindrome centered at i</span></span><br><span class="line">            <span class="keyword">while</span> (t[i + (<span class="number">1</span> + p[i])] == t[i - (<span class="number">1</span> + p[i])])</span><br><span class="line">                p[i]++;</span><br><span class="line"> </span><br><span class="line">            <span class="comment">// if palindrome centered at i expands past right,</span></span><br><span class="line">            <span class="comment">// adjust center based on expanded palindrome.</span></span><br><span class="line">            <span class="keyword">if</span> (i + p[i] &gt; right) &#123;</span><br><span class="line">                center = i;</span><br><span class="line">                right = i + p[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Transform s into t.</span></span><br><span class="line">    <span class="comment">// For example, if s = "abba", then t = "$#a#b#b#a#@"</span></span><br><span class="line">    <span class="comment">// the # are interleaved to avoid even/odd-length palindromes uniformly</span></span><br><span class="line">    <span class="comment">// $ and @ are prepended and appended to each end to avoid bounds checking</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">preprocess</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        t = <span class="keyword">new</span> <span class="keyword">char</span>[s.length()*<span class="number">2</span> + <span class="number">3</span>];</span><br><span class="line">        t[<span class="number">0</span>] = <span class="string">'$'</span>;</span><br><span class="line">        t[s.length()*<span class="number">2</span> + <span class="number">2</span>] = <span class="string">'@'</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            t[<span class="number">2</span>*i + <span class="number">1</span>] = <span class="string">'#'</span>;</span><br><span class="line">            t[<span class="number">2</span>*i + <span class="number">2</span>] = s.charAt(i);</span><br><span class="line">        &#125;</span><br><span class="line">        t[s.length()*<span class="number">2</span> + <span class="number">1</span>] = <span class="string">'#'</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// longest palindromic substring</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">longestPalindromicSubstring</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> length = <span class="number">0</span>;   <span class="comment">// length of longest palindromic substring</span></span><br><span class="line">        <span class="keyword">int</span> center = <span class="number">0</span>;   <span class="comment">// center of longest palindromic substring</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; p.length-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (p[i] &gt; length) &#123;</span><br><span class="line">                length = p[i];</span><br><span class="line">                center = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> s.substring((center - <span class="number">1</span> - length) / <span class="number">2</span>, (center - <span class="number">1</span> + length) / <span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// longest palindromic substring centered at index i/2</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">longestPalindromicSubstring</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> length = p[i + <span class="number">2</span>];</span><br><span class="line">        <span class="keyword">int</span> center = i + <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">return</span> s.substring((center - <span class="number">1</span> - length) / <span class="number">2</span>, (center - <span class="number">1</span> + length) / <span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// test client</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String s = args[<span class="number">0</span>];</span><br><span class="line">        Manacher manacher = <span class="keyword">new</span> Manacher(s);</span><br><span class="line">        StdOut.println(manacher.longestPalindromicSubstring());</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>*s.length(); i++)</span><br><span class="line">            StdOut.println(i +  <span class="string">": "</span> + manacher.longestPalindromicSubstring(i));</span><br><span class="line">         </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
 
@@ -516,12 +522,84 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+              <div>
+                
+
+<script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css">
+
+
+  
+
+
+<div class="likely">
+	
+ 	 	<div class="twitter">Tweet</div>
+	
+ 	 	<div class="facebook">Share</div>
+	
+ 	 	<div class="linkedin">Link</div>
+	
+ 	 	<div class="gplus">Plus</div>
+	
+ 	 	<div class="vkontakte">Share</div>
+	
+ 	 	<div class="odnoklassniki">Class</div>
+	
+ 	 	<div class="telegram">Send</div>
+	
+ 	 	<div class="whatsapp">Send</div>
+	
+ 	 	<div class="pinterest">Pin</div>
+	
+</div>
+
+              </div>
+            
+            
+            
+          </div>
+        
+        </div>
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/12/5-Longest-Palindromic-Substring/" rel="next" title="5. Longest Palindromic Substring">
+                <i class="fa fa-chevron-left"></i> 5. Longest Palindromic Substring
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2029/09/01/welcome/" rel="prev" title="Welcome to my website!">
+                Welcome to my website! <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -531,14 +609,7 @@
   </article>
 
 
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/99/">99</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -826,6 +897,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -862,10 +937,6 @@
   
 
   
-  
-    
-      
-    
   
 
   
@@ -931,7 +1002,7 @@
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#more");
   
   </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
