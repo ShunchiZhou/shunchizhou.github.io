@@ -96,7 +96,7 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hi, this is Shunchi!">
-<meta property="og:url" content="http://yoursite.com/page/69/index.html">
+<meta property="og:url" content="http://yoursite.com/page/100/index.html">
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -109,7 +109,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/69/">
+  <link rel="canonical" href="http://yoursite.com/page/100/">
 
 
 
@@ -403,7 +403,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/Morris-Traversal/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/03/CSE472/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -423,7 +423,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/05/03/Morris-Traversal/" class="post-title-link" itemprop="url">Morris Traversal</a>
+                <a href="/2020/03/03/CSE472/" class="post-title-link" itemprop="url">Mental Health Topic Classification</a>
               
             
           </h1>
@@ -448,7 +448,7 @@
                 
               
 
-              <time title="Created: 2020-05-03 10:52:31 / Modified: 10:52:53" itemprop="dateCreated datePublished" datetime="2020-05-03T10:52:31-07:00">2020-05-03</time>
+              <time title="Created: 2020-03-03 12:10:00 / Modified: 12:27:40" itemprop="dateCreated datePublished" datetime="2020-03-03T12:10:00-07:00">2020-03-03</time>
             
 
             
@@ -486,7 +486,8 @@
       
         
           
-            <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Java program to print inorder traversal without recursion and stack </span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* A binary tree tNode has data, a pointer to left child </span></span><br><span class="line"><span class="comment">and a pointer to right child */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">tNode</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    tNode left, right;</span><br><span class="line">    tNode(<span class="keyword">int</span> item) &#123;data = item;left = right = <span class="keyword">null</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">marris_inorder</span> </span>&#123;</span><br><span class="line">    tNode root;</span><br><span class="line">    <span class="comment">// Function to traverse a binary tree without recursion and without stack</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">MorrisTraversal</span><span class="params">(tNode root)</span> </span>&#123;</span><br><span class="line">        tNode current, pre;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (root == <span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">        current = root;</span><br><span class="line">        <span class="keyword">while</span> (current != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (current.left == <span class="keyword">null</span>) &#123;</span><br><span class="line">                System.out.print(current.data + <span class="string">" "</span>);</span><br><span class="line">                current = current.right;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">/* Find the inorder predecessor of current */</span></span><br><span class="line">                pre = current.left;</span><br><span class="line">                <span class="keyword">while</span> (pre.right != <span class="keyword">null</span> &amp;&amp; pre.right != current)</span><br><span class="line">                    pre = pre.right;</span><br><span class="line"></span><br><span class="line">                <span class="comment">/* Make current as right child of its inorder predecessor */</span></span><br><span class="line">                <span class="keyword">if</span> (pre.right == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    pre.right = current;</span><br><span class="line">                    current = current.left;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">/*</span></span><br><span class="line"><span class="comment">                 * Revert the changes made in the 'if' part to restore the original tree i.e.,</span></span><br><span class="line"><span class="comment">                 * fix the right child of predecessor</span></span><br><span class="line"><span class="comment">                 */</span></span><br><span class="line">                <span class="keyword">else</span> &#123;</span><br><span class="line">                    pre.right = <span class="keyword">null</span>;</span><br><span class="line">                    System.out.print(current.data + <span class="string">" "</span>);</span><br><span class="line">                    current = current.right;</span><br><span class="line">                &#125; <span class="comment">/* End of if condition pre-&gt;right == NULL */</span></span><br><span class="line"></span><br><span class="line">            &#125; <span class="comment">/* End of if condition current-&gt;left == NULL */</span></span><br><span class="line"></span><br><span class="line">        &#125; <span class="comment">/* End of while */</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</span><br><span class="line">        <span class="comment">/* Constructed binary tree is </span></span><br><span class="line"><span class="comment">               1 </span></span><br><span class="line"><span class="comment">             /   \ </span></span><br><span class="line"><span class="comment">            2     3 </span></span><br><span class="line"><span class="comment">          /   \ </span></span><br><span class="line"><span class="comment">         4     5 </span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        marris_inorder tree = <span class="keyword">new</span> marris_inorder();</span><br><span class="line">        tree.root = <span class="keyword">new</span> tNode(<span class="number">1</span>);</span><br><span class="line">        tree.root.left = <span class="keyword">new</span> tNode(<span class="number">2</span>);</span><br><span class="line">        tree.root.right = <span class="keyword">new</span> tNode(<span class="number">3</span>);</span><br><span class="line">        tree.root.left.left = <span class="keyword">new</span> tNode(<span class="number">4</span>);</span><br><span class="line">        tree.root.left.right = <span class="keyword">new</span> tNode(<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">        tree.MorrisTraversal(tree.root);</span><br><span class="line">        System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <p><img src="/uploads/472/472_1.png" alt><br><img src="/uploads/472/472_2.png" alt><br><img src="/uploads/472/472_3.png" alt><br><img src="/uploads/472/472_4.png" alt></p>
+
           
         
       
@@ -531,7 +532,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/68/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/68/">68</a><span class="page-number current">69</span><a class="page-number" href="/page/70/">70</a><span class="space">&hellip;</span><a class="page-number" href="/page/100/">100</a><a class="extend next" rel="next" href="/page/70/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/99/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/99/">99</a><span class="page-number current">100</span>
   </nav>
 
 

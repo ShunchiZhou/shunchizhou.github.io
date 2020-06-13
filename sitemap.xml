@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-06-13T05:52:25.329Z</lastmod>
+    <lastmod>2020-06-13T09:35:54.123Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/12/6-ZigZag-Conversion/</loc>
+    
+    <lastmod>2020-06-13T09:32:41.307Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/06/12/Manacher/</loc>
     
-    <lastmod>2020-06-13T05:48:21.742Z</lastmod>
+    <lastmod>2020-06-13T05:57:48.899Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
     
-    <lastmod>2020-06-13T03:26:16.078Z</lastmod>
+    <lastmod>2020-06-13T05:57:05.882Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-06-12T23:28:52.475Z</lastmod>
+    <lastmod>2020-06-13T05:52:25.329Z</lastmod>
     
   </url>
   
