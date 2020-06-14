@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">106</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">108</span></a>
 
   </li>
         
@@ -403,7 +403,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/10/67-Add-Binary/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/12/4-Median-of-Two-Sorted-Arrays/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -423,7 +423,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/06/10/67-Add-Binary/" class="post-title-link" itemprop="url">67. Add Binary</a>
+                <a href="/2020/06/12/4-Median-of-Two-Sorted-Arrays/" class="post-title-link" itemprop="url">4. Median of Two Sorted Arrays</a>
               
             
           </h1>
@@ -448,7 +448,7 @@
                 
               
 
-              <time title="Created: 2020-06-10 12:20:22 / Modified: 12:47:35" itemprop="dateCreated datePublished" datetime="2020-06-10T12:20:22-07:00">2020-06-10</time>
+              <time title="Created: 2020-06-12 15:24:38 / Modified: 16:28:03" itemprop="dateCreated datePublished" datetime="2020-06-12T15:24:38-07:00">2020-06-12</time>
             
 
             
@@ -486,8 +486,9 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/add-binary/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200610122102.png" alt></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">addBinary</span><span class="params">(String a, String b)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n=a.length()-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> m=b.length()-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> carry=<span class="number">0</span>;</span><br><span class="line">        StringBuilder str=<span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">while</span>(n&gt;=<span class="number">0</span>||m&gt;=<span class="number">0</span>||carry==<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> tmp=(n&gt;=<span class="number">0</span>?a.charAt(n)-<span class="string">'0'</span>:<span class="number">0</span>)+(m&gt;=<span class="number">0</span>?b.charAt(m)-<span class="string">'0'</span>:<span class="number">0</span>)+carry;</span><br><span class="line">            carry=tmp/<span class="number">2</span>;</span><br><span class="line">            str.append(tmp%<span class="number">2</span>);</span><br><span class="line">            n--;m--;</span><br><span class="line">        &#125;</span><br><span class="line">        str.reverse();</span><br><span class="line">        <span class="keyword">return</span> str.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* Because Stirng is an immutable type, better to use StringBuilder instead.</span></span><br><span class="line"><span class="comment">class Solution &#123;</span></span><br><span class="line"><span class="comment">    public String addBinary(String a, String b) &#123;</span></span><br><span class="line"><span class="comment">        int n=a.length()-1;</span></span><br><span class="line"><span class="comment">        int m=b.length()-1;</span></span><br><span class="line"><span class="comment">        int carry=0;</span></span><br><span class="line"><span class="comment">        String res="";</span></span><br><span class="line"><span class="comment">        while(n&gt;=0||m&gt;=0||carry==1)&#123;</span></span><br><span class="line"><span class="comment">            int tmp=(n&gt;=0?a.charAt(n)-'0':0)+(m&gt;=0?b.charAt(m)-'0':0)+carry;</span></span><br><span class="line"><span class="comment">            carry=tmp/2;</span></span><br><span class="line"><span class="comment">            res=(char)tmp%2+res;</span></span><br><span class="line"><span class="comment">            n--;m--;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return res;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure>
+            <p><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200612152509.png" alt></p>
+<p><strong>Binary Search (variation), Time complexity: O(log(min(m,n)))</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">findMedianSortedArrays</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span>[] B)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x=A.length;</span><br><span class="line">		<span class="keyword">int</span> y=B.length;</span><br><span class="line">		<span class="keyword">if</span> (x&gt;y) &#123;<span class="comment">// to ensure x&lt;=y</span></span><br><span class="line">			<span class="keyword">int</span>[] temp1=A; A=B; B=temp1;</span><br><span class="line">			<span class="keyword">int</span> temp2=x; x=y; y=temp2;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">int</span> low=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> high=x;</span><br><span class="line">		<span class="keyword">while</span> (low&lt;=high) &#123;</span><br><span class="line">			<span class="keyword">int</span> partitionx=(low+high)/<span class="number">2</span>;</span><br><span class="line">			<span class="keyword">int</span> partitiony=(x+y+<span class="number">1</span>)/<span class="number">2</span>-partitionx; <span class="comment">// (x+y+1) because the sum of length either odd or even.</span></span><br><span class="line">			</span><br><span class="line">			<span class="keyword">int</span> maxLeftx=(partitionx==<span class="number">0</span>)?Integer.MIN_VALUE:A[partitionx-<span class="number">1</span>];</span><br><span class="line">			<span class="keyword">int</span> minRightx=(partitionx==x)?Integer.MAX_VALUE:A[partitionx];</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">int</span> maxLefty=(partitiony==<span class="number">0</span>)?Integer.MIN_VALUE:B[partitiony-<span class="number">1</span>];</span><br><span class="line">			<span class="keyword">int</span> minRighty=(partitiony==y)?Integer.MAX_VALUE:B[partitiony];</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span> (maxLeftx&lt;=minRighty&amp;&amp;maxLefty&lt;=minRightx) &#123;</span><br><span class="line">				<span class="keyword">if</span> ((x+y)%<span class="number">2</span>==<span class="number">0</span>) &#123;</span><br><span class="line">					<span class="keyword">return</span> (<span class="keyword">double</span>)(Math.max(maxLeftx, maxLefty)+Math.min(minRightx, minRighty))/<span class="number">2</span>;</span><br><span class="line">				&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">					<span class="keyword">return</span> (<span class="keyword">double</span>)Math.max(maxLeftx, maxLefty);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;<span class="keyword">else</span> <span class="keyword">if</span> (maxLeftx&gt;minRighty) &#123;</span><br><span class="line">				high=partitionx-<span class="number">1</span>;</span><br><span class="line">			&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">				low=partitionx+<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> -<span class="number">1</span>;<span class="comment">//error occurs</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
           
         
       
@@ -532,7 +533,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/12/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/106/">106</a><a class="extend next" rel="next" href="/page/14/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/12/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/108/">108</a><a class="extend next" rel="next" href="/page/14/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -576,7 +577,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-count">108</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
