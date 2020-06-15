@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">108</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">110</span></a>
 
   </li>
         
@@ -403,7 +403,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/09/221-Maximal-Square/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/09/223-Rectangle-Area/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -423,7 +423,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/06/09/221-Maximal-Square/" class="post-title-link" itemprop="url">221. Maximal Square</a>
+                <a href="/2020/06/09/223-Rectangle-Area/" class="post-title-link" itemprop="url">223. Rectangle Area</a>
               
             
           </h1>
@@ -448,7 +448,7 @@
                 
               
 
-              <time title="Created: 2020-06-09 12:29:17 / Modified: 20:01:46" itemprop="dateCreated datePublished" datetime="2020-06-09T12:29:17-07:00">2020-06-09</time>
+              <time title="Created: 2020-06-09 22:06:10 / Modified: 22:08:22" itemprop="dateCreated datePublished" datetime="2020-06-09T22:06:10-07:00">2020-06-09</time>
             
 
             
@@ -486,8 +486,8 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/maximal-square/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200609123012.png" alt></p>
-<p><strong>DP: dp(i,j)=min(dp(i−1,j),dp(i−1,j−1),dp(i,j−1))+1</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maximalSquare</span><span class="params">(<span class="keyword">char</span>[][] matrix)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(matrix.length==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> rowNum=matrix.length;</span><br><span class="line">        <span class="keyword">int</span> colNum=matrix[<span class="number">0</span>].length;</span><br><span class="line">        <span class="keyword">int</span>[][] dp=<span class="keyword">new</span> <span class="keyword">int</span>[rowNum+<span class="number">1</span>][colNum+<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">int</span> maxEdgeLen=<span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// i: length of row; j: length of colomn.</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=rowNum;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=colNum;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(matrix[i-<span class="number">1</span>][j-<span class="number">1</span>]==<span class="string">'1'</span>)&#123;</span><br><span class="line">                    dp[i][j]=Math.min(Math.min(dp[i-<span class="number">1</span>][j],dp[i][j-<span class="number">1</span>]),dp[i-<span class="number">1</span>][j-<span class="number">1</span>])+<span class="number">1</span>;</span><br><span class="line">                    maxEdgeLen=Math.max(dp[i][j],maxEdgeLen);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxEdgeLen*maxEdgeLen;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+            <p><a href="https://leetcode.com/problems/rectangle-area/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200609220653.png" alt></p>
+<p><a href="https://leetcode.com/problems/rectangle-area/discuss/62138/My-Java-solution-Sum-of-areas-Overlapped-area" target="_blank" rel="noopener">Explanation</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">computeArea</span><span class="params">(<span class="keyword">int</span> A, <span class="keyword">int</span> B, <span class="keyword">int</span> C, <span class="keyword">int</span> D, <span class="keyword">int</span> E, <span class="keyword">int</span> F, <span class="keyword">int</span> G, <span class="keyword">int</span> H)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> areaRectA=(C-A)*(D-B);</span><br><span class="line">        <span class="keyword">int</span> areaRectB=(G-E)*(H-F);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> left=Math.max(A,E);</span><br><span class="line">        <span class="keyword">int</span> right=Math.min(C,G);</span><br><span class="line">        <span class="keyword">int</span> top=Math.min(D,H);</span><br><span class="line">        <span class="keyword">int</span> bottom=Math.max(B,F);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// If overlap</span></span><br><span class="line">        <span class="keyword">int</span> overlap=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(left&lt;right&amp;&amp;bottom&lt;top) overlap=(right-left)*(top-bottom);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> areaRectA+areaRectB-overlap;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -533,7 +533,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/21/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/page/108/">108</a><a class="extend next" rel="next" href="/page/23/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/21/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/page/110/">110</a><a class="extend next" rel="next" href="/page/23/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -577,7 +577,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">108</span>
+                    <span class="site-state-item-count">110</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
