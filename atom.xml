@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>16. 3Sum Closest</title>
+    <link href="http://yoursite.com/2020/06/14/16-3Sum-Closest/"/>
+    <id>http://yoursite.com/2020/06/14/16-3Sum-Closest/</id>
+    <published>2020-06-15T03:00:29.000Z</published>
+    <updated>2020-06-15T03:05:20.734Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/3sum-closest/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200614200047.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">threeSumClosest</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">int</span> result=nums[<span class="number">0</span>]+nums[<span class="number">1</span>]+nums[nums.length-<span class="number">1</span>];;</span><br><span class="line">                </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length-<span class="number">2</span>;i++)&#123;   </span><br><span class="line">            <span class="keyword">int</span> start=i+<span class="number">1</span>, end=nums.length-<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(start&lt;end)&#123;</span><br><span class="line">                <span class="keyword">int</span> sum=nums[i]+nums[start]+nums[end];</span><br><span class="line">                <span class="keyword">if</span>(sum&gt;target) end--;</span><br><span class="line">                <span class="keyword">else</span> start++;</span><br><span class="line">                result=Math.abs(sum-target)&lt;Math.abs(result-target)?sum:result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/3sum-closest/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercont
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title></title>
     <link href="http://yoursite.com/2020/06/14/167-Two-Sum-II-Input-array-is-sorted/"/>
     <id>http://yoursite.com/2020/06/14/167-Two-Sum-II-Input-array-is-sorted/</id>
@@ -411,27 +432,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/add-two-numbers/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubuserc
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>1. Two Sum</title>
-    <link href="http://yoursite.com/2020/06/10/1-Two-Sum/"/>
-    <id>http://yoursite.com/2020/06/10/1-Two-Sum/</id>
-    <published>2020-06-10T17:56:52.000Z</published>
-    <updated>2020-06-10T18:29:33.392Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200610105735.png" alt></p><p><strong>Approach: One-pass Hash Table, Time complexity : O(n)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        Map&lt;Integer,Integer&gt; map=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> complement=target-nums[i];</span><br><span class="line">            <span class="keyword">if</span>(map.containsKey(complement)) <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;map.get(complement),i&#125;;</span><br><span class="line">            map.put(nums[i],i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/two-sum/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.c
       
     
     </summary>
