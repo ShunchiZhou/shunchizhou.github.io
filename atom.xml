@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>24. Swap Nodes in Pairs</title>
+    <link href="http://yoursite.com/2020/06/19/24-Swap-Nodes-in-Pairs/"/>
+    <id>http://yoursite.com/2020/06/19/24-Swap-Nodes-in-Pairs/</id>
+    <published>2020-06-19T19:02:15.000Z</published>
+    <updated>2020-06-19T19:26:09.834Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/swap-nodes-in-pairs/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200619120252.png" alt></p><p><strong>Approach 1: Iterative Approach, Time Complexity: O(N), where N is the size of the linked list</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">swapPairs</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        ListNode dummy=<span class="keyword">new</span> ListNode(-<span class="number">1</span>),p=dummy;</span><br><span class="line">        dummy.next=head;</span><br><span class="line">        <span class="keyword">while</span>(head!=<span class="keyword">null</span> &amp;&amp; head.next!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            p.next=head.next;</span><br><span class="line">            head.next=head.next.next;</span><br><span class="line">            p.next.next=head;</span><br><span class="line">            head=head.next;</span><br><span class="line">            p=p.next.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><strong>Approach 2: Recursive Approach, Time Complexity: O(N)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">swapPairs</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="keyword">null</span> || head.next==<span class="keyword">null</span>) <span class="keyword">return</span> head;</span><br><span class="line">        </span><br><span class="line">        ListNode firstNode=head;</span><br><span class="line">        ListNode secondNode=head.next;</span><br><span class="line">        </span><br><span class="line">        firstNode.next=swapPairs(secondNode.next);</span><br><span class="line">        secondNode.next=firstNode;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> secondNode;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/swap-nodes-in-pairs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubu
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>23. Merge k Sorted Lists</title>
     <link href="http://yoursite.com/2020/06/18/23-Merge-k-Sorted-Lists/"/>
     <id>http://yoursite.com/2020/06/18/23-Merge-k-Sorted-Lists/</id>
@@ -410,27 +431,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reverse-integer/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubuserc
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>6. ZigZag Conversion</title>
-    <link href="http://yoursite.com/2020/06/12/6-ZigZag-Conversion/"/>
-    <id>http://yoursite.com/2020/06/12/6-ZigZag-Conversion/</id>
-    <published>2020-06-13T06:01:40.000Z</published>
-    <updated>2020-06-13T09:32:41.307Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/zigzag-conversion/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200612230216.png" alt></p><p><strong>Approach: Sort by Row, Time Complexity: O(n), where n == len(s)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">convert</span><span class="params">(String s, <span class="keyword">int</span> numRows)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(numRows==<span class="number">1</span>) <span class="keyword">return</span> s;</span><br><span class="line">        List&lt;StringBuilder&gt; rows=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;Math.min(numRows,s.length());i++) rows.add(<span class="keyword">new</span> StringBuilder());</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> curRow=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">boolean</span> goingDown=<span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">char</span> ch:s.toCharArray())&#123;</span><br><span class="line">            rows.get(curRow).append(ch);</span><br><span class="line">            <span class="keyword">if</span>(curRow==<span class="number">0</span>||curRow==numRows-<span class="number">1</span>) goingDown=!goingDown;</span><br><span class="line">            curRow+=goingDown?<span class="number">1</span>:-<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        StringBuilder sb=<span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span>(StringBuilder row:rows) sb.append(row);</span><br><span class="line">        <span class="keyword">return</span> sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/zigzag-conversion/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubuse
       
     
     </summary>

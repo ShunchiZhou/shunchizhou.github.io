@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-06-19T19:31:33.519Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/19/24-Swap-Nodes-in-Pairs/</loc>
+    
+    <lastmod>2020-06-19T19:26:09.834Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/06/18/23-Merge-k-Sorted-Lists/</loc>
     
     <lastmod>2020-06-19T18:59:51.522Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/2020/06/14/22-Generate-Parentheses/</loc>
     
     <lastmod>2020-06-15T06:58:48.324Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-06-15T06:43:20.251Z</lastmod>
     
   </url>
   
