@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/06/19/26-Remove-Duplicates-from-Sorted-Array/</loc>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-06-19T23:39:10.308Z</lastmod>
+    <lastmod>2020-06-20T00:07:02.832Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/2020/06/19/27-Remove-Element/</loc>
     
-    <lastmod>2020-06-19T23:38:04.775Z</lastmod>
+    <lastmod>2020-06-20T00:05:35.722Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/19/26-Remove-Duplicates-from-Sorted-Array/</loc>
+    
+    <lastmod>2020-06-19T23:57:44.300Z</lastmod>
     
   </url>
   
