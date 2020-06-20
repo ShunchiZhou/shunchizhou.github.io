@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-06-20T04:50:33.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/19/28-Implement-strStr/</loc>
+    
+    <lastmod>2020-06-20T04:47:33.233Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-06-20T00:07:02.832Z</lastmod>
@@ -117,13 +131,6 @@
     <loc>http://yoursite.com/2020/03/28/Tries/</loc>
     
     <lastmod>2020-06-14T20:59:29.836Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-06-14T20:00:23.595Z</lastmod>
     
   </url>
   
