@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/06/20/30-Substring-with-Concatenation-of-All-Words/</loc>
+    <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-06-21T21:13:59.127Z</lastmod>
+    <lastmod>2020-06-21T21:48:40.461Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-06-21T21:13:31.652Z</lastmod>
+    <lastmod>2020-06-21T21:48:11.330Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/21/31-Next-Permutation/</loc>
+    
+    <lastmod>2020-06-21T21:46:07.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/20/30-Substring-with-Concatenation-of-All-Words/</loc>
+    
+    <lastmod>2020-06-21T21:13:59.127Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>http://yoursite.com/2020/06/19/28-Implement-strStr/</loc>
     
     <lastmod>2020-06-20T06:38:10.458Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-06-20T04:57:34.832Z</lastmod>
     
   </url>
   
