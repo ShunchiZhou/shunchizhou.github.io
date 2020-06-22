@@ -40,6 +40,30 @@
   </entry>
   
   <entry>
+    <title>Spring</title>
+    <link href="http://yoursite.com/2020/06/22/Spring/"/>
+    <id>http://yoursite.com/2020/06/22/Spring/</id>
+    <published>2020-06-22T19:16:43.000Z</published>
+    <updated>2020-06-22T19:17:25.065Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><a href="https://www.tutorialspoint.com/spring/index.htm" target="_blank" rel="noopener">Spring Framework Tutorial</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/spring/index.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Spring Framework Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>32. Longest Valid Parentheses</title>
     <link href="http://yoursite.com/2020/06/21/32-Longest-Valid-Parentheses/"/>
     <id>http://yoursite.com/2020/06/21/32-Longest-Valid-Parentheses/</id>
@@ -410,27 +434,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/3sum-closest/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercont
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2020/06/14/167-Two-Sum-II-Input-array-is-sorted/"/>
-    <id>http://yoursite.com/2020/06/14/167-Two-Sum-II-Input-array-is-sorted/</id>
-    <published>2020-06-15T02:33:40.000Z</published>
-    <updated>2020-06-15T02:53:18.442Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200614193443.png" alt></p><p><strong>Approach: Two Pointers, Time complexity : O(n)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] numbers, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">int</span> l=<span class="number">0</span>,r=numbers.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="keyword">int</span> sum=numbers[l]+numbers[r];</span><br><span class="line">            <span class="keyword">if</span>(sum==target) <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;l+<span class="number">1</span>,r+<span class="number">1</span>&#125;;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(sum&lt;target) l++;</span><br><span class="line">            <span class="keyword">else</span> r--;  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https:
       
     
     </summary>

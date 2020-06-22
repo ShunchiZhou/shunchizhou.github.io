@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/22/Spring/</loc>
+    
+    <lastmod>2020-06-22T19:17:25.065Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/General/index.html</loc>
+    
+    <lastmod>2020-06-22T19:16:05.264Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-06-22T06:35:22.707Z</lastmod>
@@ -411,13 +425,6 @@
     <loc>http://yoursite.com/2020/05/27/Collections-Comparison/</loc>
     
     <lastmod>2020-05-28T05:26:40.613Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/General/index.html</loc>
-    
-    <lastmod>2020-05-28T05:07:58.845Z</lastmod>
     
   </url>
   
