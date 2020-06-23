@@ -44,9 +44,9 @@
     <link href="http://yoursite.com/2020/06/22/Spring/"/>
     <id>http://yoursite.com/2020/06/22/Spring/</id>
     <published>2020-06-22T19:16:43.000Z</published>
-    <updated>2020-06-22T19:17:25.065Z</updated>
+    <updated>2020-06-23T00:30:09.817Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><a href="https://www.tutorialspoint.com/spring/index.htm" target="_blank" rel="noopener">Spring Framework Tutorial</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li><a href="https://www.tutorialspoint.com/spring/index.htm" target="_blank" rel="noopener">Spring Framework Tutorial</a></li><li><a href="https://dzone.com/articles/spring-framework-architecture" target="_blank" rel="noopener">Spring Framework Architecture</a></li><li><a href="https://springframework.guru/spring-framework-annotations/" target="_blank" rel="noopener">Spring Framework Annotations</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -54,8 +54,7 @@
       
         &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/spring/index.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Spring Framework Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
+&lt;li&gt;&lt;a 
       
     
     </summary>
