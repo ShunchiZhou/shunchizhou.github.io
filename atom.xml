@@ -40,21 +40,20 @@
   </entry>
   
   <entry>
-    <title>Spring</title>
+    <title>Spring Related</title>
     <link href="http://yoursite.com/2020/06/22/Spring/"/>
     <id>http://yoursite.com/2020/06/22/Spring/</id>
     <published>2020-06-22T19:16:43.000Z</published>
-    <updated>2020-06-23T21:27:46.990Z</updated>
+    <updated>2020-06-24T01:08:49.304Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><a href="https://www.tutorialspoint.com/spring/index.htm" target="_blank" rel="noopener">Spring Framework Tutorial</a></li><li><a href="https://dzone.com/articles/spring-framework-architecture" target="_blank" rel="noopener">Spring Framework Architecture</a></li><li><a href="https://springframework.guru/spring-framework-annotations/" target="_blank" rel="noopener">Spring Framework Annotations</a></li><li><a href="https://o7planning.org/en/11267/spring-boot-tutorial-for-beginners" target="_blank" rel="noopener">Spring Boot Tutorial for Beginners</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Spring-Framework"><a href="#Spring-Framework" class="headerlink" title="Spring Framework"></a>Spring Framework</h2><ul><li><a href="https://www.tutorialspoint.com/spring/index.htm" target="_blank" rel="noopener">Spring Framework Tutorial</a></li><li><a href="https://dzone.com/articles/spring-framework-architecture" target="_blank" rel="noopener">Spring Framework Architecture</a></li><li><a href="https://springframework.guru/spring-framework-annotations/" target="_blank" rel="noopener">Spring Framework Annotations</a></li><li><a href="https://o7planning.org/en/11267/spring-boot-tutorial-for-beginners" target="_blank" rel="noopener">Spring Boot Tutorial for Beginners</a></li><li><a href="https://www.tutorialspoint.com/spring_boot/index.htm" target="_blank" rel="noopener">Spring Boot Tutorial</a></li></ul><h2 id="JSP"><a href="#JSP" class="headerlink" title="JSP"></a>JSP</h2><ul><li><a href="https://www.tutorialspoint.com/jsp/index.htm" target="_blank" rel="noopener">JSP Tutorial</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/spring/index.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Spring Framework Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a 
+        &lt;h2 id=&quot;Spring-Framework&quot;&gt;&lt;a href=&quot;#Spring-Framework&quot; class=&quot;headerlink&quot; title=&quot;Spring Framework&quot;&gt;&lt;/a&gt;Spring Framework&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=
       
     
     </summary>
