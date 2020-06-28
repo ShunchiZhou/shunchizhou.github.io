@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-06-28T21:30:42.507Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/21/32-Longest-Valid-Parentheses/</loc>
+    
+    <lastmod>2020-06-28T21:30:24.954Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/28/33-Search-in-Rotated-Sorted-Array/</loc>
+    
+    <lastmod>2020-06-28T17:57:47.813Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/resume/index.html</loc>
     
     <lastmod>2020-06-28T05:00:15.052Z</lastmod>
@@ -33,20 +54,6 @@
     <loc>http://yoursite.com/General/index.html</loc>
     
     <lastmod>2020-06-26T19:45:22.522Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-06-22T06:35:22.707Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/21/32-Longest-Valid-Parentheses/</loc>
-    
-    <lastmod>2020-06-22T06:10:31.237Z</lastmod>
     
   </url>
   
