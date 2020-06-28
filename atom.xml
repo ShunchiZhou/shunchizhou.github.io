@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>CSE510_Database_Mgmt_Sys_Implementn</title>
+    <link href="http://yoursite.com/2020/06/27/CSE510-Database-Mgmt-Sys-Implementn/"/>
+    <id>http://yoursite.com/2020/06/27/CSE510-Database-Mgmt-Sys-Implementn/</id>
+    <published>2020-06-28T03:19:46.000Z</published>
+    <updated>2020-06-28T03:20:57.485Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/uploads/510/Work_1.jpg" alt><br><img src="/uploads/510/Work_2.jpg" alt><br><img src="/uploads/510/Work_3.jpg" alt><br><img src="/uploads/510/Work_4.jpg" alt><br><img src="/uploads/510/Work_5.jpg" alt><br><img src="/uploads/510/Work_6.jpg" alt><br><img src="/uploads/510/Work_7.jpg" alt><br><img src="/uploads/510/Work_8.jpg" alt><br><img src="/uploads/510/Work_9.jpg" alt><br><img src="/uploads/510/Work_10.jpg" alt><br><img src="/uploads/510/Work_11.jpg" alt><br><img src="/uploads/510/Work_12.jpg" alt><br><img src="/uploads/510/Work_13.jpg" alt><br><img src="/uploads/510/Work_14.jpg" alt><br><img src="/uploads/510/Work_15.jpg" alt><br><img src="/uploads/510/Work_16.jpg" alt><br><img src="/uploads/510/Work_17.jpg" alt><br><img src="/uploads/510/Work_18.jpg" alt><br><img src="/uploads/510/Work_19.jpg" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/uploads/510/Work_1.jpg&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/510/Work_2.jpg&quot; alt&gt;&lt;br&gt;&lt;img src=&quot;/uploads/510/Work_3.jpg&quot; alt&gt;&lt;br&gt;&lt;img src
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>JAVA WEB - Spring Related</title>
     <link href="http://yoursite.com/2020/06/22/Spring/"/>
     <id>http://yoursite.com/2020/06/22/Spring/</id>
@@ -411,27 +432,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/letter-combinations-of-a-phone-number/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;h
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>16. 3Sum Closest</title>
-    <link href="http://yoursite.com/2020/06/14/16-3Sum-Closest/"/>
-    <id>http://yoursite.com/2020/06/14/16-3Sum-Closest/</id>
-    <published>2020-06-15T03:00:29.000Z</published>
-    <updated>2020-06-15T03:05:20.734Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/3sum-closest/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200614200047.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">threeSumClosest</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">int</span> result=nums[<span class="number">0</span>]+nums[<span class="number">1</span>]+nums[nums.length-<span class="number">1</span>];;</span><br><span class="line">                </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length-<span class="number">2</span>;i++)&#123;   </span><br><span class="line">            <span class="keyword">int</span> start=i+<span class="number">1</span>, end=nums.length-<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(start&lt;end)&#123;</span><br><span class="line">                <span class="keyword">int</span> sum=nums[i]+nums[start]+nums[end];</span><br><span class="line">                <span class="keyword">if</span>(sum&gt;target) end--;</span><br><span class="line">                <span class="keyword">else</span> start++;</span><br><span class="line">                result=Math.abs(sum-target)&lt;Math.abs(result-target)?sum:result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/3sum-closest/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercont
       
     
     </summary>
