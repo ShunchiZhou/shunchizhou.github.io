@@ -447,7 +447,7 @@
                 
               
 
-              <time title="Created: 2020-06-28 17:16:57 / Modified: 17:17:56" itemprop="dateCreated datePublished" datetime="2020-06-28T17:16:57-07:00">2020-06-28</time>
+              <time title="Created: 2020-06-28 17:16:57 / Modified: 17:45:59" itemprop="dateCreated datePublished" datetime="2020-06-28T17:16:57-07:00">2020-06-28</time>
             
 
             
@@ -486,7 +486,8 @@
         
           
             <p><a href="https://leetcode.com/problems/count-and-say/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200628171751.png" alt></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><strong>Recursion</strong> <a href="https://leetcode.com/problems/count-and-say/discuss/16000/Show-an-Answer-in-Java" target="_blank" rel="noopener">link</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">countAndSay</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(n == <span class="number">1</span>) <span class="keyword">return</span> <span class="string">"1"</span>; </span><br><span class="line">        String prev = countAndSay(n - <span class="number">1</span>); </span><br><span class="line">        StringBuilder str = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(i &lt; prev.length()) &#123;</span><br><span class="line">            <span class="keyword">char</span> curr = prev.charAt(i);</span><br><span class="line">            <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span>(i+j &lt; prev.length() &amp;&amp; prev.charAt(i+j) == curr) j++;</span><br><span class="line">            str.append(j);</span><br><span class="line">            str.append(curr);</span><br><span class="line">            i += j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> str.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
           
         
       
