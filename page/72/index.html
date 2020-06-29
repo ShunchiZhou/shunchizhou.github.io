@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">134</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">136</span></a>
 
   </li>
         
@@ -402,7 +402,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/12/1438-Longest-Continuous-Subarray-With-Absolute-Diff-Less-Than-or-Equal-to-Limit/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/15/Java-Core/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -422,7 +422,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/05/12/1438-Longest-Continuous-Subarray-With-Absolute-Diff-Less-Than-or-Equal-to-Limit/" class="post-title-link" itemprop="url">1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit</a>
+                <a href="/2020/05/15/Java-Core/" class="post-title-link" itemprop="url">Java Core</a>
               
             
           </h1>
@@ -447,12 +447,24 @@
                 
               
 
-              <time title="Created: 2020-05-12 12:27:22 / Modified: 22:59:46" itemprop="dateCreated datePublished" datetime="2020-05-12T12:27:22-07:00">2020-05-12</time>
+              <time title="Created: 2020-05-15 09:49:30" itemprop="dateCreated datePublished" datetime="2020-05-15T09:49:30-07:00">2020-05-15</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-06-26 15:37:29" itemprop="dateModified" datetime="2020-06-26T15:37:29-07:00">2020-06-26</time>
               
             
           </span>
@@ -485,9 +497,59 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/" target="_blank" rel="noopener">https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200512122755.png" alt></p>
-<p><strong><a href="https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/discuss/609771/JavaC%2B%2BPython-Deques-O(N" target="_blank" rel="noopener">Sliding Window</a>)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Time Limit Exceeded</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">class Solution &#123;</span></span><br><span class="line"><span class="comment">    public int longestSubarray(int[] nums, int limit) &#123;</span></span><br><span class="line"><span class="comment">        int len=nums.length;</span></span><br><span class="line"><span class="comment">        int maxNum=Integer.MIN_VALUE;</span></span><br><span class="line"><span class="comment">        int maxLen=0;</span></span><br><span class="line"><span class="comment">        for(int i=0;i&lt;len;i++)&#123;</span></span><br><span class="line"><span class="comment">            for(int j=i;j&lt;len;j++)&#123;</span></span><br><span class="line"><span class="comment">                if(maxAbs(i,j,nums)&lt;=limit) &#123;</span></span><br><span class="line"><span class="comment">                    maxLen=(j-i+1)&gt;maxLen?(j-i+1):maxLen;</span></span><br><span class="line"><span class="comment">                &#125;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">       return maxLen; </span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    public int maxAbs(int l,int r, int[] nums)&#123;</span></span><br><span class="line"><span class="comment">        if(l==r) return 0;</span></span><br><span class="line"><span class="comment">        int maxNum=Integer.MIN_VALUE;</span></span><br><span class="line"><span class="comment">        for(int i=l;i&lt;r;i++)&#123;</span></span><br><span class="line"><span class="comment">            for(int j=i+1;j&lt;=r;j++)&#123;</span></span><br><span class="line"><span class="comment">                int rangeAbs=Math.abs(nums[i]-nums[j]);</span></span><br><span class="line"><span class="comment">                maxNum=rangeAbs&gt;maxNum?rangeAbs:maxNum;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return maxNum;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lc1438</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">longestSubarray</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span> limit)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// intuition to use Deque: </span></span><br><span class="line">        <span class="comment">// to store the max and min of the curren range [l-r]</span></span><br><span class="line">        <span class="comment">// and the next range [l+1,r]</span></span><br><span class="line">        Deque&lt;Integer&gt; maxd = <span class="keyword">new</span> ArrayDeque&lt;&gt;();</span><br><span class="line">        Deque&lt;Integer&gt; mind = <span class="keyword">new</span> ArrayDeque&lt;&gt;();</span><br><span class="line">        <span class="keyword">int</span> l = <span class="number">0</span>, r;</span><br><span class="line">        <span class="keyword">for</span> (r = <span class="number">0</span>; r &lt; A.length; ++r) &#123;</span><br><span class="line">            <span class="keyword">while</span> (!maxd.isEmpty() &amp;&amp; A[r] &gt; maxd.peekLast()) maxd.pollLast(); <span class="comment">// &gt;=,wrong</span></span><br><span class="line">            <span class="keyword">while</span> (!mind.isEmpty() &amp;&amp; A[r] &lt; mind.peekLast()) mind.pollLast(); <span class="comment">// &lt;=,wrong</span></span><br><span class="line">            maxd.addLast(A[r]);</span><br><span class="line">            mind.addLast(A[r]);</span><br><span class="line">            <span class="keyword">if</span> (maxd.peek() - mind.peek() &gt; limit) &#123;</span><br><span class="line">                <span class="keyword">if</span> (maxd.peek() == A[l]) maxd.poll();</span><br><span class="line">                <span class="keyword">if</span> (mind.peek() == A[l]) mind.poll();</span><br><span class="line">                ++l;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> r - l;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// driver method</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] A=&#123;<span class="number">10</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">7</span>,<span class="number">2</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> limit=<span class="number">5</span>;</span><br><span class="line">        System.out.println(longestSubarray(A, limit));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// DP trial, failed</span></span><br><span class="line"><span class="comment">// class Solution &#123;</span></span><br><span class="line"><span class="comment">//     public int longestSubarray(int[] nums, int limit) &#123;</span></span><br><span class="line"><span class="comment">//         int len=nums.length;</span></span><br><span class="line"><span class="comment">//         int[][] dp=new int[len][len];</span></span><br><span class="line"><span class="comment">//         for(int i=0;i&lt;len;i++)&#123;</span></span><br><span class="line"><span class="comment">//             dp[i][i]=1;</span></span><br><span class="line"><span class="comment">//             int min=nums[i],max=nums[i];</span></span><br><span class="line"><span class="comment">//             for(int j=i+1;j&lt;len;j++)&#123;</span></span><br><span class="line"><span class="comment">//                 min=nums[j]&lt;min?nums[j]:min;</span></span><br><span class="line"><span class="comment">//                 max=nums[j]&gt;max?nums[j]:max;</span></span><br><span class="line"><span class="comment">//                 // dp[i][j]=Math.max(dp[i][j-1],Math.max(Math.abs(nums[j]-min),Math.abs(max-nums[j])));</span></span><br><span class="line"><span class="comment">//                 if(Math.max(Math.abs(nums[j]-min),Math.abs(max-nums[j]))&lt;=limit) dp[i][j]=dp[i][j-1]+1;</span></span><br><span class="line"><span class="comment">//                 else dp[i][j]=dp[i][j-1];</span></span><br><span class="line"><span class="comment">//             &#125;</span></span><br><span class="line"><span class="comment">//         &#125;</span></span><br><span class="line">        </span><br><span class="line"><span class="comment">//         int maxLen=0;</span></span><br><span class="line"><span class="comment">//         for(int i=0;i&lt;len;i++)&#123;</span></span><br><span class="line"><span class="comment">//             for(int j=i;j&lt;len;j++)&#123;</span></span><br><span class="line"><span class="comment">//                 maxLen=dp[i][j]&gt;maxLen?dp[i][j]:maxLen;</span></span><br><span class="line"><span class="comment">//             &#125;</span></span><br><span class="line"><span class="comment">//         &#125;</span></span><br><span class="line"><span class="comment">//         return maxLen;</span></span><br><span class="line"><span class="comment">//     &#125;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br></pre></td></tr></table></figure>
+            <ul>
+<li><a href="https://www.java-success.com/core-java-interview-questions/" target="_blank" rel="noopener">Top 50+ Core Java interview Q&amp;As</a></li>
+<li><a href="https://www.softwaretestinghelp.com/core-java-interview-questions/" target="_blank" rel="noopener">Top 50+ Core Java Interview Questions And Answers</a></li>
+<li><a href="https://github.com/Snailclimb/JavaGuide" target="_blank" rel="noopener">JavaGuide (Chinese)</a></li>
+<li><a href="https://www.w3schools.com/java/default.asp" target="_blank" rel="noopener">Java Tutorial</a></li>
+<li><a href="https://www.tutorialspoint.com/java_generics/index.htm" target="_blank" rel="noopener">Java Generics Tutorial</a></li>
+</ul>
+<h1 id="SOLID-Principles"><a href="#SOLID-Principles" class="headerlink" title="SOLID Principles"></a><span style="color: #ff9900">SOLID Principles</span></h1><ul>
+<li><a href="https://www.edureka.co/blog/solid-principles-in-java/" target="_blank" rel="noopener">ref.1</a> (<a href="https://shunchizhou.com/2020/05/17/solid-mirror/" target="_blank" rel="noopener">mirror</a>) <a href="https://stackify.com/solid-design-principles/" target="_blank" rel="noopener">| ref.2</a> <a href="https://www.oodesign.com/dependency-inversion-principle.html" target="_blank" rel="noopener">| ref.3 (clearer on DIP)</a></li>
+<li><a href="https://dzone.com/articles/the-openclosed-principle" target="_blank" rel="noopener">The Open/Closed Principle and Strategy Pattern</a></li>
+</ul>
+<h1 id="Design-Patterns"><a href="#Design-Patterns" class="headerlink" title="Design Patterns"></a><span style="color: #ff9900">Design Patterns</span></h1><ul>
+<li><a href="https://www.oodesign.com/" target="_blank" rel="noopener">Design patterns</a></li>
+<li><a href="https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm" target="_blank" rel="noopener">MVC Pattern</a></li>
+</ul>
+<h1 id="Java-Concurrency"><a href="#Java-Concurrency" class="headerlink" title="Java Concurrency"></a><span style="color: #ff9900">Java Concurrency</span></h1><p><strong>Multithreading</strong></p>
+<ul>
+<li><a href="https://dzone.com/articles/java-thread-tutorial-creating-threads-and-multithr" target="_blank" rel="noopener">Java Thread Tutorial: Creating Threads and Multithreading in Java</a></li>
+<li><a href="https://www.javatpoint.com/java-multithreading-interview-questions" target="_blank" rel="noopener">Java Multithreading and Concurrency Interview Questions</a></li>
+</ul>
+<p><strong>Synchronization</strong></p>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/volatile-keyword-in-java/?ref=rp" target="_blank" rel="noopener">volatile keyword in Java</a></li>
+</ul>
+<h1 id="Java-Collections"><a href="#Java-Collections" class="headerlink" title="Java Collections"></a><span style="color: #ff9900">Java Collections</span></h1><ul>
+<li><a href="https://www.codejava.net/java-core/collections/overview-of-java-collections-framework-api-uml-diagram" target="_blank" rel="noopener">Overview of Java Collections Framework API (UML diagram)</a></li>
+<li><a href="https://www.edureka.co/blog/java-collections/" target="_blank" rel="noopener">Java Collections </a></li>
+<li><a href="https://shunchizhou.com/2020/05/27/Collections-Comparison/" target="_blank" rel="noopener">Collections Comparison</a></li>
+</ul>
+<h1 id="Java-Serialization"><a href="#Java-Serialization" class="headerlink" title="Java Serialization"></a><span style="color: #ff9900">Java Serialization</span></h1><ul>
+<li><a href="https://www.geeksforgeeks.org/transient-keyword-java/" target="_blank" rel="noopener">transient keyword in Java</a></li>
+<li><a href="http://blog.clempinch.com/transient-and-final-instance-variables-in-java/" target="_blank" rel="noopener">TRANSIENT AND FINAL INSTANCE VARIABLES IN JAVA</a></li>
+</ul>
+<h1 id="Java-Stream"><a href="#Java-Stream" class="headerlink" title="Java Stream"></a><span style="color: #ff9900">Java Stream</span></h1><ul>
+<li><a href="https://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/" target="_blank" rel="noopener">Java 8 Stream Tutorial</a></li>
+<li><a href="https://stackify.com/streams-guide-java-8/" target="_blank" rel="noopener">A Guide to Streams in Java 8: In-Depth Tutorial With Examples</a></li>
+</ul>
+<h1 id="Java-Lambda"><a href="#Java-Lambda" class="headerlink" title="Java Lambda"></a><span style="color: #ff9900">Java Lambda</span></h1><ul>
+<li><a href="http://tutorials.jenkov.com/java/lambda-expressions.html#:~:text=Java%20lambda%20expressions%20are%20Java&#39;s,without%20belonging%20to%20any%20class.&amp;text=Java%20lambda%20expressions%20are%20commonly,with%20the%20Java%20Streams%20API." target="_blank" rel="noopener">Java lambda expressions</a></li>
+</ul>
+<h1 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a><span style="color: #ff9900">JVM</span></h1><ul>
+<li><a href="https://blog.jamesdbloom.com/JVMInternals.html" target="_blank" rel="noopener">JVMInternals</a></li>
+</ul>
+<h1 id="Others"><a href="#Others" class="headerlink" title="Others"></a><span style="color: #ff9900">Others</span></h1><ul>
+<li><a href="https://javapapers.com/java/java-abstract-class-and-methods/" target="_blank" rel="noopener">Abstract Class and Methods</a></li>
+<li><a href="https://howtodoinjava.com/oops/exploring-interfaces-and-abstract-classes-in-java/" target="_blank" rel="noopener">Interface vs Abstract Class in Java</a></li>
+<li><a href="https://shunchizhou.com/2020/05/02/Determine-if-a-number-is-2-to-the-power-of-n/" target="_blank" rel="noopener">Determine if a number is 2 to the power of n</a></li>
+<li><a href="https://docs.oracle.com/javase/tutorial/java/generics/types.html" target="_blank" rel="noopener">Java template class</a> <a href="https://shunchizhou.com/2020/04/06/127-Word-Ladder/" target="_blank" rel="noopener"><span style="color: #1a8cff"><strong>code</strong> </span></a></li>
+<li><a href="https://aboullaite.me/understanding-jit-compiler-just-in-time-compiler/" target="_blank" rel="noopener">JIT compiler</a></li>
+<li><a href="https://stackoverflow.com/questions/4805606/how-to-sort-by-two-fields-in-java" target="_blank" rel="noopener">How to sort by two fields in Java?</a></li>
+<li><a href="https://www.techiedelight.com/sort-list-of-objects-using-comparator-java/" target="_blank" rel="noopener">sort-list-of-objects-using-comparator-java</a></li>
+</ul>
+
           
         
       
@@ -532,7 +594,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/71/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/71/">71</a><span class="page-number current">72</span><a class="page-number" href="/page/73/">73</a><span class="space">&hellip;</span><a class="page-number" href="/page/134/">134</a><a class="extend next" rel="next" href="/page/73/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/71/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/71/">71</a><span class="page-number current">72</span><a class="page-number" href="/page/73/">73</a><span class="space">&hellip;</span><a class="page-number" href="/page/136/">136</a><a class="extend next" rel="next" href="/page/73/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -576,7 +638,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">134</span>
+                    <span class="site-state-item-count">136</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

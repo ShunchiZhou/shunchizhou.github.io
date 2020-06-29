@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/06/28/36-Valid-Sudoku/</loc>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-06-28T23:38:40.852Z</lastmod>
+    <lastmod>2020-06-29T00:18:29.532Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/2020/06/28/38-Count-and-Say/</loc>
     
-    <lastmod>2020-06-28T23:38:13.246Z</lastmod>
+    <lastmod>2020-06-29T00:17:56.115Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/28/37-Sudoku-Solver/</loc>
+    
+    <lastmod>2020-06-29T00:15:02.961Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/28/36-Valid-Sudoku/</loc>
+    
+    <lastmod>2020-06-28T23:38:40.852Z</lastmod>
     
   </url>
   
