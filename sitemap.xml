@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/General/index.html</loc>
+    
+    <lastmod>2020-06-30T21:34:19.246Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/30/prepositions-of-time/</loc>
+    
+    <lastmod>2020-06-30T21:33:21.878Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/29/42-Trapping-Rain-Water/</loc>
+    
+    <lastmod>2020-06-29T22:08:47.971Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-06-29T07:14:10.856Z</lastmod>
+    <lastmod>2020-06-29T07:16:30.641Z</lastmod>
     
   </url>
   
@@ -103,13 +124,6 @@
     <loc>http://yoursite.com/2020/05/15/Java-Core/</loc>
     
     <lastmod>2020-06-26T22:37:29.668Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/General/index.html</loc>
-    
-    <lastmod>2020-06-26T19:45:22.522Z</lastmod>
     
   </url>
   
