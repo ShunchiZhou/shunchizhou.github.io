@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-07-01T02:47:45.716Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/30/44-Wildcard-Matching/</loc>
+    
+    <lastmod>2020-07-01T02:47:12.355Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/06/29/42-Trapping-Rain-Water/</loc>
     
     <lastmod>2020-06-30T23:14:00.499Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/2020/06/30/prepositions-of-time/</loc>
     
     <lastmod>2020-06-30T21:33:21.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-06-29T07:16:30.641Z</lastmod>
     
   </url>
   
