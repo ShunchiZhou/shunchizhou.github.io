@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>Amazon</title>
+    <link href="http://yoursite.com/2020/07/01/Amazon/"/>
+    <id>http://yoursite.com/2020/07/01/Amazon/</id>
+    <published>2020-07-01T22:20:19.000Z</published>
+    <updated>2020-07-01T22:22:26.266Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">第一题：零件组装题。题目意思就是有一堆零件，每个零件的尺寸和组装需要的时间是一样的。输入各个零件的尺寸的list，要求输出最短的总的 accumulated 组装时间。这么说估计也很难描述清楚，直接上例子：</span></span><br><span class="line"><span class="comment">比如输入的list是 &#123;8， 4， 6， 12&#125;。</span></span><br><span class="line"><span class="comment">1. 先选 4 和 6组装到一起，形成 size 为 10 的新零件。目前为止耗时为10。零件的 list 变为 &#123;8， 10， 12&#125;</span></span><br><span class="line"><span class="comment">2. 再选 8 和 10 组装到一起，形成 size 为 18 的新零件。目前为止耗时为 10 + 18 = 28。零件的 list 变为 &#123;12， 18&#125;</span></span><br><span class="line"><span class="comment">3. 最后 把 12 和 18 组装到一起，形成 size 为 30 的新零件。目前为止耗时为 10 + 18 + 30 = 58。</span></span><br><span class="line"><span class="comment">最后输出 58 就可以了。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">解题思路：把所有零件先放到 min-heap (PriorityQueue for Java)中。然后每次 poll 两个最小的，加起来形成新零件，然后放回到min-heap中。如此循环直至 min-heap 中只有一个零件为止。在循环过程中记录总的累积时间就行了。这个题一定要秒掉，为后面的第二题赢得时间。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">import</span> java.util.PriorityQueue;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">minAssembleTime</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a.length==<span class="number">1</span>) <span class="keyword">return</span> a[<span class="number">0</span>];</span><br><span class="line">        PriorityQueue&lt;Integer&gt; q=<span class="keyword">new</span> PriorityQueue&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i:a ) q.offer(i);</span><br><span class="line">        <span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(q.size()&gt;<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> m=q.poll();</span><br><span class="line">            <span class="keyword">int</span> n=q.poll();</span><br><span class="line">            res+=m+n;</span><br><span class="line">            q.offer(m+n);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] a=&#123;<span class="number">8</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">12</span>&#125;;</span><br><span class="line">        System.out.println(Solution.minAssembleTime(a));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>50. Pow(x, n)</title>
     <link href="http://yoursite.com/2020/07/01/50-Pow-x-n/"/>
     <id>http://yoursite.com/2020/07/01/50-Pow-x-n/</id>
@@ -412,33 +433,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/search-in-rotated-sorted-array/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>CSE510_Database_Mgmt_Sys_Implementn</title>
-    <link href="http://yoursite.com/2020/06/27/CSE510-Database-Mgmt-Sys-Implementn/"/>
-    <id>http://yoursite.com/2020/06/27/CSE510-Database-Mgmt-Sys-Implementn/</id>
-    <published>2020-06-28T03:19:46.000Z</published>
-    <updated>2020-06-28T03:45:28.781Z</updated>
-    
-    <content type="html"><![CDATA[<embed src="/uploads/510/summary.pdf" width="900" height="850"><table><thead><tr><th style="text-align:center">1</th><th style="text-align:center">2</th></tr></thead><tbody><tr><td style="text-align:center"><img src="/uploads/510/Work_1.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_2.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_3.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_4.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_5.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_6.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_7.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_8.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_9.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_10.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_11.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_12.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_13.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_14.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_15.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_16.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_17.jpg" alt></td><td style="text-align:center"><img src="/uploads/510/Work_18.jpg" alt></td></tr><tr><td style="text-align:center"><img src="/uploads/510/Work_19.jpg" alt></td><td style="text-align:center"></td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;embed src=&quot;/uploads/510/summary.pdf&quot; width=&quot;900&quot; height=&quot;850&quot;&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;1&lt;/th&gt;
-&lt;th style=&quot;text-a
       
     
     </summary>

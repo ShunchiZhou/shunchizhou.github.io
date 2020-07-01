@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">148</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">149</span></a>
 
   </li>
         
@@ -314,6 +314,25 @@
     
 
     <a href="/LeetCode_Notes/" rel="section"><i class="menu-item-icon fa fa-fw fa-clipboard"></i> <br>LeetCode_Notes</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-interview">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/Interview/" rel="section"><i class="menu-item-icon fa fa-fw fa-clipboard"></i> <br>Interview</a>
 
   </li>
         
@@ -402,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/14/21-Merge-Two-Sorted-Lists/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/14/22-Generate-Parentheses/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -422,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/06/14/21-Merge-Two-Sorted-Lists/" class="post-title-link" itemprop="url">21. Merge Two Sorted Lists</a>
+                <a href="/2020/06/14/22-Generate-Parentheses/" class="post-title-link" itemprop="url">22. Generate Parentheses</a>
               
             
           </h1>
@@ -447,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-06-14 22:40:33 / Modified: 22:56:20" itemprop="dateCreated datePublished" datetime="2020-06-14T22:40:33-07:00">2020-06-14</time>
+              <time title="Created: 2020-06-14 22:58:16 / Modified: 23:58:48" itemprop="dateCreated datePublished" datetime="2020-06-14T22:58:16-07:00">2020-06-14</time>
             
 
             
@@ -485,9 +504,10 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200614224158.png" alt></p>
-<p><strong>Approach 1: Iteration</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">mergeTwoLists</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        ListNode dummyHead=<span class="keyword">new</span> ListNode(-<span class="number">1</span>);</span><br><span class="line">        ListNode ans=dummyHead;</span><br><span class="line">        <span class="keyword">while</span>(l1!=<span class="keyword">null</span> &amp;&amp; l2!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(l1.val&lt;=l2.val)&#123;</span><br><span class="line">                ans.next=l1;                </span><br><span class="line">                l1=l1.next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                ans.next=l2;</span><br><span class="line">                l2=l2.next;</span><br><span class="line">            &#125;</span><br><span class="line">            ans=ans.next;</span><br><span class="line">        &#125;  </span><br><span class="line">        ans.next=l1==<span class="keyword">null</span>?l2:l1;</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">return</span> dummyHead.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Approach 2: Recursion</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">mergeTwoLists</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(l1==<span class="keyword">null</span>) <span class="keyword">return</span> l2;</span><br><span class="line">        <span class="keyword">if</span>(l2==<span class="keyword">null</span>) <span class="keyword">return</span> l1;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(l1.val&lt;=l2.val)&#123;</span><br><span class="line">            l1.next=mergeTwoLists(l1.next,l2);</span><br><span class="line">            <span class="keyword">return</span> l1;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            l2.next=mergeTwoLists(l1,l2.next);</span><br><span class="line">            <span class="keyword">return</span> l2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+            <p><a href="https://leetcode.com/problems/generate-parentheses/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200614225846.png" alt></p>
+<p><strong>Backtracking, Time Complexity: O(4^n/sqrt{n}})</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">generateParenthesis</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        List&lt;String&gt; ans= <span class="keyword">new</span> ArrayList();</span><br><span class="line">        backtrack(ans,<span class="string">""</span>,<span class="number">0</span>,<span class="number">0</span>,n);</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">backtrack</span><span class="params">(List&lt;String&gt; ans, String cur, <span class="keyword">int</span> open,<span class="keyword">int</span> close, <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(cur.length()==n*<span class="number">2</span>)&#123;</span><br><span class="line">            ans.add(cur);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(open&lt;n) backtrack(ans,cur+<span class="string">"("</span>,open+<span class="number">1</span>,close, n);</span><br><span class="line">        <span class="keyword">if</span>(close&lt;open) backtrack(ans,cur+<span class="string">")"</span>,open,close+<span class="number">1</span>,n);        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://leetcode.com/problems/generate-parentheses/discuss/10098/Java-DFS-way-solution" target="_blank" rel="noopener">link</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">class Solution&#123;</span></span><br><span class="line"><span class="comment">    public List&lt;String&gt; generateParenthesis(int n) &#123;</span></span><br><span class="line"><span class="comment">    List&lt;String&gt; list = new ArrayList&lt;String&gt;();</span></span><br><span class="line"><span class="comment">    generateOneByOne("", list, 0, 0, n);</span></span><br><span class="line"><span class="comment">    return list;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    public void generateOneByOne(String sublist, List&lt;String&gt; list, int left, int right, int n)&#123;</span></span><br><span class="line"><span class="comment">        if(left &lt; right)&#123;</span></span><br><span class="line"><span class="comment">            return;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        if(left &lt; n)&#123;</span></span><br><span class="line"><span class="comment">            generateOneByOne( sublist + "(" , list, left+1, right, n);</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        if(right &lt; n)&#123;</span></span><br><span class="line"><span class="comment">            generateOneByOne( sublist + ")" , list, left, right+1, n);</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        if(left == n &amp;&amp; right == n)&#123;</span></span><br><span class="line"><span class="comment">            list.add(sublist);</span></span><br><span class="line"><span class="comment">            return;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure></p>
+<p><a href="https://leetcode.com/problems/generate-parentheses/discuss/10127/An-iterative-method." target="_blank" rel="noopener">Explanation</a><br><strong>Approach 3: Closure Number (DP)</strong>\<br>First consider how to get the result f(n) from previous result f(0)…f(n-1).<br>Actually, the result f(n) will be put an extra () pair to f(n-1). Let the “(“ always at the first position, to produce a valid result, we can only put “)” in a way that there will be i pairs () inside the extra () and n - 1 - i pairs () outside the extra pair.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">generateParenthesis</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        List&lt;String&gt; ans = <span class="keyword">new</span> ArrayList();</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">0</span>) &#123;</span><br><span class="line">            ans.add(<span class="string">""</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</span><br><span class="line">                <span class="keyword">for</span> (String left: generateParenthesis(i))</span><br><span class="line">                    <span class="keyword">for</span> (String right: generateParenthesis(n-i-<span class="number">1</span>))</span><br><span class="line">                        ans.add(<span class="string">"("</span> + left + <span class="string">")"</span> + right);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -533,7 +553,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/33/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><span class="page-number current">34</span><a class="page-number" href="/page/35/">35</a><span class="space">&hellip;</span><a class="page-number" href="/page/148/">148</a><a class="extend next" rel="next" href="/page/35/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/33/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><span class="page-number current">34</span><a class="page-number" href="/page/35/">35</a><span class="space">&hellip;</span><a class="page-number" href="/page/149/">149</a><a class="extend next" rel="next" href="/page/35/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -577,7 +597,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">148</span>
+                    <span class="site-state-item-count">149</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
