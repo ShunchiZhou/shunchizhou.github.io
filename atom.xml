@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>48. Rotate Image</title>
+    <link href="http://yoursite.com/2020/07/01/48-Rotate-Image/"/>
+    <id>http://yoursite.com/2020/07/01/48-Rotate-Image/</id>
+    <published>2020-07-01T07:55:03.000Z</published>
+    <updated>2020-07-01T08:26:57.651Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/rotate-image/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200701005539.png" alt></p><p><strong>Approach : Transpose and then reverse</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[][] arr,<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> tmp=arr[i][j];</span><br><span class="line">        arr[i][j]=arr[j][i];</span><br><span class="line">        arr[j][i]=tmp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">transpose</span><span class="params">(<span class="keyword">int</span>[][] matrix)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;matrix.length;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&lt;matrix[<span class="number">0</span>].length;j++)&#123;</span><br><span class="line">                swap(matrix,i,j);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">reverseRows</span><span class="params">(<span class="keyword">int</span>[][] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span>[] row:arr)&#123;</span><br><span class="line">            <span class="keyword">int</span> l=<span class="number">0</span>,r=arr.length-<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">                <span class="keyword">int</span> tmp=row[l];row[l]=row[r];row[r]=tmp;</span><br><span class="line">                l++;r--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rotate</span><span class="params">(<span class="keyword">int</span>[][] matrix)</span> </span>&#123;</span><br><span class="line">        transpose(matrix);</span><br><span class="line">        reverseRows(matrix);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/rotate-image/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercont
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>47. Permutations II</title>
     <link href="http://yoursite.com/2020/07/01/47-Permutations-II/"/>
     <id>http://yoursite.com/2020/07/01/47-Permutations-II/</id>
@@ -419,27 +440,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-valid-parentheses/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.g
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Permutation: Heap&#39;s algorithm</title>
-    <link href="http://yoursite.com/2020/06/21/Permutation-Heap-s-algorithm/"/>
-    <id>http://yoursite.com/2020/06/21/Permutation-Heap-s-algorithm/</id>
-    <published>2020-06-22T00:02:17.000Z</published>
-    <updated>2020-06-22T00:03:32.064Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://en.wikipedia.org/wiki/Heap%27s_algorithm#cite_note-3" target="_blank" rel="noopener">wiki</a>, <a href="https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/" target="_blank" rel="noopener">geeksforgeeks</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Java program to print all permutations using </span></span><br><span class="line"><span class="comment">// Heap's algorithm </span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HeapAlgo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> tmp = a[i];</span><br><span class="line">        a[i] = a[j];</span><br><span class="line">        a[j] = tmp;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Generating permutation using Heap Algorithm</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">heapPermutation</span><span class="params">(<span class="keyword">int</span>[] arr, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// if n becomes 1 then prints the obtained permutation</span></span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;System.out.println(Arrays.toString(arr));<span class="keyword">return</span>;&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            heapPermutation(arr, n - <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (n % <span class="number">2</span> == <span class="number">1</span>) &#123; <span class="comment">// if n is odd, swap first and last element</span></span><br><span class="line">                swap(arr, <span class="number">0</span>, n - <span class="number">1</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">// If size is even, swap i-th and last element</span></span><br><span class="line">                swap(arr, i, n - <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123; <span class="comment">// Driver // Driver code</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</span><br><span class="line">        HeapAlgo obj = <span class="keyword">new</span> HeapAlgo();</span><br><span class="line">        <span class="keyword">int</span>[] arr = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;</span><br><span class="line">        obj.heapPermutation(arr, arr.length);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Heap%27s_algorithm#cite_note-3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wiki&lt;/a&gt;, &lt;a href=&quot;https://www.geek
       
     
     </summary>
