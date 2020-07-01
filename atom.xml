@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>amazon road construction mst</title>
+    <link href="http://yoursite.com/2020/07/01/amazon-road-construction-mst/"/>
+    <id>http://yoursite.com/2020/07/01/amazon-road-construction-mst/</id>
+    <published>2020-07-01T22:36:08.000Z</published>
+    <updated>2020-07-01T22:36:31.442Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">第二题：城市建路题。题目意思是有一定数量的城市，城市之间已经有了一些道路。还有一些可以供选择的道路来建设。每个新建的道路有 cost。问如果要连接所有的城市，新建路的最小的 cost 是多少。举个栗子：</span></span><br><span class="line"><span class="comment">Input 如下：</span></span><br><span class="line"><span class="comment">numTotalAvailableCities = 6</span></span><br><span class="line"><span class="comment">numTotalAvailableRoads = 3</span></span><br><span class="line"><span class="comment">roadsAvailable = [[1, 4], [4, 5], [2, 3]]</span></span><br><span class="line"><span class="comment">numNewRoadsConstruct = 4</span></span><br><span class="line"><span class="comment">costNewRoadsConstruct = [[1, 2, 5], [1, 3, 10], [1, 6, 2], [5, 6, 5]]</span></span><br><span class="line"><span class="comment">Output 应该是： 7</span></span><br><span class="line"><span class="comment">解释：numTotalAvailableCities = 6 意思是城市的编号从 1 到 6。基于提供的 roadsAvailable list, 这 6 个城市中 已经形成了三个岛， 分别为 [1, 4, 6], [2, 3] 和 [6]。 现在要从 costNewRoadsConstruct list 中选一些路来建使得所有的城市都被连接。这个例子中，显然要选择[1, 2, 5] 和 [1, 6, 2] 这两条路。总的 cost 就是 5 + 2 = 7。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">解题思路：</span></span><br><span class="line"><span class="comment">这是个最小生成树（MST）问题。但要注意整个图中已经有一些边了，不是从0开始的最小生成树。具体来说，可以先Union-Find所有已经有的路 in roadsAvailable list，然后把所有可以建的路 in costNewRoadsConstruct list 按照 cost 排序放入 min-heap。然后每次从 min-heap 中拿出最小 cost 的路来接着 Union-Find整个图。每次需要Union的时候，累积目前为止的 cost。当总的 edges 数目等于总的 vertices 数目减 1 时，整个图就被构建成了一颗树。这时输入累积的cost作为输出。</span></span><br><span class="line"><span class="comment">注意：</span></span><br><span class="line"><span class="comment">这个题不太容易过所有的 test case （目前有19个test cases），因为有些坑需要避免。</span></span><br><span class="line"><span class="comment">1. 城市的ID是从1开始，不是从0开始。所以UnionFind的时候要多注意。</span></span><br><span class="line"><span class="comment">2. 输入的roadsAvailable list 和 costNewRoadsConstruct list 互相之间可能有重复。所以不要在算Graph中的 edges 数目的时候要格外注意。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Amazon</title>
     <link href="http://yoursite.com/2020/07/01/Amazon/"/>
     <id>http://yoursite.com/2020/07/01/Amazon/</id>
@@ -412,27 +433,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>33. Search in Rotated Sorted Array</title>
-    <link href="http://yoursite.com/2020/06/28/33-Search-in-Rotated-Sorted-Array/"/>
-    <id>http://yoursite.com/2020/06/28/33-Search-in-Rotated-Sorted-Array/</id>
-    <published>2020-06-28T17:51:53.000Z</published>
-    <updated>2020-06-28T17:57:47.813Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200628105316.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums.length==<span class="number">0</span>) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> lo=<span class="number">0</span>,hi=nums.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(lo&lt;hi)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid=(lo+hi)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid]&gt;nums[hi]) lo=mid+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> hi=mid;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> pivot=lo;</span><br><span class="line">        <span class="keyword">if</span>(target&gt;nums[nums.length-<span class="number">1</span>]) <span class="keyword">return</span> binary_search(<span class="number">0</span>,pivot-<span class="number">1</span>,nums, target);</span><br><span class="line">        <span class="keyword">return</span> binary_search(pivot,nums.length-<span class="number">1</span>,nums,target);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">binary_search</span><span class="params">(<span class="keyword">int</span> lo,<span class="keyword">int</span> hi,<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> mid;</span><br><span class="line">        <span class="keyword">while</span>(lo&lt;=hi)&#123;</span><br><span class="line">            mid=(lo+hi)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid]==target) <span class="keyword">return</span> mid;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(nums[mid]&lt;target) lo=mid+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> hi=mid-<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/search-in-rotated-sorted-array/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://
       
     
     </summary>
