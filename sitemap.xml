@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/Interview/index.html</loc>
+    
+    <lastmod>2020-07-02T18:28:43.411Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/02/amazon-find-substrings/</loc>
+    
+    <lastmod>2020-07-02T18:27:59.647Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/28/200-Number-of-Islands/</loc>
     
     <lastmod>2020-07-02T16:12:22.106Z</lastmod>
@@ -68,13 +82,6 @@
     <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
     
     <lastmod>2020-07-02T00:05:29.972Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/Interview/index.html</loc>
-    
-    <lastmod>2020-07-01T22:37:11.441Z</lastmod>
     
   </url>
   
