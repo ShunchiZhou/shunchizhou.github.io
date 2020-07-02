@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/01/Graph-%E2%80%93-Detect-Cycle-in-an-Undirected-Graph-using-DFS/</loc>
+    
+    <lastmod>2020-07-02T00:31:23.900Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-07-02T00:18:28.247Z</lastmod>
+    <lastmod>2020-07-02T00:28:16.163Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/29/union-find-algorithm/</loc>
+    
+    <lastmod>2020-07-02T00:19:57.977Z</lastmod>
     
   </url>
   
@@ -1013,13 +1027,6 @@
     <loc>http://yoursite.com/2020/03/28/684-Redundant-Connection/</loc>
     
     <lastmod>2020-03-29T19:23:30.334Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/29/union-find-algorithm/</loc>
-    
-    <lastmod>2020-03-29T19:00:31.768Z</lastmod>
     
   </url>
   
