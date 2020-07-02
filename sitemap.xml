@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/07/01/937-Reorder-Data-in-Log-Files/</loc>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-07-02T23:23:35.258Z</lastmod>
+    <lastmod>2020-07-02T23:41:58.476Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/2020/07/02/692-Top-K-Frequent-Words/</loc>
     
-    <lastmod>2020-07-02T23:18:44.862Z</lastmod>
+    <lastmod>2020-07-02T23:39:54.945Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/01/937-Reorder-Data-in-Log-Files/</loc>
+    
+    <lastmod>2020-07-02T23:23:35.258Z</lastmod>
     
   </url>
   
