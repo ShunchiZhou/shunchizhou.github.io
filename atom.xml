@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>937. Reorder Data in Log Files</title>
+    <link href="http://yoursite.com/2020/07/01/937-Reorder-Data-in-Log-Files/"/>
+    <id>http://yoursite.com/2020/07/01/937-Reorder-Data-in-Log-Files/</id>
+    <published>2020-07-02T04:49:22.000Z</published>
+    <updated>2020-07-02T04:51:49.874Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/reorder-data-in-log-files/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200701214951.png" alt></p><p><strong>Approach: Custom Sort</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> String[] reorderLogFiles(String[] logs) &#123;</span><br><span class="line">        Arrays.sort(logs,(log1,log2)-&gt;&#123;</span><br><span class="line">            String[] split1=log1.split(<span class="string">" "</span>,<span class="number">2</span>);</span><br><span class="line">            String[] split2=log2.split(<span class="string">" "</span>,<span class="number">2</span>);</span><br><span class="line">            <span class="keyword">boolean</span> isDigit1=Character.isDigit(split1[<span class="number">1</span>].charAt(<span class="number">0</span>));</span><br><span class="line">            <span class="keyword">boolean</span> isDigit2=Character.isDigit(split2[<span class="number">1</span>].charAt(<span class="number">0</span>));</span><br><span class="line">            <span class="keyword">if</span>(!isDigit1&amp;&amp;!isDigit2)&#123;</span><br><span class="line">                <span class="keyword">int</span> cmp=split1[<span class="number">1</span>].compareTo(split2[<span class="number">1</span>]);</span><br><span class="line">                <span class="keyword">if</span>(cmp==<span class="number">0</span>) <span class="keyword">return</span> split1[<span class="number">0</span>].compareTo(split2[<span class="number">0</span>]);</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">return</span> cmp;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> isDigit1?(isDigit2?<span class="number">0</span>:<span class="number">1</span>):-<span class="number">1</span>; <span class="comment">/* 1: descending order, -1: increasing order*/</span></span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> logs;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reorder-data-in-log-files/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.g
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Prim’s Algorithm – Minimum Spanning Tree (MST)</title>
     <link href="http://yoursite.com/2020/07/01/Prim%E2%80%99s-Algorithm-%E2%80%93-Minimum-Spanning-Tree-MST/"/>
     <id>http://yoursite.com/2020/07/01/Prim’s-Algorithm-–-Minimum-Spanning-Tree-MST/</id>
@@ -413,27 +434,6 @@
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight java&quot;&gt;&lt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>38. Count and Say</title>
-    <link href="http://yoursite.com/2020/06/28/38-Count-and-Say/"/>
-    <id>http://yoursite.com/2020/06/28/38-Count-and-Say/</id>
-    <published>2020-06-29T00:16:57.000Z</published>
-    <updated>2020-06-29T00:45:59.608Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/count-and-say/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200628171751.png" alt></p><p><strong>Recursion</strong> <a href="https://leetcode.com/problems/count-and-say/discuss/16000/Show-an-Answer-in-Java" target="_blank" rel="noopener">link</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">countAndSay</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(n == <span class="number">1</span>) <span class="keyword">return</span> <span class="string">"1"</span>; </span><br><span class="line">        String prev = countAndSay(n - <span class="number">1</span>); </span><br><span class="line">        StringBuilder str = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(i &lt; prev.length()) &#123;</span><br><span class="line">            <span class="keyword">char</span> curr = prev.charAt(i);</span><br><span class="line">            <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span>(i+j &lt; prev.length() &amp;&amp; prev.charAt(i+j) == curr) j++;</span><br><span class="line">            str.append(j);</span><br><span class="line">            str.append(curr);</span><br><span class="line">            i += j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> str.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-and-say/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercon
       
     
     </summary>

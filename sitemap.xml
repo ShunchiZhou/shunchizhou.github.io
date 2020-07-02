@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-07-02T05:00:37.258Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/01/937-Reorder-Data-in-Log-Files/</loc>
+    
+    <lastmod>2020-07-02T04:51:49.874Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/01/amazon-road-construction-mst/</loc>
     
     <lastmod>2020-07-02T04:03:29.483Z</lastmod>
@@ -61,13 +75,6 @@
     <loc>http://yoursite.com/2020/07/01/Amazon/</loc>
     
     <lastmod>2020-07-01T22:22:26.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-07-01T19:06:38.312Z</lastmod>
     
   </url>
   
