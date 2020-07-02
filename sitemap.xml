@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/01/amazon-road-construction-mst/</loc>
+    
+    <lastmod>2020-07-02T04:03:29.483Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/01/Prim%E2%80%99s-Algorithm-%E2%80%93-Minimum-Spanning-Tree-MST/</loc>
     
     <lastmod>2020-07-02T03:42:08.811Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://yoursite.com/Interview/index.html</loc>
     
     <lastmod>2020-07-01T22:37:11.441Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/01/amazon-road-construction-mst/</loc>
-    
-    <lastmod>2020-07-01T22:36:31.442Z</lastmod>
     
   </url>
   
