@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>347. Top K Frequent Elements</title>
+    <link href="http://yoursite.com/2020/07/02/347-Top-K-Frequent-Elements/"/>
+    <id>http://yoursite.com/2020/07/02/347-Top-K-Frequent-Elements/</id>
+    <published>2020-07-03T00:00:05.000Z</published>
+    <updated>2020-07-03T00:01:40.656Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/top-k-frequent-elements/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702170044.png" alt></p><p><strong>HashMap + Heap, Time complexity: O(Nlogk)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] topKFrequent(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        Map&lt;Integer,Integer&gt; count=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:nums) count.put(i,count.getOrDefault(i,<span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">        PriorityQueue&lt;Integer&gt; minHeap=<span class="keyword">new</span> PriorityQueue&lt;&gt;(</span><br><span class="line">            (o1,o2)-&gt;count.get(o1)-count.get(o2)</span><br><span class="line">        );</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:count.keySet())&#123;</span><br><span class="line">            minHeap.offer(i);</span><br><span class="line">            <span class="keyword">if</span>(minHeap.size()&gt;k) minHeap.poll();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span>[] topk=<span class="keyword">new</span> <span class="keyword">int</span>[k];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=k-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--) topk[i]=minHeap.poll(); </span><br><span class="line">        <span class="keyword">return</span> topk;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/top-k-frequent-elements/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.git
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>692. Top K Frequent Words</title>
     <link href="http://yoursite.com/2020/07/02/692-Top-K-Frequent-Words/"/>
     <id>http://yoursite.com/2020/07/02/692-Top-K-Frequent-Words/</id>
@@ -412,27 +433,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/trapping-rain-water/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubu
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>41. First Missing Positive</title>
-    <link href="http://yoursite.com/2020/06/28/41-First-Missing-Positive/"/>
-    <id>http://yoursite.com/2020/06/28/41-First-Missing-Positive/</id>
-    <published>2020-06-29T06:43:33.000Z</published>
-    <updated>2020-06-29T07:13:32.459Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/first-missing-positive/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200628234407.png" alt></p><p><strong>Array in-place operation</strong> <a href="https://leetcode.com/problems/first-missing-positive/discuss/17071/My-short-c%2B%2B-solution-O(1" target="_blank" rel="noopener">link</a>-space-and-O(n)-time)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">firstMissingPositive</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">int</span> n = nums.length; </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line"><span class="keyword">while</span> (nums[i] &gt; <span class="number">0</span> &amp;&amp; nums[i] &lt;= n &amp;&amp; nums[nums[i] - <span class="number">1</span>] != nums[i]) &#123;</span><br><span class="line"><span class="keyword">int</span> next = nums[nums[i] - <span class="number">1</span>]; </span><br><span class="line">nums[nums[i] - <span class="number">1</span>] = nums[i];</span><br><span class="line">nums[i] = next; </span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line"><span class="keyword">if</span> (nums[i] != i + <span class="number">1</span>) <span class="keyword">return</span> i+<span class="number">1</span>; </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> nums.length + <span class="number">1</span>; </span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/first-missing-positive/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.gith
       
     
     </summary>

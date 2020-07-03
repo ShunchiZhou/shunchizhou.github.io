@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/07/02/692-Top-K-Frequent-Words/</loc>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-07-02T23:45:14.593Z</lastmod>
+    <lastmod>2020-07-03T00:02:35.531Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/2020/07/02/347-Top-K-Frequent-Elements/</loc>
     
-    <lastmod>2020-07-02T23:41:58.476Z</lastmod>
+    <lastmod>2020-07-03T00:01:40.656Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/02/692-Top-K-Frequent-Words/</loc>
+    
+    <lastmod>2020-07-02T23:45:14.593Z</lastmod>
     
   </url>
   
