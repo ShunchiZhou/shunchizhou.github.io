@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/819-Most-Common-Word/</loc>
+    
+    <lastmod>2020-07-03T02:22:22.543Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-07-03T02:21:35.426Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
     <lastmod>2020-07-03T02:20:55.408Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/819-Most-Common-Word/</loc>
-    
-    <lastmod>2020-07-03T02:20:38.096Z</lastmod>
     
   </url>
   
