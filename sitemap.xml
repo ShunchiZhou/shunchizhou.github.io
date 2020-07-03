@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-03T21:27:06.208Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/03/Amazon-OA-2019-Critical-Routers/</loc>
+    
+    <lastmod>2020-07-03T21:26:33.422Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-07-03T20:45:25.176Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>http://yoursite.com/2020/07/03/Connected-Components-in-an-undirected-graph/</loc>
     
     <lastmod>2020-07-03T20:43:46.080Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/03/Amazon-OA-2019-Critical-Routers/</loc>
-    
-    <lastmod>2020-07-03T20:33:38.715Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-03T19:05:02.636Z</lastmod>
     
   </url>
   
