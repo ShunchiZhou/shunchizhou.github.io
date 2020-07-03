@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-03T22:53:31.186Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/03/1268-Search-Suggestions-System/</loc>
+    
+    <lastmod>2020-07-03T22:52:48.102Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/28/Tries/</loc>
     
     <lastmod>2020-07-03T21:53:08.709Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-07-03T21:45:17.097Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/03/1268-Search-Suggestions-System/</loc>
-    
-    <lastmod>2020-07-03T21:34:53.097Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-03T21:28:17.106Z</lastmod>
     
   </url>
   
