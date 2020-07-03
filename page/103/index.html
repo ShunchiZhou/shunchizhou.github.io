@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">172</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">173</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/23/180-Consecutive-Numbers/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/24/186-Reverse-Words-in-a-String-II/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/05/23/180-Consecutive-Numbers/" class="post-title-link" itemprop="url">180. Consecutive Numbers</a>
+                <a href="/2020/05/24/186-Reverse-Words-in-a-String-II/" class="post-title-link" itemprop="url">186. Reverse Words in a String II</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-05-23 20:14:21 / Modified: 20:16:19" itemprop="dateCreated datePublished" datetime="2020-05-23T20:14:21-07:00">2020-05-23</time>
+              <time title="Created: 2020-05-24 10:50:00 / Modified: 10:50:39" itemprop="dateCreated datePublished" datetime="2020-05-24T10:50:00-07:00">2020-05-24</time>
             
 
             
@@ -504,9 +504,8 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/consecutive-numbers/" target="_blank" rel="noopener">https://leetcode.com/problems/consecutive-numbers/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200523201446.png" alt></p>
-<p><a href="https://leetcode.com/problems/consecutive-numbers/discuss/321205/Runtime%3A-299-ms-faster-than-94.39" target="_blank" rel="noopener">Explanation</a></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Write your MySQL query statement below</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> <span class="keyword">Num</span> <span class="keyword">AS</span> ConsecutiveNums</span><br><span class="line"><span class="keyword">FROM</span> <span class="keyword">Logs</span></span><br><span class="line"><span class="keyword">WHERE</span> (<span class="keyword">Id</span>+<span class="number">1</span>,<span class="keyword">Num</span>) <span class="keyword">IN</span> (<span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">Logs</span>) <span class="keyword">AND</span> (<span class="keyword">Id</span>+<span class="number">2</span>,<span class="keyword">Num</span>) <span class="keyword">IN</span> (<span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">Logs</span>);</span><br></pre></td></tr></table></figure>
+            <p><a href="https://leetcode.com/problems/reverse-words-in-a-string-ii/" target="_blank" rel="noopener">https://leetcode.com/problems/reverse-words-in-a-string-ii/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200524105024.png" alt></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">reverse</span><span class="params">(<span class="keyword">char</span>[] s,<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="keyword">char</span> tmp=s[r];</span><br><span class="line">            s[r--]=s[l];</span><br><span class="line">            s[l++]=tmp;</span><br><span class="line">            <span class="comment">// l++;</span></span><br><span class="line">            <span class="comment">// r--;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">reverseWords</span><span class="params">(<span class="keyword">char</span>[] s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(s==<span class="keyword">null</span>||s.length==<span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">int</span> l=<span class="number">0</span>,r=s.length-<span class="number">1</span>;</span><br><span class="line">        reverse(s,l,r);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> j=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.length;i=j+<span class="number">1</span>)&#123;</span><br><span class="line">            j=i;</span><br><span class="line">            <span class="keyword">while</span>(j&lt;s.length&amp;&amp;s[j]!=<span class="string">' '</span>) j++;</span><br><span class="line">            reverse(s,i,j-<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -551,7 +550,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/102/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/102/">102</a><span class="page-number current">103</span><a class="page-number" href="/page/104/">104</a><span class="space">&hellip;</span><a class="page-number" href="/page/172/">172</a><a class="extend next" rel="next" href="/page/104/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/102/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/102/">102</a><span class="page-number current">103</span><a class="page-number" href="/page/104/">104</a><span class="space">&hellip;</span><a class="page-number" href="/page/173/">173</a><a class="extend next" rel="next" href="/page/104/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -595,7 +594,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">172</span>
+                    <span class="site-state-item-count">173</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
