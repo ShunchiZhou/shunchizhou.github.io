@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-03T18:54:29.436Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/03/588-Design-In-Memory-File-System/</loc>
+    
+    <lastmod>2020-07-03T18:53:43.871Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/03/1192-Critical-Connections-in-a-Network/</loc>
     
     <lastmod>2020-07-03T18:15:59.848Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-07-03T17:19:28.628Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-03T08:19:49.175Z</lastmod>
     
   </url>
   
