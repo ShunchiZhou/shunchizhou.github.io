@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-07-03T19:05:02.636Z</lastmod>
+    <lastmod>2020-07-03T20:35:26.738Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/07/03/Amazon-OA-2019-Critical-Routers/</loc>
     
-    <lastmod>2020-07-03T19:00:26.108Z</lastmod>
+    <lastmod>2020-07-03T20:33:38.715Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-03T19:05:02.636Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2020/07/03/1192-Critical-Connections-in-a-Network/</loc>
     
     <lastmod>2020-07-03T18:15:59.848Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-03T17:19:28.628Z</lastmod>
     
   </url>
   
