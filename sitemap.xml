@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-07-03T00:37:37.330Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-03T00:36:44.717Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/02/763-Partition-Labels/</loc>
+    
+    <lastmod>2020-07-03T00:36:24.593Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/Interview/index.html</loc>
     
     <lastmod>2020-07-03T00:21:29.288Z</lastmod>
@@ -9,23 +30,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-03T00:20:30.065Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2020/07/01/amazon-components-assembly/</loc>
     
     <lastmod>2020-07-03T00:18:26.623Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-07-03T00:02:35.531Z</lastmod>
     
   </url>
   
