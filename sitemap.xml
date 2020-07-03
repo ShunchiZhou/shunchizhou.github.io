@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-07-03T21:43:17.940Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/03/1268-Search-Suggestions-System/</loc>
+    
+    <lastmod>2020-07-03T21:34:53.097Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
     <lastmod>2020-07-03T21:28:17.106Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/2020/07/03/Amazon-OA-2019-Critical-Routers/</loc>
     
     <lastmod>2020-07-03T21:26:33.422Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-03T20:45:25.176Z</lastmod>
     
   </url>
   
