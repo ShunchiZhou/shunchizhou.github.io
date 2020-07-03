@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">170</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">171</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/347-Top-K-Frequent-Elements/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/Amazon/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/02/347-Top-K-Frequent-Elements/" class="post-title-link" itemprop="url">347. Top K Frequent Elements</a>
+                <a href="/2020/07/02/Amazon/" class="post-title-link" itemprop="url">Amazon</a>
               
             
           </h1>
@@ -466,12 +466,24 @@
                 
               
 
-              <time title="Created: 2020-07-02 17:00:05 / Modified: 17:01:40" itemprop="dateCreated datePublished" datetime="2020-07-02T17:00:05-07:00">2020-07-02</time>
+              <time title="Created: 2020-07-02 17:16:50" itemprop="dateCreated datePublished" datetime="2020-07-02T17:16:50-07:00">2020-07-02</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-07-03 12:05:02" itemprop="dateModified" datetime="2020-07-03T12:05:02-07:00">2020-07-03</time>
               
             
           </span>
@@ -504,8 +516,41 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/top-k-frequent-elements/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702170044.png" alt></p>
-<p><strong>HashMap + Heap, Time complexity: O(Nlogk)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] topKFrequent(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        Map&lt;Integer,Integer&gt; count=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:nums) count.put(i,count.getOrDefault(i,<span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">        PriorityQueue&lt;Integer&gt; minHeap=<span class="keyword">new</span> PriorityQueue&lt;&gt;(</span><br><span class="line">            (o1,o2)-&gt;count.get(o1)-count.get(o2)</span><br><span class="line">        );</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:count.keySet())&#123;</span><br><span class="line">            minHeap.offer(i);</span><br><span class="line">            <span class="keyword">if</span>(minHeap.size()&gt;k) minHeap.poll();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span>[] topk=<span class="keyword">new</span> <span class="keyword">int</span>[k];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=k-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--) topk[i]=minHeap.poll(); </span><br><span class="line">        <span class="keyword">return</span> topk;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+            <ul>
+<li><a href="https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions" target="_blank" rel="noopener">Amazon Online Assessment Questions</a></li>
+<li><a href="https://shunchizhou.com/2020/07/02/amazon-summary/" target="_blank" rel="noopener">Amazon summary</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://shunchizhou.com/2020/07/01/amazon-components-assembly/" target="_blank" rel="noopener">零件组装题</a></li>
+<li><a href="https://shunchizhou.com/2020/07/01/amazon-road-construction-mst/" target="_blank" rel="noopener">城市建路题</a></li>
+<li><a href="https://shunchizhou.com/2020/07/02/amazon-find-substrings/" target="_blank" rel="noopener">find substrings</a></li>
+<li><a href="https://leetcode.com/discuss/interview-question/542597/" target="_blank" rel="noopener">Amazon | OA 2020 | Top K Frequently Mentioned Keywords</a> -&gt; 692. Top K Frequent Words</li>
+<li>[Amazon | OA 2019 | Treasure Island] <strong><a href="https://leetcode.com/discuss/interview-question/347457/Amazon-or-OA-2019-or-Treasure-Island" target="_blank" rel="noopener">Description</a></strong> <strong><a href="https://shunchizhou.com/2020/07/02/amazon-Treasure-Island/" target="_blank" rel="noopener">Code</a></strong> -&gt; 994. Rotting Oranges</li>
+<li>[Optimal Utilization, 04/20] <strong><a href="https://leetcode.com/discuss/interview-question/373202" target="_blank" rel="noopener">Description</a></strong> <strong><a href="https://shunchizhou.com/2020/07/02/amazon-Optimal-Utilization/" target="_blank" rel="noopener">Code</a></strong></li>
+<li><a href="https://leetcode.com/discuss/interview-question/455793/amazon-oa-2019-top-n-competitors-zombie-in-matrix" target="_blank" rel="noopener">Amazon | OA 2019 | Top N competitors &amp; Zombie in Matrix, 04/01</a></li>
+<li>[Amazon | OA 2019 | Zombie in Matrix, 02/26|03/10] <strong><a href="https://leetcode.com/discuss/interview-question/411357/" target="_blank" rel="noopener">Description</a></strong> <strong><a href="https://shunchizhou.com/2020/07/02/amazon-Zombie-in-Matrix/" target="_blank" rel="noopener">Code</a></strong> -&gt; 994. Rotting Oranges</li>
+<li>[Amazon | OA 2019 | Critical Routers] <strong><a href="https://leetcode.com/discuss/interview-question/436073/" target="_blank" rel="noopener">Description</a></strong> <strong><a href="https://shunchizhou.com/2020/07/02/Amazon-OA-2019-Critical-Routers" target="_blank" rel="noopener">Code</a></strong> -&gt; 1192. Critical Connections in a Network</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://shunchizhou.com/2020/03/28/200-Number-of-Islands/" target="_blank" rel="noopener">200. Number of Islands, 07/02|05/08|03/07</a> </li>
+<li><a href="https://shunchizhou.com/2020/07/02/692-Top-K-Frequent-Words/" target="_blank" rel="noopener">692. Top K Frequent Words, 05/31|06/20|06/19|05/10|04/17</a></li>
+<li><a href="https://shunchizhou.com/2020/07/01/937-Reorder-Data-in-Log-Files/" target="_blank" rel="noopener">937. Reorder Data in Log Files, 07/02|05/31|06/20|06/19|05/10|05/08|04/20|04/17</a></li>
+<li><a href="https://shunchizhou.com/2020/07/02/763-Partition-Labels/" target="_blank" rel="noopener">763. Partition Labels, 06/03</a></li>
+<li><a href="https://shunchizhou.com/2020/07/02/819-Most-Common-Word/" target="_blank" rel="noopener">819. Most Common Word, 06/03</a></li>
+<li><a href="https://shunchizhou.com/2020/07/03/588-Design-In-Memory-File-System" target="_blank" rel="noopener">588. Design In-Memory File System</a></li>
+<li><a href="https://shunchizhou.com/2020/07/03/1192-Critical-Connections-in-a-Network/" target="_blank" rel="noopener">1192. Critical Connections in a Network, 03/26</a></li>
+<li><a href="https://shunchizhou.com/2020/07/02/240-Search-a-2D-Matrix-II/" target="_blank" rel="noopener">240. Search a 2D Matrix II, 03/25</a></li>
+<li>[994. Rotting Oranges, 03/04|03/07] <strong><a href="https://leetcode.com/problems/rotting-oranges/" target="_blank" rel="noopener">Description</a></strong> <strong><a href="https://shunchizhou.com/2020/07/02/994-Rotting-Oranges/" target="_blank" rel="noopener">Code</a></strong></li>
+<li><a href="https://shunchizhou.com/2020/06/10/1-Two-Sum/" target="_blank" rel="noopener">1. Two Sum, 04/21</a> </li>
+<li><a href="https://leetcode.com/problems/as-far-from-land-as-possible/" target="_blank" rel="noopener">1162. As Far from Land as Possible, 03/04</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://leetcode.com/problems/k-empty-slots/" target="_blank" rel="noopener">683. K Empty Slots</a></li>
+<li><a href="https://leetcode.com/problems/search-suggestions-system/" target="_blank" rel="noopener">1268. Search Suggestions System</a></li>
+</ul>
 
           
         
@@ -551,7 +596,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/13/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/">15</a><span class="space">&hellip;</span><a class="page-number" href="/page/170/">170</a><a class="extend next" rel="next" href="/page/15/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/13/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/">15</a><span class="space">&hellip;</span><a class="page-number" href="/page/171/">171</a><a class="extend next" rel="next" href="/page/15/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -595,7 +640,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">170</span>
+                    <span class="site-state-item-count">171</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
