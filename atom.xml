@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>240. Search a 2D Matrix II</title>
+    <link href="http://yoursite.com/2020/07/02/240-Search-a-2D-Matrix-II/"/>
+    <id>http://yoursite.com/2020/07/02/240-Search-a-2D-Matrix-II/</id>
+    <published>2020-07-03T02:34:58.000Z</published>
+    <updated>2020-07-03T02:37:31.483Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/search-a-2d-matrix-ii/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702193720.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/search-a-2d-matrix-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githu
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>819. Most Common Word</title>
     <link href="http://yoursite.com/2020/07/02/819-Most-Common-Word/"/>
     <id>http://yoursite.com/2020/07/02/819-Most-Common-Word/</id>
@@ -86,17 +107,16 @@
     <link href="http://yoursite.com/2020/07/02/Amazon/"/>
     <id>http://yoursite.com/2020/07/02/Amazon/</id>
     <published>2020-07-03T00:16:50.000Z</published>
-    <updated>2020-07-03T02:20:55.408Z</updated>
+    <updated>2020-07-03T03:16:40.593Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><a href="https://shunchizhou.com/2020/07/01/amazon-components-assembly/" target="_blank" rel="noopener">零件组装题</a></li><li><a href="https://shunchizhou.com/2020/07/01/amazon-road-construction-mst/" target="_blank" rel="noopener">城市建路题</a></li><li><a href="https://shunchizhou.com/2020/07/02/amazon-find-substrings/" target="_blank" rel="noopener">find substrings</a></li><li><a href="https://leetcode.com/discuss/interview-question/542597/" target="_blank" rel="noopener">Amazon | OA 2020 | Top K Frequently Mentioned Keywords</a></li><li><a href="https://shunchizhou.com/2020/07/01/937-Reorder-Data-in-Log-Files/" target="_blank" rel="noopener">937. Reorder Data in Log Files</a></li><li><a href="https://shunchizhou.com/2020/07/02/763-Partition-Labels/" target="_blank" rel="noopener">763. Partition Labels</a></li><li><a href="https://shunchizhou.com/2020/07/02/819-Most-Common-Word/" target="_blank" rel="noopener">819. Most Common Word</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li><a href="https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions" target="_blank" rel="noopener">Amazon Online Assessment Questions</a></li><li><a href="https://shunchizhou.com/2020/07/01/amazon-components-assembly/" target="_blank" rel="noopener">零件组装题</a></li><li><a href="https://shunchizhou.com/2020/07/01/amazon-road-construction-mst/" target="_blank" rel="noopener">城市建路题</a></li><li><a href="https://shunchizhou.com/2020/07/02/amazon-find-substrings/" target="_blank" rel="noopener">find substrings</a></li><li><a href="https://leetcode.com/discuss/interview-question/542597/" target="_blank" rel="noopener">Amazon | OA 2020 | Top K Frequently Mentioned Keywords</a></li><li><a href="https://shunchizhou.com/2020/03/28/200-Number-of-Islands/" target="_blank" rel="noopener">200. Number of Islands, 07/02|05/08|03/07</a> </li><li><a href="https://shunchizhou.com/2020/07/02/692-Top-K-Frequent-Words/" target="_blank" rel="noopener">692. Top K Frequent Words, 05/31|06/20|06/19|05/10|04/17</a></li><li><a href="https://shunchizhou.com/2020/07/01/937-Reorder-Data-in-Log-Files/" target="_blank" rel="noopener">937. Reorder Data in Log Files, 07/02|05/31|06/20|06/19|05/10|05/08|04/20|04/17</a></li><li><a href="https://shunchizhou.com/2020/07/02/763-Partition-Labels/" target="_blank" rel="noopener">763. Partition Labels, 06/03</a></li><li><a href="https://shunchizhou.com/2020/07/02/819-Most-Common-Word/" target="_blank" rel="noopener">819. Most Common Word, 06/03</a></li><li><a href="https://leetcode.com/discuss/interview-question/373202" target="_blank" rel="noopener">Optimal Utilization, 04/20</a></li><li><a href="https://leetcode.com/discuss/interview-question/455793/amazon-oa-2019-top-n-competitors-zombie-in-matrix" target="_blank" rel="noopener">Amazon | OA 2019 | Top N competitors &amp; Zombie in Matrix, 04/01</a></li><li><a href="https://leetcode.com/problems/design-in-memory-file-system/" target="_blank" rel="noopener">588. Design In-Memory File System</a></li><li><a href>1192. Critical Connections in a Network, 03/26</a></li><li><a href>240. Search a 2D Matrix II, 03/25</a></li><li><a href="https://leetcode.com/problems/rotting-oranges/" target="_blank" rel="noopener">994. Rotting Oranges, 03/04|03/07</a></li><li><a href="https://shunchizhou.com/2020/06/10/1-Two-Sum/" target="_blank" rel="noopener">1. Two Sum, 04/21</a> </li><li><a href="https://leetcode.com/discuss/interview-question/411357/" target="_blank" rel="noopener">Amazon | OA 2019 | 🧟‍♀️ Zombie in Matrix, 03/10</a></li><li><a href="https://leetcode.com/problems/as-far-from-land-as-possible/" target="_blank" rel="noopener">1162. As Far from Land as Possible, 03/04</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://shunchizhou.com/2020/07/01/amazon-components-assembly/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;零件组装题&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=
+&lt;li&gt;&lt;a href=&quot;https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
       
     
     </summary>
@@ -414,27 +434,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/permutations/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercont
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>45. Jump Game II</title>
-    <link href="http://yoursite.com/2020/06/30/45-Jump-Game-II/"/>
-    <id>http://yoursite.com/2020/06/30/45-Jump-Game-II/</id>
-    <published>2020-07-01T03:56:44.000Z</published>
-    <updated>2020-07-01T06:48:21.571Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/jump-game-ii/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200630205719.png" alt></p><p><strong>Approach 1: Brute Force, Time Complexity: O(2^N)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">jump</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len=nums.length;</span><br><span class="line">        Integer[] minStep=<span class="keyword">new</span> Integer[len];</span><br><span class="line">        minStep[<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&lt;i+nums[i-<span class="number">1</span>];j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(minStep[j]==<span class="keyword">null</span>) minStep[j]=minStep[i-<span class="number">1</span>]+<span class="number">1</span>;</span><br><span class="line">                minStep[j]=Math.min(minStep[i-<span class="number">1</span>]+<span class="number">1</span>,minStep[j]);</span><br><span class="line">                <span class="keyword">if</span>(j==len-<span class="number">1</span>) <span class="keyword">return</span> minStep[len-<span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> minStep[len-<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><strong>Approach 2: Greedy, Moving Forward, O(N) time and O(1) space.</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">jump</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len=nums.length;</span><br><span class="line">        <span class="keyword">if</span>(len&lt;<span class="number">2</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> maxPos=nums[<span class="number">0</span>],maxSteps=nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">int</span> jumps=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(maxSteps&lt;i)&#123;</span><br><span class="line">                jumps++;</span><br><span class="line">                maxSteps=maxPos;</span><br><span class="line">            &#125;</span><br><span class="line">            maxPos=Math.max(maxPos,i+nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jumps;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/jump-game-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercont
       
     
     </summary>
