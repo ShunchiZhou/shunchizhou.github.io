@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/07/02/240-Search-a-2D-Matrix-II/</loc>
+    <loc>http://yoursite.com/DSA/index.html</loc>
     
-    <lastmod>2020-07-03T07:36:28.854Z</lastmod>
+    <lastmod>2020-07-03T17:19:28.628Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/03/1192-Critical-Connections-in-a-Network/</loc>
+    
+    <lastmod>2020-07-03T08:35:46.910Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
-    <lastmod>2020-07-03T07:04:33.938Z</lastmod>
+    <lastmod>2020-07-03T08:19:49.175Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/02/240-Search-a-2D-Matrix-II/</loc>
+    
+    <lastmod>2020-07-03T07:36:28.854Z</lastmod>
     
   </url>
   
@@ -131,13 +145,6 @@
     <loc>http://yoursite.com/2020/07/01/Prim%E2%80%99s-Algorithm-%E2%80%93-Minimum-Spanning-Tree-MST/</loc>
     
     <lastmod>2020-07-02T03:42:08.811Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-02T03:37:37.226Z</lastmod>
     
   </url>
   
