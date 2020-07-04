@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-07-04T04:48:07.027Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
     <lastmod>2020-07-04T04:38:43.318Z</lastmod>
@@ -96,13 +103,6 @@
     <loc>http://yoursite.com/2020/07/02/amazon-Treasure-Island/</loc>
     
     <lastmod>2020-07-03T05:40:06.772Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-07-03T05:23:44.400Z</lastmod>
     
   </url>
   
