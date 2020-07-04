@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/240-Search-a-2D-Matrix-II/</loc>
+    
+    <lastmod>2020-07-04T09:12:22.827Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/04/572-Subtree-of-Another-Tree/</loc>
     
     <lastmod>2020-07-04T09:09:11.505Z</lastmod>
@@ -103,13 +110,6 @@
     <loc>http://yoursite.com/2020/07/03/1192-Critical-Connections-in-a-Network/</loc>
     
     <lastmod>2020-07-03T18:15:59.848Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/240-Search-a-2D-Matrix-II/</loc>
-    
-    <lastmod>2020-07-03T07:36:28.854Z</lastmod>
     
   </url>
   
