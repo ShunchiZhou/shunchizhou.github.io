@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-04T08:54:27.218Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/04/572-Subtree-of-Another-Tree/</loc>
+    
+    <lastmod>2020-07-04T08:51:10.554Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/06/18/23-Merge-k-Sorted-Lists/</loc>
     
     <lastmod>2020-07-04T07:26:31.090Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/2020/05/05/138-Copy-List-with-Random-Pointer/</loc>
     
     <lastmod>2020-07-04T06:52:17.270Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-04T04:38:43.318Z</lastmod>
     
   </url>
   

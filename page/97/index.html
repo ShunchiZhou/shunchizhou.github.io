@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">175</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">176</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/27/Collections-Comparison/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/01/209-Minimum-Size-Subarray-Sum/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/05/27/Collections-Comparison/" class="post-title-link" itemprop="url">Collections Comparison</a>
+                <a href="/2020/06/01/209-Minimum-Size-Subarray-Sum/" class="post-title-link" itemprop="url">209. Minimum Size Subarray Sum</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-05-27 22:25:46 / Modified: 22:26:40" itemprop="dateCreated datePublished" datetime="2020-05-27T22:25:46-07:00">2020-05-27</time>
+              <time title="Created: 2020-06-01 23:22:39 / Modified: 23:31:20" itemprop="dateCreated datePublished" datetime="2020-06-01T23:22:39-07:00">2020-06-01</time>
             
 
             
@@ -504,7 +504,8 @@
       
         
           
-            <p><a href="https://discuss.codechef.com/t/java-collections-tutorial-part-2/13327" target="_blank" rel="noopener">https://discuss.codechef.com/t/java-collections-tutorial-part-2/13327</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200527222606.png" alt></p>
+            <p><a href="https://leetcode.com/problems/minimum-size-subarray-sum/" target="_blank" rel="noopener">https://leetcode.com/problems/minimum-size-subarray-sum/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200601232304.png" alt></p>
+<p><strong>two pointers</strong><br><a href="https://leetcode.com/problems/minimum-size-subarray-sum/discuss/59078/Accepted-clean-Java-O(n" target="_blank" rel="noopener">Explanation</a>-solution-(two-pointers))<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minSubArrayLen</span><span class="params">(<span class="keyword">int</span> s, <span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums==<span class="keyword">null</span>||nums.length==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> l=<span class="number">0</span>,r=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> minLen=Integer.MAX_VALUE;</span><br><span class="line">        <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(r&lt;nums.length)&#123;  </span><br><span class="line">            sum+=nums[r++];</span><br><span class="line">            <span class="keyword">while</span>(sum&gt;=s)&#123;</span><br><span class="line">                minLen=r-l&lt;minLen?r-l:minLen;</span><br><span class="line">                sum-=nums[l++];</span><br><span class="line">            &#125;             </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> minLen==Integer.MAX_VALUE?<span class="number">0</span>:minLen;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">class Solution &#123;</span></span><br><span class="line"><span class="comment">    public int minSubArrayLen(int s, int[] nums) &#123;</span></span><br><span class="line"><span class="comment">        if(nums==null||nums.length==0) return 0;</span></span><br><span class="line"><span class="comment">        int l=0,r=0;</span></span><br><span class="line"><span class="comment">        int minLen=Integer.MAX_VALUE;</span></span><br><span class="line"><span class="comment">        int sum=0;</span></span><br><span class="line"><span class="comment">        while(l&lt;=r&amp;&amp;r&lt;=nums.length)&#123; </span></span><br><span class="line"><span class="comment">            if(sum&lt;s&amp;&amp;r==nums.length) break;</span></span><br><span class="line"><span class="comment">            if(sum&lt;s)&#123; </span></span><br><span class="line"><span class="comment">                sum+=nums[r];</span></span><br><span class="line"><span class="comment">                r++;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            if(sum&gt;=s)&#123;</span></span><br><span class="line"><span class="comment">                minLen=r-l&lt;minLen?r-l:minLen;</span></span><br><span class="line"><span class="comment">                sum-=nums[l];</span></span><br><span class="line"><span class="comment">                l++;</span></span><br><span class="line"><span class="comment">            &#125;             </span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return minLen==Integer.MAX_VALUE?0:minLen;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -550,7 +551,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/96/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/96/">96</a><span class="page-number current">97</span><a class="page-number" href="/page/98/">98</a><span class="space">&hellip;</span><a class="page-number" href="/page/175/">175</a><a class="extend next" rel="next" href="/page/98/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/96/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/96/">96</a><span class="page-number current">97</span><a class="page-number" href="/page/98/">98</a><span class="space">&hellip;</span><a class="page-number" href="/page/176/">176</a><a class="extend next" rel="next" href="/page/98/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -594,7 +595,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">175</span>
+                    <span class="site-state-item-count">176</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
