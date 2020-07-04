@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">176</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">177</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/28/36-Valid-Sudoku/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/28/37-Sudoku-Solver/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/06/28/36-Valid-Sudoku/" class="post-title-link" itemprop="url">36. Valid Sudoku</a>
+                <a href="/2020/06/28/37-Sudoku-Solver/" class="post-title-link" itemprop="url">37. Sudoku Solver</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-06-28 16:36:32 / Modified: 16:38:40" itemprop="dateCreated datePublished" datetime="2020-06-28T16:36:32-07:00">2020-06-28</time>
+              <time title="Created: 2020-06-28 16:39:44 / Modified: 17:15:02" itemprop="dateCreated datePublished" datetime="2020-06-28T16:39:44-07:00">2020-06-28</time>
             
 
             
@@ -504,8 +504,8 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/valid-sudoku/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200628162458.png" alt></p>
-<p><strong>2D Array, HashSet</strong> <a href="https://leetcode.com/problems/valid-sudoku/discuss/15472/Short%2BSimple-Java-using-Strings" target="_blank" rel="noopener">link</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidSudoku</span><span class="params">(<span class="keyword">char</span>[][] board)</span> </span>&#123;</span><br><span class="line">        Set&lt;String&gt; check=<span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">9</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">9</span>;j++)&#123;</span><br><span class="line">                <span class="keyword">char</span> ch=board[i][j];</span><br><span class="line">                <span class="keyword">if</span>(ch!=<span class="string">'.'</span>)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(!check.add(ch+<span class="string">"in row"</span>+i)||</span><br><span class="line">                       !check.add(ch+<span class="string">"in colum"</span>+j)||</span><br><span class="line">                       !check.add(ch+<span class="string">"in box"</span>+i/<span class="number">3</span>+<span class="string">"-"</span>+j/<span class="number">3</span>)</span><br><span class="line">                       )&#123;</span><br><span class="line">                          <span class="keyword">return</span> <span class="keyword">false</span>; </span><br><span class="line">                       &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+            <p><a href="https://leetcode.com/problems/sudoku-solver/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200628164058.png" alt></p>
+<p><strong>BackTracking</strong> <a href="https://leetcode.com/problems/sudoku-solver/discuss/15752/Straight-Forward-Java-Solution-Using-Backtracking" target="_blank" rel="noopener">link</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">solveSudoku</span><span class="params">(<span class="keyword">char</span>[][] board)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(board==<span class="keyword">null</span>||board.length==<span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">        solve(board);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">solve</span><span class="params">(<span class="keyword">char</span>[][] board)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;board.length;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;board[<span class="number">0</span>].length;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(board[i][j]==<span class="string">'.'</span>)&#123;</span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">char</span> c=<span class="string">'1'</span>;c&lt;=<span class="string">'9'</span>;c++)&#123;</span><br><span class="line">                        <span class="keyword">if</span>(isValid(board,i,j,c))&#123;</span><br><span class="line">                            board[i][j]=c;</span><br><span class="line">                            <span class="keyword">if</span>(solve(board)) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                            <span class="keyword">else</span> board[i][j]=<span class="string">'.'</span>;</span><br><span class="line">                        &#125;                        </span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;                </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isValid</span><span class="params">(<span class="keyword">char</span>[][] board,<span class="keyword">int</span> row,<span class="keyword">int</span> column,<span class="keyword">char</span> c)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> blkrow=<span class="number">3</span>*(row/<span class="number">3</span>),blkcol=<span class="number">3</span>*(column/<span class="number">3</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;board.length;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(board[row][i]==c </span><br><span class="line">               || board[i][column]==c </span><br><span class="line">               || board[blkrow+i/<span class="number">3</span>][blkcol+i%<span class="number">3</span>]==c) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -551,7 +551,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/43/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><span class="page-number current">44</span><a class="page-number" href="/page/45/">45</a><span class="space">&hellip;</span><a class="page-number" href="/page/176/">176</a><a class="extend next" rel="next" href="/page/45/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/43/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><span class="page-number current">44</span><a class="page-number" href="/page/45/">45</a><span class="space">&hellip;</span><a class="page-number" href="/page/177/">177</a><a class="extend next" rel="next" href="/page/45/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -595,7 +595,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">176</span>
+                    <span class="site-state-item-count">177</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-04T09:16:45.543Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/04/Amazon-OA-2019-Favorite-Genres/</loc>
+    
+    <lastmod>2020-07-04T09:15:53.279Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/02/240-Search-a-2D-Matrix-II/</loc>
     
     <lastmod>2020-07-04T09:13:06.130Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-07-04T08:55:18.713Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-04T08:54:27.218Z</lastmod>
     
   </url>
   
