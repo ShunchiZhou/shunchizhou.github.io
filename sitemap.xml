@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/18/23-Merge-k-Sorted-Lists/</loc>
+    
+    <lastmod>2020-07-04T07:26:31.090Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-07-04T07:09:20.067Z</lastmod>
@@ -467,13 +474,6 @@
     <loc>http://yoursite.com/2020/06/19/24-Swap-Nodes-in-Pairs/</loc>
     
     <lastmod>2020-06-19T19:26:09.834Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/18/23-Merge-k-Sorted-Lists/</loc>
-    
-    <lastmod>2020-06-19T18:59:51.522Z</lastmod>
     
   </url>
   
