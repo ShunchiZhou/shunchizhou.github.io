@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/14/22-Generate-Parentheses/</loc>
+    
+    <lastmod>2020-07-05T19:00:00.802Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/05/973-K-Closest-Points-to-Origin/</loc>
     
     <lastmod>2020-07-05T18:25:48.503Z</lastmod>
@@ -558,13 +565,6 @@
     <loc>http://yoursite.com/2020/06/19/24-Swap-Nodes-in-Pairs/</loc>
     
     <lastmod>2020-06-19T19:26:09.834Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/14/22-Generate-Parentheses/</loc>
-    
-    <lastmod>2020-06-15T06:58:48.324Z</lastmod>
     
   </url>
   
