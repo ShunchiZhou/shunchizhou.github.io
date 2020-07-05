@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
-    <lastmod>2020-07-05T06:15:15.941Z</lastmod>
+    <lastmod>2020-07-05T16:51:36.284Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    <loc>http://yoursite.com/2020/07/05/Amazon-OA-2019-Substrings-of-size-K-with-K-distinct-chars/</loc>
     
-    <lastmod>2020-07-05T06:14:44.791Z</lastmod>
+    <lastmod>2020-07-05T16:50:02.393Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
+    
+    <lastmod>2020-07-05T07:17:03.403Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-07-05T06:15:15.941Z</lastmod>
     
   </url>
   
@@ -663,13 +677,6 @@
     <loc>http://yoursite.com/2020/06/12/Manacher/</loc>
     
     <lastmod>2020-06-13T05:57:48.899Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
-    
-    <lastmod>2020-06-13T05:57:05.882Z</lastmod>
     
   </url>
   
