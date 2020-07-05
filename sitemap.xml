@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/04/Amazon-OA-2019-Substrings-with-exactly-K-distinct-chars/</loc>
+    
+    <lastmod>2020-07-05T05:10:18.740Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/04/992-Subarrays-with-K-Different-Integers/</loc>
+    
+    <lastmod>2020-07-05T05:08:51.813Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
     <lastmod>2020-07-05T04:54:51.524Z</lastmod>
@@ -9,23 +23,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/07/04/992-Subarrays-with-K-Different-Integers/</loc>
-    
-    <lastmod>2020-07-05T04:53:54.328Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/General/index.html</loc>
     
     <lastmod>2020-07-05T00:38:38.963Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/04/Amazon-OA-2019-Substrings-with-exactly-K-distinct-chars/</loc>
-    
-    <lastmod>2020-07-05T00:24:16.479Z</lastmod>
     
   </url>
   
