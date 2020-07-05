@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-07-05T21:58:32.818Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
+    
+    <lastmod>2020-07-05T21:46:07.623Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
     <lastmod>2020-07-05T19:03:35.207Z</lastmod>
@@ -191,13 +205,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-03T21:45:17.097Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2020/07/03/Amazon-OA-2019-Critical-Routers/</loc>
     
     <lastmod>2020-07-03T21:26:33.422Z</lastmod>
@@ -348,13 +355,6 @@
     <loc>http://yoursite.com/2020/07/01/Disjoint-Set-Union-Find/</loc>
     
     <lastmod>2020-07-02T00:17:32.209Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
-    
-    <lastmod>2020-07-02T00:05:29.972Z</lastmod>
     
   </url>
   
