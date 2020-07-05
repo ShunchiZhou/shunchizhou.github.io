@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-05T06:14:44.791Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/04/Amazon-OA-2019-Max-Of-Min-Altitudes/</loc>
     
     <lastmod>2020-07-05T06:13:37.896Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://yoursite.com/General/index.html</loc>
     
     <lastmod>2020-07-05T05:41:26.524Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-05T05:28:44.375Z</lastmod>
     
   </url>
   
