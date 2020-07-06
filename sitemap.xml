@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/03/1192-Critical-Connections-in-a-Network/</loc>
+    
+    <lastmod>2020-07-06T05:36:03.583Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/03/588-Design-In-Memory-File-System/</loc>
     
     <lastmod>2020-07-06T05:29:55.311Z</lastmod>
@@ -285,13 +292,6 @@
     <loc>http://yoursite.com/2020/03/28/Tries/</loc>
     
     <lastmod>2020-07-03T21:53:08.709Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/03/1192-Critical-Connections-in-a-Network/</loc>
-    
-    <lastmod>2020-07-03T18:15:59.848Z</lastmod>
     
   </url>
   
