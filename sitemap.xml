@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/01/937-Reorder-Data-in-Log-Files/</loc>
+    
+    <lastmod>2020-07-06T02:37:01.419Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/05/Amazon-OA-2019-Subtree-with-Maximum-Average/</loc>
     
     <lastmod>2020-07-06T02:31:25.033Z</lastmod>
@@ -327,13 +334,6 @@
     <loc>http://yoursite.com/2020/07/02/692-Top-K-Frequent-Words/</loc>
     
     <lastmod>2020-07-02T23:45:14.593Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/01/937-Reorder-Data-in-Log-Files/</loc>
-    
-    <lastmod>2020-07-02T23:23:35.258Z</lastmod>
     
   </url>
   
