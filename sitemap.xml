@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-07-06T04:25:07.134Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/03/Connected-Components-in-an-undirected-graph/</loc>
+    
+    <lastmod>2020-07-06T04:22:52.896Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/03/Amazon-OA-2019-Critical-Routers/</loc>
+    
+    <lastmod>2020-07-06T04:22:29.231Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/02/994-Rotting-Oranges/</loc>
     
     <lastmod>2020-07-06T04:11:17.845Z</lastmod>
@@ -54,13 +75,6 @@
     <loc>http://yoursite.com/2020/07/05/Amazon-OA-2019-Min-Cost-to-Connect-All-Nodes/</loc>
     
     <lastmod>2020-07-06T00:08:15.538Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-05T23:03:37.186Z</lastmod>
     
   </url>
   
@@ -250,20 +264,6 @@
     <loc>http://yoursite.com/2020/03/28/Tries/</loc>
     
     <lastmod>2020-07-03T21:53:08.709Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/03/Amazon-OA-2019-Critical-Routers/</loc>
-    
-    <lastmod>2020-07-03T21:26:33.422Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/03/Connected-Components-in-an-undirected-graph/</loc>
-    
-    <lastmod>2020-07-03T20:43:46.080Z</lastmod>
     
   </url>
   
