@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-07-06T16:27:50.003Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/05/957-Prison-Cells-After-N-Days/</loc>
     
     <lastmod>2020-07-06T15:19:38.104Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://yoursite.com/2020/07/02/763-Partition-Labels/</loc>
     
     <lastmod>2020-07-06T04:41:04.459Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-06T04:25:07.134Z</lastmod>
     
   </url>
   
