@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-07-06T18:27:17.712Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/03/1268-Search-Suggestions-System/</loc>
+    
+    <lastmod>2020-07-06T18:19:17.384Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-07-06T16:27:50.003Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
     <lastmod>2020-07-06T15:04:50.867Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/03/1268-Search-Suggestions-System/</loc>
-    
-    <lastmod>2020-07-06T05:56:04.204Z</lastmod>
     
   </url>
   
@@ -159,13 +166,6 @@
     <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
     
     <lastmod>2020-07-05T07:17:03.403Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-07-05T06:15:15.941Z</lastmod>
     
   </url>
   
