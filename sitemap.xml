@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-06T05:48:41.434Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/03/1192-Critical-Connections-in-a-Network/</loc>
     
     <lastmod>2020-07-06T05:36:03.583Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2020/07/04/Amazon-OA-2019-Substrings-with-exactly-K-distinct-chars/</loc>
     
     <lastmod>2020-07-06T05:14:46.327Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-06T05:01:29.185Z</lastmod>
     
   </url>
   
