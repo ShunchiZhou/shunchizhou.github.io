@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-06T03:59:21.810Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/01/937-Reorder-Data-in-Log-Files/</loc>
     
     <lastmod>2020-07-06T02:37:01.419Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/2020/07/05/1120-Maximum-Average-Subtree/</loc>
     
     <lastmod>2020-07-06T02:29:23.480Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-06T01:51:27.327Z</lastmod>
     
   </url>
   
