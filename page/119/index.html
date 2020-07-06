@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">185</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">187</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/19/172-Factorial-Trailing-Zeroes/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/23/179-Largest-Number/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/05/19/172-Factorial-Trailing-Zeroes/" class="post-title-link" itemprop="url">172. Factorial Trailing Zeroes</a>
+                <a href="/2020/05/23/179-Largest-Number/" class="post-title-link" itemprop="url">179. Largest Number</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-05-19 11:35:30 / Modified: 12:04:14" itemprop="dateCreated datePublished" datetime="2020-05-19T11:35:30-07:00">2020-05-19</time>
+              <time title="Created: 2020-05-23 12:38:04 / Modified: 12:43:30" itemprop="dateCreated datePublished" datetime="2020-05-23T12:38:04-07:00">2020-05-23</time>
             
 
             
@@ -504,10 +504,9 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/factorial-trailing-zeroes/" target="_blank" rel="noopener">https://leetcode.com/problems/factorial-trailing-zeroes/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200519113612.png" alt></p>
-<p>Explanation: <a href="https://leetcode.com/problems/factorial-trailing-zeroes/discuss/52371/My-one-line-solutions-in-3-languages" target="_blank" rel="noopener">ref.1</a> <a href="https://leetcode.com/problems/factorial-trailing-zeroes/discuss/196311/topic" target="_blank" rel="noopener">ref.2</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">trailingZeroes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n==<span class="number">0</span>?<span class="number">0</span>:n/<span class="number">5</span>+trailingZeroes(n/<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<hr>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* factorial -&gt; overflow</span></span><br><span class="line"><span class="comment">class Solution &#123;</span></span><br><span class="line"><span class="comment">    public int trailingZeroes(int n) &#123;</span></span><br><span class="line"><span class="comment">        String facNum=String.valueOf(fac((long)n));</span></span><br><span class="line"><span class="comment">        int cnt=0;</span></span><br><span class="line"><span class="comment">        for(int i=facNum.length()-1;i&gt;=0;i--)&#123;</span></span><br><span class="line"><span class="comment">            if(facNum.charAt(i)=='0') cnt++;</span></span><br><span class="line"><span class="comment">            if(facNum.charAt(i)!='0') break;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return cnt;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    public long fac(long n)&#123;</span></span><br><span class="line"><span class="comment">        if(n&lt;=1) return 1;</span></span><br><span class="line"><span class="comment">        return n*fac(n-1);</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure>
+            <p><a href="https://leetcode.com/problems/largest-number/" target="_blank" rel="noopener">https://leetcode.com/problems/largest-number/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200523123836.png" alt></p>
+<p><a href="https://leetcode.com/problems/largest-number/discuss/53158/My-Java-Solution-to-share" target="_blank" rel="noopener">Explanation</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">largestNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums==<span class="keyword">null</span>||nums.length==<span class="number">0</span>) <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">int</span> len=nums.length;</span><br><span class="line">        String[] strs=<span class="keyword">new</span> String[len];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            strs[i]=String.valueOf(nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        Arrays.sort(strs,(s1,s2)-&gt;(s2+s1).compareTo(s1+s2));</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(strs[<span class="number">0</span>].charAt(<span class="number">0</span>)==<span class="string">'0'</span>) <span class="keyword">return</span> <span class="string">"0"</span>;</span><br><span class="line">        </span><br><span class="line">        StringBuilder res=<span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span>(String s:strs) res.append(s);</span><br><span class="line">        <span class="keyword">return</span> res.toString();    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
           
         
       
@@ -552,7 +551,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/118/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/118/">118</a><span class="page-number current">119</span><a class="page-number" href="/page/120/">120</a><span class="space">&hellip;</span><a class="page-number" href="/page/185/">185</a><a class="extend next" rel="next" href="/page/120/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/118/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/118/">118</a><span class="page-number current">119</span><a class="page-number" href="/page/120/">120</a><span class="space">&hellip;</span><a class="page-number" href="/page/187/">187</a><a class="extend next" rel="next" href="/page/120/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -596,7 +595,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">185</span>
+                    <span class="site-state-item-count">187</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
