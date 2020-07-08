@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">189</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">190</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/07/Amazon-Interview/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/07/348-Design-Tic-Tac-Toe/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/07/Amazon-Interview/" class="post-title-link" itemprop="url">Amazon Interview</a>
+                <a href="/2020/07/07/348-Design-Tic-Tac-Toe/" class="post-title-link" itemprop="url">348. Design Tic-Tac-Toe</a>
               
             
           </h1>
@@ -466,12 +466,24 @@
                 
               
 
-              <time title="Created: 2020-07-07 22:45:29 / Modified: 22:55:04" itemprop="dateCreated datePublished" datetime="2020-07-07T22:45:29-07:00">2020-07-07</time>
+              <time title="Created: 2020-07-07 23:15:09" itemprop="dateCreated datePublished" datetime="2020-07-07T23:15:09-07:00">2020-07-07</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-07-08 12:47:26" itemprop="dateModified" datetime="2020-07-08T12:47:26-07:00">2020-07-08</time>
               
             
           </span>
@@ -504,10 +516,9 @@
       
         
           
-            <ul>
-<li><a href="https://1o24bbs.com/t/topic/12295" target="_blank" rel="noopener">亚麻BQ总结</a></li>
-<li><a href="https://1o24bbs.com/t/topic/16858" target="_blank" rel="noopener">亚麻New Grad过经-3轮VO</a></li>
-</ul>
+            <p><a href="https://leetcode.com/problems/design-tic-tac-toe/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200707231546.png" alt></p>
+<p><strong>Brute Force</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TicTacToe</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N;</span><br><span class="line">    <span class="keyword">int</span>[][] checkBoard;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Initialize your data structure here. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">TicTacToe</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.N=n;</span><br><span class="line">        checkBoard=<span class="keyword">new</span> <span class="keyword">int</span>[n][n];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">winner</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">// horizonatal</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> count_1=<span class="number">0</span>,count_2=<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;N;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(checkBoard[i][j]==<span class="number">1</span>) count_1++;</span><br><span class="line">                <span class="keyword">if</span>(checkBoard[i][j]==<span class="number">2</span>) count_2++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(count_1==N) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(count_2==N) <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// vertical</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> count_1=<span class="number">0</span>,count_2=<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;N;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(checkBoard[j][i]==<span class="number">1</span>) count_1++;</span><br><span class="line">                <span class="keyword">if</span>(checkBoard[j][i]==<span class="number">2</span>) count_2++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(count_1==N) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(count_2==N) <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// diagonal</span></span><br><span class="line">        <span class="keyword">int</span> count_1=<span class="number">0</span>,count_2=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(checkBoard[i][i]==<span class="number">1</span>) count_1++;</span><br><span class="line">            <span class="keyword">if</span>(checkBoard[i][i]==<span class="number">2</span>) count_2++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(count_1==N) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(count_2==N) <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// anti-diagonal</span></span><br><span class="line">        count_1=<span class="number">0</span>;count_2=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(checkBoard[i][N-<span class="number">1</span>-i]==<span class="number">1</span>) count_1++;</span><br><span class="line">            <span class="keyword">if</span>(checkBoard[i][N-<span class="number">1</span>-i]==<span class="number">2</span>) count_2++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(count_1==N) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(count_2==N) <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Player &#123;player&#125; makes a move at (&#123;row&#125;, &#123;col&#125;).</span></span><br><span class="line"><span class="comment">        <span class="doctag">@param</span> row The row of the board.</span></span><br><span class="line"><span class="comment">        <span class="doctag">@param</span> col The column of the board.</span></span><br><span class="line"><span class="comment">        <span class="doctag">@param</span> player The player, can be either 1 or 2.</span></span><br><span class="line"><span class="comment">        <span class="doctag">@return</span> The current winning condition, can be either:</span></span><br><span class="line"><span class="comment">                0: No one wins.</span></span><br><span class="line"><span class="comment">                1: Player 1 wins.</span></span><br><span class="line"><span class="comment">                2: Player 2 wins. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">move</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col, <span class="keyword">int</span> player)</span> </span>&#123;</span><br><span class="line">        checkBoard[row][col]=player;</span><br><span class="line">        <span class="keyword">return</span> winner();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your TicTacToe object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * TicTacToe obj = new TicTacToe(n);</span></span><br><span class="line"><span class="comment"> * int param_1 = obj.move(row,col,player);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708124718.png" alt></p>
 
           
         
@@ -553,7 +564,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/189/">189</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/190/">190</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -597,7 +608,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">189</span>
+                    <span class="site-state-item-count">190</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
