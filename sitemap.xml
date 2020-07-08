@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/Interviews/index.html</loc>
+    
+    <lastmod>2020-07-08T05:46:27.223Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/07/Amazon-Interview/</loc>
+    
+    <lastmod>2020-07-08T05:46:08.745Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-07-06T18:27:17.712Z</lastmod>
@@ -229,13 +243,6 @@
     <loc>http://yoursite.com/2020/07/04/Amazon-OA-2019-Favorite-Genres/</loc>
     
     <lastmod>2020-07-04T23:34:55.207Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/Interviews/index.html</loc>
-    
-    <lastmod>2020-07-04T22:44:23.886Z</lastmod>
     
   </url>
   
