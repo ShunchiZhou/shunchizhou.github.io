@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>1032. Stream of Characters</title>
+    <link href="http://yoursite.com/2020/07/08/1032-Stream-of-Characters/"/>
+    <id>http://yoursite.com/2020/07/08/1032-Stream-of-Characters/</id>
+    <published>2020-07-09T05:14:00.000Z</published>
+    <updated>2020-07-09T05:15:27.711Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/stream-of-characters/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708221508.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/stream-of-characters/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.github
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>683. K Empty Slots</title>
     <link href="http://yoursite.com/2020/07/08/683-K-Empty-Slots/"/>
     <id>http://yoursite.com/2020/07/08/683-K-Empty-Slots/</id>
@@ -412,27 +433,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/subtree-of-another-tree/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.git
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Amazon | OA 2019 | Find Pair With Given Sum</title>
-    <link href="http://yoursite.com/2020/07/03/Amazon-OA-2019-Find-Pair-With-Given-Sum/"/>
-    <id>http://yoursite.com/2020/07/03/Amazon-OA-2019-Find-Pair-With-Given-Sum/</id>
-    <published>2020-07-04T03:37:54.000Z</published>
-    <updated>2020-07-04T04:38:11.824Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/discuss/interview-question/356960" target="_blank" rel="noopener">link</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200703203859.png" alt></p><p><strong>Two Sum: HashMap</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span>[] Find2Sum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">int</span> max = Integer.MIN_VALUE;</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (map.containsKey(nums[i])) &#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[i] &gt; max || target-nums[i] &gt; max) &#123;</span><br><span class="line">                    res[<span class="number">0</span>] = map.get(nums[i]);</span><br><span class="line">                    res[<span class="number">1</span>] = i;</span><br><span class="line">                    max = Math.max(nums[i], target-nums[i]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            map.put(target - nums[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public class MyClass &#123;</span></span><br><span class="line"><span class="comment">    public static void main(String[] args) &#123;</span></span><br><span class="line"><span class="comment">        int[] nums1 = &#123; 1, 10, 25, 35, 60 &#125;;</span></span><br><span class="line"><span class="comment">        int target1 = 90;</span></span><br><span class="line"><span class="comment">        System.out.println(Arrays.toString(Solution.Find2Sum(nums1, target1 - 30)));</span></span><br><span class="line"><span class="comment">        int[] nums2 = &#123; 20, 50, 40, 25, 30, 10 &#125;;</span></span><br><span class="line"><span class="comment">        int target2 = 90;</span></span><br><span class="line"><span class="comment">        System.out.println(Arrays.toString(Solution.Find2Sum(nums2, target2 - 30)));</span></span><br><span class="line"><span class="comment">        int[] nums3 = &#123; 50, 20, 10, 40, 25, 30 &#125;;</span></span><br><span class="line"><span class="comment">        int target3 = 90;</span></span><br><span class="line"><span class="comment">        System.out.println(Arrays.toString(Solution.Find2Sum(nums3, target3 - 30)));</span></span><br><span class="line"><span class="comment">        int[] nums4 = &#123; 1, 2 &#125;;</span></span><br><span class="line"><span class="comment">        int target4 = 90;</span></span><br><span class="line"><span class="comment">        System.out.println(Arrays.toString(Solution.Find2Sum(nums4, target4 - 30)));</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*、</span></span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/discuss/interview-question/356960&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;link&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubu
       
     
     </summary>
