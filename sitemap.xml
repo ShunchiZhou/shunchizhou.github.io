@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/19/28-Implement-strStr/</loc>
+    
+    <lastmod>2020-07-09T02:20:16.890Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/08/55-Jump-Game/</loc>
     
-    <lastmod>2020-07-09T01:51:31.318Z</lastmod>
+    <lastmod>2020-07-09T01:56:33.953Z</lastmod>
     
   </url>
   
@@ -586,13 +593,6 @@
     <loc>http://yoursite.com/2020/06/19/29-Divide-Two-Integers/</loc>
     
     <lastmod>2020-06-20T22:32:25.169Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/19/28-Implement-strStr/</loc>
-    
-    <lastmod>2020-06-20T06:38:10.458Z</lastmod>
     
   </url>
   
