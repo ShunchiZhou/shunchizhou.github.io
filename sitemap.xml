@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/Interviews/index.html</loc>
+    
+    <lastmod>2020-07-09T05:54:44.203Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/08/1162-As-Far-from-Land-as-Possible/</loc>
     
     <lastmod>2020-07-09T05:53:09.594Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>http://yoursite.com/2020/06/14/21-Merge-Two-Sorted-Lists/</loc>
     
     <lastmod>2020-07-08T06:00:45.451Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/Interviews/index.html</loc>
-    
-    <lastmod>2020-07-08T05:46:27.223Z</lastmod>
     
   </url>
   
