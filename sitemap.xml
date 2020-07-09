@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/28/Tries/</loc>
+    
+    <lastmod>2020-07-09T05:32:14.957Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/08/1032-Stream-of-Characters/</loc>
     
     <lastmod>2020-07-09T05:15:27.711Z</lastmod>
@@ -348,13 +355,6 @@
     <loc>http://yoursite.com/2020/07/03/amazon-Min-Cost-to-Connect-Ropes-Min-Time-to-Merge-Files/</loc>
     
     <lastmod>2020-07-03T23:12:15.113Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/28/Tries/</loc>
-    
-    <lastmod>2020-07-03T21:53:08.709Z</lastmod>
     
   </url>
   
