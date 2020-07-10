@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/09/Binary-Heap/</loc>
+    
+    <lastmod>2020-07-10T06:25:57.694Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-07-10T06:25:09.216Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/05/09/Selection-sort/</loc>
     
     <lastmod>2020-07-10T05:54:04.468Z</lastmod>
@@ -138,13 +152,6 @@
     <loc>http://yoursite.com/2020/07/03/1268-Search-Suggestions-System/</loc>
     
     <lastmod>2020-07-06T18:19:17.384Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-06T16:27:50.003Z</lastmod>
     
   </url>
   
