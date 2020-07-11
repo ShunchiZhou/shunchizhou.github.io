@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>694. Number of Distinct Islands</title>
+    <link href="http://yoursite.com/2020/07/11/694-Number-of-Distinct-Islands/"/>
+    <id>http://yoursite.com/2020/07/11/694-Number-of-Distinct-Islands/</id>
+    <published>2020-07-11T23:19:24.000Z</published>
+    <updated>2020-07-11T23:20:56.753Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/number-of-distinct-islands/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200711162047.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/number-of-distinct-islands/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>353. Design Snake Game</title>
     <link href="http://yoursite.com/2020/07/11/353-Design-Snake-Game/"/>
     <id>http://yoursite.com/2020/07/11/353-Design-Snake-Game/</id>
@@ -411,27 +432,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/discuss/interview-question/349617&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;link&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubu
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>957. Prison Cells After N Days</title>
-    <link href="http://yoursite.com/2020/07/05/957-Prison-Cells-After-N-Days/"/>
-    <id>http://yoursite.com/2020/07/05/957-Prison-Cells-After-N-Days/</id>
-    <published>2020-07-06T00:11:27.000Z</published>
-    <updated>2020-07-06T15:19:38.104Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/prison-cells-after-n-days/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200705171156.png" alt></p><p><a href="https://leetcode.com/problems/prison-cells-after-n-days/discuss/266854/Java%3A-easy-to-understand" target="_blank" rel="noopener">link</a></p><p><strong>Using hashset to detect cycle</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] prisonAfterNDays(<span class="keyword">int</span>[] cells, <span class="keyword">int</span> N) &#123;</span><br><span class="line">        <span class="keyword">if</span>(cells==<span class="keyword">null</span> || cells.length==<span class="number">0</span> || N&lt;=<span class="number">0</span>) <span class="keyword">return</span> cells;</span><br><span class="line">        <span class="keyword">boolean</span> hasCycle = <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">int</span> cycle = <span class="number">0</span>;</span><br><span class="line">        HashSet&lt;String&gt; set = <span class="keyword">new</span> HashSet&lt;&gt;(); </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">            <span class="keyword">int</span>[] next = nextDay(cells);</span><br><span class="line">            String key = Arrays.toString(next);</span><br><span class="line">            <span class="keyword">if</span>(!set.contains(key))&#123; <span class="comment">//store cell state</span></span><br><span class="line">                set.add(key);</span><br><span class="line">                cycle++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123; <span class="comment">//hit a cycle</span></span><br><span class="line">                hasCycle = <span class="keyword">true</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            cells = next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(hasCycle)&#123;</span><br><span class="line">            N%=cycle;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;N;i++)&#123;</span><br><span class="line">                cells = nextDay(cells);</span><br><span class="line">            &#125;   </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cells;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] nextDay(<span class="keyword">int</span>[] cells)&#123;</span><br><span class="line">        <span class="keyword">int</span>[] tmp = <span class="keyword">new</span> <span class="keyword">int</span>[cells.length];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;cells.length-<span class="number">1</span>;i++)&#123;</span><br><span class="line">            tmp[i]=cells[i-<span class="number">1</span>]==cells[i+<span class="number">1</span>]?<span class="number">1</span>:<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> tmp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200705175752.png" alt></p><hr><p><strong>Brute Force: Time Complexity: O(KN), Output Limit Exceeded</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">class Solution &#123;</span></span><br><span class="line"><span class="comment">    public int[] prisonAfterNDays(int[] cells, int N) &#123;</span></span><br><span class="line"><span class="comment">        for(int i=0;i&lt;N;i++)&#123;</span></span><br><span class="line"><span class="comment">            int[] preCells=cells.clone();</span></span><br><span class="line"><span class="comment">            for(int j=0;j&lt;cells.length;j++)&#123;</span></span><br><span class="line"><span class="comment">                if(j==0) cells[j]=0;</span></span><br><span class="line"><span class="comment">                else if(j==cells.length-1) cells[j]=0;</span></span><br><span class="line"><span class="comment">                else if((preCells[j-1]==1&amp;&amp;preCells[j+1]==1)||(preCells[j-1]==0&amp;&amp;preCells[j+1]==0)) cells[j]=1;</span></span><br><span class="line"><span class="comment">                else cells[j]=0;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return cells;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/prison-cells-after-n-days/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.g
       
     
     </summary>
