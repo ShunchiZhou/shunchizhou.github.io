@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/15/Java-Core/</loc>
+    
+    <lastmod>2020-07-11T23:18:22.917Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/General/index.html</loc>
+    
+    <lastmod>2020-07-11T23:10:18.125Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/11/353-Design-Snake-Game/</loc>
     
     <lastmod>2020-07-11T22:53:02.921Z</lastmod>
@@ -117,13 +131,6 @@
     <loc>http://yoursite.com/2020/07/08/1152-Analyze-User-Website-Visit-Pattern/</loc>
     
     <lastmod>2020-07-09T16:35:18.196Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/05/15/Java-Core/</loc>
-    
-    <lastmod>2020-07-09T16:19:56.619Z</lastmod>
     
   </url>
   
@@ -348,13 +355,6 @@
     <loc>http://yoursite.com/2020/07/04/Amazon-OA-2019-Max-Of-Min-Altitudes/</loc>
     
     <lastmod>2020-07-05T06:13:37.896Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/General/index.html</loc>
-    
-    <lastmod>2020-07-05T05:41:26.524Z</lastmod>
     
   </url>
   
