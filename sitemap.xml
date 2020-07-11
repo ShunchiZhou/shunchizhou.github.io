@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/04/06/127-Word-Ladder/</loc>
+    
+    <lastmod>2020-07-11T01:13:57.257Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/10/140-Word-Break-II/</loc>
     
-    <lastmod>2020-07-11T00:42:49.145Z</lastmod>
+    <lastmod>2020-07-11T00:43:21.748Z</lastmod>
     
   </url>
   
@@ -1307,13 +1314,6 @@
     <loc>http://yoursite.com/2020/04/06/137-Single-Number-II/</loc>
     
     <lastmod>2020-04-07T01:25:50.360Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/04/06/127-Word-Ladder/</loc>
-    
-    <lastmod>2020-04-06T23:55:01.033Z</lastmod>
     
   </url>
   
