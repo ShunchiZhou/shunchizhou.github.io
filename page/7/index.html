@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">207</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">208</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/10/227-Basic-Calculator-II/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/10/253-Meeting-Rooms-II/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/10/227-Basic-Calculator-II/" class="post-title-link" itemprop="url">227. Basic Calculator II</a>
+                <a href="/2020/07/10/253-Meeting-Rooms-II/" class="post-title-link" itemprop="url">253. Meeting Rooms II</a>
               
             
           </h1>
@@ -466,12 +466,24 @@
                 
               
 
-              <time title="Created: 2020-07-10 21:19:31 / Modified: 22:08:03" itemprop="dateCreated datePublished" datetime="2020-07-10T21:19:31-07:00">2020-07-10</time>
+              <time title="Created: 2020-07-10 22:16:09" itemprop="dateCreated datePublished" datetime="2020-07-10T22:16:09-07:00">2020-07-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-07-11 12:08:30" itemprop="dateModified" datetime="2020-07-11T12:08:30-07:00">2020-07-11</time>
               
             
           </span>
@@ -504,8 +516,11 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/basic-calculator-ii/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200710212039.png" alt></p>
-<p><a href="https://leetcode.com/problems/basic-calculator-ii/discuss/63003/Share-my-java-solution" target="_blank" rel="noopener">link</a><br><strong>Stack</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len= s.length();</span><br><span class="line">        <span class="keyword">if</span>(s==<span class="keyword">null</span> || len==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        LinkedList&lt;Integer&gt; stack = <span class="keyword">new</span> LinkedList&lt;Integer&gt;();</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">char</span> sign = <span class="string">'+'</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c = s.charAt(i);</span><br><span class="line">            <span class="keyword">if</span>(Character.isDigit(c))&#123;</span><br><span class="line">                num = num*<span class="number">10</span>+c-<span class="string">'0'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>((!Character.isDigit(c) &amp;&amp; c!=<span class="string">' '</span>) || i==len-<span class="number">1</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span>(sign==<span class="string">'-'</span>)&#123;</span><br><span class="line">                    stack.push(-num);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(sign==<span class="string">'+'</span>)&#123;</span><br><span class="line">                    stack.push(num);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(sign==<span class="string">'*'</span>)&#123;</span><br><span class="line">                    stack.push(stack.pop()*num);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(sign==<span class="string">'/'</span>)&#123;</span><br><span class="line">                    stack.push(stack.pop()/num);</span><br><span class="line">                &#125;</span><br><span class="line">                sign = c;</span><br><span class="line">                num = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> total = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (!stack.isEmpty()) total += stack.pop();</span><br><span class="line">        <span class="keyword">return</span> total;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+            <p><a href="https://leetcode.com/problems/meeting-rooms-ii/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200710221709.png" alt></p>
+<p><strong>Priority Queues</strong><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200711113936.png" alt><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minMeetingRooms</span><span class="params">(<span class="keyword">int</span>[][] intervals)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len=intervals.length;</span><br><span class="line">        <span class="keyword">if</span>(len==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        Arrays.sort(intervals,(a,b)-&gt;a[<span class="number">0</span>]-b[<span class="number">0</span>]);<span class="comment">// Sort the intervals by start time</span></span><br><span class="line">        PriorityQueue&lt;Integer&gt; q=<span class="keyword">new</span> PriorityQueue&lt;&gt;();</span><br><span class="line">        q.add(intervals[<span class="number">0</span>][<span class="number">1</span>]);<span class="comment">// Add the first meeting</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(intervals[i][<span class="number">0</span>]&gt;=q.peek()) q.poll();</span><br><span class="line">            q.add(intervals[i][<span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> q.size();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public class MyClass &#123;</span></span><br><span class="line"><span class="comment">    public static void main(String[] args) &#123;</span></span><br><span class="line"><span class="comment">        int[][] intervals=&#123;&#123;0, 30&#125;,&#123;5, 10&#125;,&#123;15, 20&#125;&#125;;</span></span><br><span class="line"><span class="comment">        System.out.println(new Solution().minMeetingRooms(intervals));</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200711114040.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200711000414.png" alt><br><strong>Chronological Ordering, Greedy + Two Pointers</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// O(NlogN)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minMeetingRooms</span><span class="params">(Interval[] intervals)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (intervals == <span class="keyword">null</span> || intervals.length == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> n = intervals.length, index = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span>[] begins = <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line">    <span class="keyword">int</span>[] ends = <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line">    <span class="keyword">for</span> (Interval i: intervals) &#123;</span><br><span class="line">        begins[index] = i.start;</span><br><span class="line">        ends[index] = i.end;</span><br><span class="line">        index++;</span><br><span class="line">    &#125;</span><br><span class="line">    Arrays.sort(begins);</span><br><span class="line">    Arrays.sort(ends);</span><br><span class="line">    <span class="keyword">int</span> rooms = <span class="number">0</span>, pre = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        rooms++;</span><br><span class="line">        <span class="keyword">if</span> (begins[i] &gt;= ends[pre]) &#123;</span><br><span class="line">            rooms--;</span><br><span class="line">            pre++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> rooms;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200711115646.png" alt><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200711000526.webp" alt></p>
 
           
         
@@ -551,7 +566,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/207/">207</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/208/">208</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -595,7 +610,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">207</span>
+                    <span class="site-state-item-count">208</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
