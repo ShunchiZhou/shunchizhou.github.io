@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">213</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">212</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/04/992-Subarrays-with-K-Different-Integers/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/04/Amazon-OA-2019-Substrings-with-exactly-K-distinct-chars/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/04/992-Subarrays-with-K-Different-Integers/" class="post-title-link" itemprop="url">992. Subarrays with K Different Integers</a>
+                <a href="/2020/07/04/Amazon-OA-2019-Substrings-with-exactly-K-distinct-chars/" class="post-title-link" itemprop="url">Amazon | OA 2019 | Substrings with exactly K distinct chars</a>
               
             
           </h1>
@@ -466,12 +466,24 @@
                 
               
 
-              <time title="Created: 2020-07-04 17:31:23 / Modified: 22:08:51" itemprop="dateCreated datePublished" datetime="2020-07-04T17:31:23-07:00">2020-07-04</time>
+              <time title="Created: 2020-07-04 17:23:19" itemprop="dateCreated datePublished" datetime="2020-07-04T17:23:19-07:00">2020-07-04</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-07-05 22:14:46" itemprop="dateModified" datetime="2020-07-05T22:14:46-07:00">2020-07-05</time>
               
             
           </span>
@@ -504,8 +516,8 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/subarrays-with-k-different-integers/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200704173209.png" alt></p>
-<p><a href="https://leetcode.com/problems/subarrays-with-k-different-integers/discuss/523136/JavaC%2B%2BPython-Sliding-Window" target="_blank" rel="noopener">link</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200704215209.png" alt><br><strong>HashTable, Two Pointers, Sliding Windows</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// import java.util.*;</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">subarraysWithKDistinct</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span> K)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> atMostK(A, K) - atMostK(A, K - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">atMostK</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span> K)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> start = <span class="number">0</span>, end = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> len = <span class="number">0</span>;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (end &lt; A.length) &#123;</span><br><span class="line">            <span class="keyword">int</span> endNum = A[end];</span><br><span class="line">            map.put(endNum, map.getOrDefault(endNum, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">            end++;</span><br><span class="line">            <span class="keyword">while</span> (map.size() &gt; K) &#123;</span><br><span class="line">                <span class="keyword">int</span> startNum = A[start];</span><br><span class="line">                map.put(startNum, map.get(startNum) - <span class="number">1</span>);</span><br><span class="line">                <span class="keyword">if</span> (map.get(startNum) == <span class="number">0</span>) &#123;</span><br><span class="line">                    map.remove(startNum);</span><br><span class="line">                &#125;</span><br><span class="line">                start++;</span><br><span class="line">            &#125;</span><br><span class="line">            len += end - start;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public class MyClass &#123;</span></span><br><span class="line"><span class="comment">    public static void main(String[] args) &#123;</span></span><br><span class="line"><span class="comment">        int[] A = &#123; 1, 2, 1, 2, 3 &#125;;</span></span><br><span class="line"><span class="comment">        int K = 2;</span></span><br><span class="line"><span class="comment">        System.out.println(Solution.subarraysWithKDistinct(A, K));</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure></p>
+            <p><a href="https://leetcode.com/discuss/interview-question/370157" target="_blank" rel="noopener">link</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200704172408.png" alt></p>
+<p><strong><a href="https://shunchizhou.com/2020/07/04/992-Subarrays-with-K-Different-Integers/" target="_blank" rel="noopener">992. Subarrays with K Different Integers</a></strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">subarraysWithKDistinct</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span> K)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> atMostK(A, K) - atMostK(A, K - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">atMostK</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span> K)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> start = <span class="number">0</span>, end = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> len = <span class="number">0</span>;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (end &lt; A.length) &#123;</span><br><span class="line">            <span class="keyword">int</span> endNum = A[end];</span><br><span class="line">            map.put(endNum, map.getOrDefault(endNum, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">            end++;</span><br><span class="line">            <span class="keyword">while</span> (map.size() &gt; K) &#123;</span><br><span class="line">                <span class="keyword">int</span> startNum = A[start];</span><br><span class="line">                map.put(startNum, map.get(startNum) - <span class="number">1</span>);</span><br><span class="line">                <span class="keyword">if</span> (map.get(startNum) == <span class="number">0</span>) &#123;</span><br><span class="line">                    map.remove(startNum);</span><br><span class="line">                &#125;</span><br><span class="line">                start++;</span><br><span class="line">            &#125;</span><br><span class="line">            len += end - start;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200704215331.png" alt></p>
 
           
@@ -552,7 +564,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/33/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><span class="page-number current">34</span><a class="page-number" href="/page/35/">35</a><span class="space">&hellip;</span><a class="page-number" href="/page/213/">213</a><a class="extend next" rel="next" href="/page/35/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/33/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><span class="page-number current">34</span><a class="page-number" href="/page/35/">35</a><span class="space">&hellip;</span><a class="page-number" href="/page/212/">212</a><a class="extend next" rel="next" href="/page/35/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -596,7 +608,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">213</span>
+                    <span class="site-state-item-count">212</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
