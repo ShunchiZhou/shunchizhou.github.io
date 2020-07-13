@@ -40,6 +40,27 @@
   </entry>
   
   <entry>
+    <title>238. Product of Array Except Self</title>
+    <link href="http://yoursite.com/2020/07/12/238-Product-of-Array-Except-Self/"/>
+    <id>http://yoursite.com/2020/07/12/238-Product-of-Array-Except-Self/</id>
+    <published>2020-07-13T06:11:13.000Z</published>
+    <updated>2020-07-13T06:34:19.828Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/product-of-array-except-self/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200712231146.png" alt></p><p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200712233253.png" alt><br><strong>Math</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] productExceptSelf(<span class="keyword">int</span>[] nums) &#123;</span><br><span class="line">        <span class="keyword">int</span> leng = nums.length;</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[leng];</span><br><span class="line">        <span class="keyword">if</span> (leng == <span class="number">0</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="keyword">int</span> runningprefix = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; leng; i++) &#123;</span><br><span class="line">            res[i] = runningprefix;</span><br><span class="line">            runningprefix *= nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> runningsufix = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = leng - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            res[i] *= runningsufix;</span><br><span class="line">            runningsufix *= nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200712233416.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/product-of-array-except-self/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://ra
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>472. Concatenated Words</title>
     <link href="http://yoursite.com/2020/07/12/472-Concatenated-Words/"/>
     <id>http://yoursite.com/2020/07/12/472-Concatenated-Words/</id>
@@ -410,27 +431,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/as-far-from-land-as-possible/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://ra
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>1032. Stream of Characters</title>
-    <link href="http://yoursite.com/2020/07/08/1032-Stream-of-Characters/"/>
-    <id>http://yoursite.com/2020/07/08/1032-Stream-of-Characters/</id>
-    <published>2020-07-09T05:14:00.000Z</published>
-    <updated>2020-07-09T06:15:27.109Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/stream-of-characters/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708221508.png" alt></p><p><a href="https://leetcode.com/problems/stream-of-characters/discuss/278769/Java-Trie-Solution" target="_blank" rel="noopener">link</a><br><strong>Trie</strong><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708224453.png" alt><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">StreamChecker</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">TrieNode</span> </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> isWord;</span><br><span class="line">        TrieNode[] next = <span class="keyword">new</span> TrieNode[<span class="number">26</span>];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    TrieNode root = <span class="keyword">new</span> TrieNode();</span><br><span class="line">    StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">StreamChecker</span><span class="params">(String[] words)</span> </span>&#123;</span><br><span class="line">        createTrie(words);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">query</span><span class="params">(<span class="keyword">char</span> letter)</span> </span>&#123;</span><br><span class="line">        sb.append(letter);</span><br><span class="line">        TrieNode node = root;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = sb.length() - <span class="number">1</span>; i &gt;= <span class="number">0</span> &amp;&amp; node != <span class="keyword">null</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">char</span> c = sb.charAt(i);</span><br><span class="line">            node = node.next[c - <span class="string">'a'</span>];</span><br><span class="line">            <span class="keyword">if</span> (node != <span class="keyword">null</span> &amp;&amp; node.isWord) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">createTrie</span><span class="params">(String[] words)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (String s : words) &#123;</span><br><span class="line">            TrieNode node = root;</span><br><span class="line">            <span class="keyword">int</span> len = s.length();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = len - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">                <span class="keyword">char</span> c = s.charAt(i);</span><br><span class="line">                <span class="keyword">if</span> (node.next[c - <span class="string">'a'</span>] == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    node.next[c - <span class="string">'a'</span>] = <span class="keyword">new</span> TrieNode();</span><br><span class="line">                &#125;</span><br><span class="line">                node = node.next[c - <span class="string">'a'</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            node.isWord = <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/stream-of-characters/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.github
       
     
     </summary>
