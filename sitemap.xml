@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/06/139-Word-Break/</loc>
+    
+    <lastmod>2020-07-13T03:31:57.024Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/12/472-Concatenated-Words/</loc>
     
     <lastmod>2020-07-13T03:17:07.359Z</lastmod>
@@ -145,13 +152,6 @@
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-07-10T23:43:04.941Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/05/06/139-Word-Break/</loc>
-    
-    <lastmod>2020-07-10T23:40:27.351Z</lastmod>
     
   </url>
   
