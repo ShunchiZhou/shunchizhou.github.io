@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/01/49-Group-Anagrams/</loc>
+    
+    <lastmod>2020-07-15T20:39:51.426Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
     
     <lastmod>2020-07-15T18:56:21.947Z</lastmod>
@@ -649,13 +656,6 @@
     <loc>http://yoursite.com/2020/07/01/50-Pow-x-n/</loc>
     
     <lastmod>2020-07-01T19:05:30.044Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/01/49-Group-Anagrams/</loc>
-    
-    <lastmod>2020-07-01T09:00:24.454Z</lastmod>
     
   </url>
   
