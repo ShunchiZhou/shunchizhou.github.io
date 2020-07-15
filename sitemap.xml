@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/12/126-Word-Ladder-II/</loc>
+    
+    <lastmod>2020-07-15T21:38:35.204Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/12/97-Interleaving-String/</loc>
+    
+    <lastmod>2020-07-15T21:09:17.222Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
     <lastmod>2020-07-15T21:04:00.877Z</lastmod>
@@ -117,20 +131,6 @@
     <loc>http://yoursite.com/2020/07/12/239-Sliding-Window-Maximum/</loc>
     
     <lastmod>2020-07-13T03:15:07.033Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/12/126-Word-Ladder-II/</loc>
-    
-    <lastmod>2020-07-13T00:18:10.635Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/12/97-Interleaving-String/</loc>
-    
-    <lastmod>2020-07-12T19:41:31.926Z</lastmod>
     
   </url>
   
