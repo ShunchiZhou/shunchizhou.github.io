@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/07/01/Disjoint-Set-Union-Find/</loc>
+    <loc>http://yoursite.com/2020/07/15/78-Subsets/</loc>
     
-    <lastmod>2020-07-14T18:51:45.235Z</lastmod>
+    <lastmod>2020-07-15T14:02:29.105Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
     
-    <lastmod>2020-07-14T05:12:04.628Z</lastmod>
+    <lastmod>2020-07-15T13:57:32.087Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/01/Disjoint-Set-Union-Find/</loc>
+    
+    <lastmod>2020-07-14T18:51:45.235Z</lastmod>
     
   </url>
   
