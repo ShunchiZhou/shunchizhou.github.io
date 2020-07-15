@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/14/22-Generate-Parentheses/</loc>
+    
+    <lastmod>2020-07-15T21:01:52.624Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/01/49-Group-Anagrams/</loc>
     
     <lastmod>2020-07-15T20:39:51.426Z</lastmod>
@@ -446,13 +453,6 @@
     <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
     
     <lastmod>2020-07-05T21:46:07.623Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/14/22-Generate-Parentheses/</loc>
-    
-    <lastmod>2020-07-05T19:00:00.802Z</lastmod>
     
   </url>
   
