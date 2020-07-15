@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/11/297-Serialize-and-Deserialize-Binary-Tree/</loc>
+    
+    <lastmod>2020-07-15T22:45:52.768Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/11/269-Alien-Dictionary/</loc>
     
     <lastmod>2020-07-15T22:28:01.626Z</lastmod>
@@ -138,13 +145,6 @@
     <loc>http://yoursite.com/2020/07/12/239-Sliding-Window-Maximum/</loc>
     
     <lastmod>2020-07-13T03:15:07.033Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/11/297-Serialize-and-Deserialize-Binary-Tree/</loc>
-    
-    <lastmod>2020-07-12T17:43:42.416Z</lastmod>
     
   </url>
   
