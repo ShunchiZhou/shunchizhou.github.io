@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
+    
+    <lastmod>2020-07-15T18:56:21.947Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/08/1162-As-Far-from-Land-as-Possible/</loc>
     
     <lastmod>2020-07-15T18:45:31.516Z</lastmod>
@@ -229,13 +236,6 @@
     <loc>http://yoursite.com/2020/07/09/Binary-Heap/</loc>
     
     <lastmod>2020-07-10T20:36:26.509Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
-    
-    <lastmod>2020-07-10T07:07:23.722Z</lastmod>
     
   </url>
   
