@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2020-07-16T17:06:27.346Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/16/295-Find-Median-from-Data-Stream/</loc>
     
     <lastmod>2020-07-16T17:05:47.189Z</lastmod>
@@ -159,13 +166,6 @@
     <loc>http://yoursite.com/2020/07/13/121-Best-Time-to-Buy-and-Sell-Stock/</loc>
     
     <lastmod>2020-07-14T04:41:29.809Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-14T04:18:48.047Z</lastmod>
     
   </url>
   
