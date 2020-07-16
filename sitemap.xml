@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/05/973-K-Closest-Points-to-Origin/</loc>
+    
+    <lastmod>2020-07-16T06:33:15.634Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/11/694-Number-of-Distinct-Islands/</loc>
     
     <lastmod>2020-07-16T06:05:55.210Z</lastmod>
@@ -453,13 +460,6 @@
     <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
     
     <lastmod>2020-07-05T21:46:07.623Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/05/973-K-Closest-Points-to-Origin/</loc>
-    
-    <lastmod>2020-07-05T18:25:48.503Z</lastmod>
     
   </url>
   
