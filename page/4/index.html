@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">217</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">220</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/13/121-Best-Time-to-Buy-and-Sell-Stock/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/56-Merge-Intervals/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/13/121-Best-Time-to-Buy-and-Sell-Stock/" class="post-title-link" itemprop="url">121. Best Time to Buy and Sell Stock</a>
+                <a href="/2020/07/16/56-Merge-Intervals/" class="post-title-link" itemprop="url">56. Merge Intervals</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-07-13 19:40:27 / Modified: 21:41:29" itemprop="dateCreated datePublished" datetime="2020-07-13T19:40:27-07:00">2020-07-13</time>
+              <time title="Created: 2020-07-16 07:16:27 / Modified: 07:50:36" itemprop="dateCreated datePublished" datetime="2020-07-16T07:16:27-07:00">2020-07-16</time>
             
 
             
@@ -504,11 +504,9 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200713194117.png" alt></p>
-<p><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/39038/" target="_blank" rel="noopener">link</a><br><strong>One Pass</strong><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200713213208.png" alt><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200713213849.png" alt><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span>[] prices)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> maxCur = <span class="number">0</span>, maxSoFar = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; prices.length; i++) &#123;</span><br><span class="line">            maxCur = Math.max(<span class="number">0</span>, maxCur + prices[i] - prices[i-<span class="number">1</span>]);</span><br><span class="line">            maxSoFar = Math.max(maxCur, maxSoFar);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxSoFar;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* implementation based on kadane's algorithm</span></span><br><span class="line"><span class="comment">class Solution &#123;</span></span><br><span class="line"><span class="comment">    public int maxProfit(int[] prices) &#123;</span></span><br><span class="line"><span class="comment">        if(prices.length&lt;2) return 0;</span></span><br><span class="line"><span class="comment">        int[] d=new int[prices.length-1];</span></span><br><span class="line"><span class="comment">        for(int i=0;i&lt;prices.length-1;i++) d[i]=prices[i+1]-prices[i];</span></span><br><span class="line"><span class="comment">        int localMax=0,globalMax=0;</span></span><br><span class="line"><span class="comment">        for(int i=0;i&lt;d.length;i++)&#123;</span></span><br><span class="line"><span class="comment">            localMax=Math.max(d[i],d[i]+localMax);</span></span><br><span class="line"><span class="comment">            globalMax=Math.max(localMax,globalMax);</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return globalMax;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200713201142.png" alt></p>
-<p><strong>Brute Force</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// O(N^2)</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span>[] prices)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len=prices.length;</span><br><span class="line">        <span class="keyword">if</span>(len==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> min=Integer.MIN_VALUE;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;len;j++)&#123;</span><br><span class="line">                min=Math.max(prices[j]-prices[i],min);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> min&lt;=<span class="number">0</span>?<span class="number">0</span>:min;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200713214125.png" alt></p>
+            <p><a href="https://leetcode.com/problems/merge-intervals/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200716071720.png" alt></p>
+<p><strong>sort the intervals by their start value</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[][] merge(<span class="keyword">int</span>[][] intervals) &#123;</span><br><span class="line">        Arrays.sort(intervals,(a,b)-&gt;a[<span class="number">0</span>]-b[<span class="number">0</span>]);</span><br><span class="line">        LinkedList&lt;<span class="keyword">int</span>[]&gt; dq=<span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span>[] interval:intervals)&#123;</span><br><span class="line">            <span class="keyword">if</span>(dq.size()==<span class="number">0</span>||interval[<span class="number">0</span>]&gt;dq.peekLast()[<span class="number">1</span>]) dq.addLast(interval);</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                dq.getLast()[<span class="number">1</span>]=Math.max(dq.peekLast()[<span class="number">1</span>],interval[<span class="number">1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[][] res=<span class="keyword">new</span> <span class="keyword">int</span>[dq.size()][<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span>[] interval:dq) res[i++]=interval;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200716075033.png" alt></p>
 
           
         
@@ -554,7 +552,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/217/">217</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/220/">220</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -598,7 +596,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">217</span>
+                    <span class="site-state-item-count">220</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
+    
+    <lastmod>2020-07-16T16:40:09.482Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/16/295-Find-Median-from-Data-Stream/</loc>
+    
+    <lastmod>2020-07-16T16:27:35.951Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/16/79-Word-Search/</loc>
+    
+    <lastmod>2020-07-16T15:01:59.181Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/16/56-Merge-Intervals/</loc>
+    
+    <lastmod>2020-07-16T14:50:36.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/18/23-Merge-k-Sorted-Lists/</loc>
+    
+    <lastmod>2020-07-16T14:00:53.011Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/29/MergeSort/</loc>
     
-    <lastmod>2020-07-16T13:55:04.001Z</lastmod>
+    <lastmod>2020-07-16T13:55:40.746Z</lastmod>
     
   </url>
   
@@ -61,13 +96,6 @@
     <loc>http://yoursite.com/2020/07/12/97-Interleaving-String/</loc>
     
     <lastmod>2020-07-15T21:09:17.222Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/02/Amazon/</loc>
-    
-    <lastmod>2020-07-15T21:04:00.877Z</lastmod>
     
   </url>
   
@@ -544,13 +572,6 @@
     <loc>http://yoursite.com/2020/07/04/572-Subtree-of-Another-Tree/</loc>
     
     <lastmod>2020-07-04T09:09:11.505Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/18/23-Merge-k-Sorted-Lists/</loc>
-    
-    <lastmod>2020-07-04T07:26:31.090Z</lastmod>
     
   </url>
   
