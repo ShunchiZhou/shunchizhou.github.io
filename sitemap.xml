@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
+    
+    <lastmod>2020-07-16T17:47:54.404Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2020-07-16T17:06:27.346Z</lastmod>
@@ -1531,13 +1538,6 @@
     <loc>http://yoursite.com/2020/03/26/108-Convert-Sorted-Array-to-Binary-Search-Tree/</loc>
     
     <lastmod>2020-03-27T02:37:02.519Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
-    
-    <lastmod>2020-03-27T02:16:03.173Z</lastmod>
     
   </url>
   
