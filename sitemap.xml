@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/11/694-Number-of-Distinct-Islands/</loc>
+    
+    <lastmod>2020-07-16T06:05:55.210Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/07/Amazon-Interview/</loc>
     
     <lastmod>2020-07-15T22:56:43.549Z</lastmod>
@@ -173,13 +180,6 @@
     <loc>http://yoursite.com/2020/07/11/273-Integer-to-English-Words/</loc>
     
     <lastmod>2020-07-12T00:29:10.463Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/11/694-Number-of-Distinct-Islands/</loc>
-    
-    <lastmod>2020-07-12T00:05:35.507Z</lastmod>
     
   </url>
   
