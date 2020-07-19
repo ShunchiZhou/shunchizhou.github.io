@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/15/Java-Core/</loc>
+    
+    <lastmod>2020-07-19T17:52:00.126Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/General/index.html</loc>
     
-    <lastmod>2020-07-19T00:50:36.638Z</lastmod>
+    <lastmod>2020-07-19T01:15:25.639Z</lastmod>
     
   </url>
   
@@ -236,13 +243,6 @@
     <loc>http://yoursite.com/2020/07/11/273-Integer-to-English-Words/</loc>
     
     <lastmod>2020-07-12T00:29:10.463Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/05/15/Java-Core/</loc>
-    
-    <lastmod>2020-07-11T23:18:22.917Z</lastmod>
     
   </url>
   
