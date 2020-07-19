@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/General/index.html</loc>
+    
+    <lastmod>2020-07-19T00:50:36.638Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/07/Amazon-Interview/</loc>
+    
+    <lastmod>2020-07-16T22:27:48.179Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
     
     <lastmod>2020-07-16T21:25:54.429Z</lastmod>
@@ -68,13 +82,6 @@
     <loc>http://yoursite.com/2020/07/11/694-Number-of-Distinct-Islands/</loc>
     
     <lastmod>2020-07-16T06:05:55.210Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/07/Amazon-Interview/</loc>
-    
-    <lastmod>2020-07-15T22:56:43.549Z</lastmod>
     
   </url>
   
@@ -236,13 +243,6 @@
     <loc>http://yoursite.com/2020/05/15/Java-Core/</loc>
     
     <lastmod>2020-07-11T23:18:22.917Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/General/index.html</loc>
-    
-    <lastmod>2020-07-11T23:10:18.125Z</lastmod>
     
   </url>
   
