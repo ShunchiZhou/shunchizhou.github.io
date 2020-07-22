@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/21/51-N-Queens/</loc>
+    
+    <lastmod>2020-07-22T05:42:31.980Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-07-22T00:31:39.737Z</lastmod>
+    <lastmod>2020-07-22T05:42:16.513Z</lastmod>
     
   </url>
   
