@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/22/Spring/</loc>
+    
+    <lastmod>2020-07-26T05:45:11.657Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
     <lastmod>2020-07-25T01:47:13.193Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2020/07/22/1365-How-Many-Numbers-Are-Smaller-Than-the-Current-Number/</loc>
     
     <lastmod>2020-07-23T04:35:22.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/22/Spring/</loc>
-    
-    <lastmod>2020-07-22T15:12:34.220Z</lastmod>
     
   </url>
   
