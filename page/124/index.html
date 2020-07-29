@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">227</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">229</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/13/11-Container-With-Most-Water/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/14/13-Roman-to-Integer/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/06/13/11-Container-With-Most-Water/" class="post-title-link" itemprop="url">11. Container With Most Water</a>
+                <a href="/2020/06/14/13-Roman-to-Integer/" class="post-title-link" itemprop="url">13. Roman to Integer</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-06-13 23:10:27 / Modified: 23:48:56" itemprop="dateCreated datePublished" datetime="2020-06-13T23:10:27-07:00">2020-06-13</time>
+              <time title="Created: 2020-06-14 01:03:44 / Modified: 01:10:05" itemprop="dateCreated datePublished" datetime="2020-06-14T01:03:44-07:00">2020-06-14</time>
             
 
             
@@ -504,10 +504,8 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/container-with-most-water/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200613231115.png" alt></p>
-<p><strong>Approach 1: Brute Force, Time Complexity: O(n^2)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="keyword">int</span>[] height)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> max=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;height.length-<span class="number">1</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;height.length;j++)&#123;</span><br><span class="line">                max=Math.max((j-i)*Math.min(height[i],height[j]),max);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Approach 2: Two Pointer Approach</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="keyword">int</span>[] height)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> l=<span class="number">0</span>,r=height.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> max=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            max=Math.max(max,(r-l)*Math.min(height[l],height[r]));</span><br><span class="line">            <span class="keyword">if</span>(height[l]&lt;height[r]) l++;</span><br><span class="line">            <span class="keyword">else</span> r--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+            <p><a href="https://leetcode.com/problems/roman-to-integer/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200614010921.png" alt></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">romanToInt</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len=s.length();</span><br><span class="line">        <span class="keyword">int</span>[] tmp=<span class="keyword">new</span> <span class="keyword">int</span>[len];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;len;i++)&#123; </span><br><span class="line">            <span class="keyword">switch</span>(s.charAt(i))&#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'I'</span>:tmp[j]=<span class="number">1</span>;j++;<span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'V'</span>:tmp[j]=<span class="number">5</span>;j++;<span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'X'</span>:tmp[j]=<span class="number">10</span>;j++;<span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'L'</span>:tmp[j]=<span class="number">50</span>;j++;<span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'C'</span>:tmp[j]=<span class="number">100</span>;j++;<span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'D'</span>:tmp[j]=<span class="number">500</span>;j++;<span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'M'</span>:tmp[j]=<span class="number">1000</span>;j++;<span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i+<span class="number">1</span>&lt;len&amp;&amp;tmp[i]&lt;tmp[i+<span class="number">1</span>])&#123;</span><br><span class="line">                sum+=tmp[i+<span class="number">1</span>]-tmp[i];</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                sum+=tmp[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -552,7 +550,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/123/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/123/">123</a><span class="page-number current">124</span><a class="page-number" href="/page/125/">125</a><span class="space">&hellip;</span><a class="page-number" href="/page/227/">227</a><a class="extend next" rel="next" href="/page/125/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/123/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/123/">123</a><span class="page-number current">124</span><a class="page-number" href="/page/125/">125</a><span class="space">&hellip;</span><a class="page-number" href="/page/229/">229</a><a class="extend next" rel="next" href="/page/125/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -596,7 +594,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">227</span>
+                    <span class="site-state-item-count">229</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
