@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">231</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">232</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/763-Partition-Labels/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/819-Most-Common-Word/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/02/763-Partition-Labels/" class="post-title-link" itemprop="url">763. Partition Labels</a>
+                <a href="/2020/07/02/819-Most-Common-Word/" class="post-title-link" itemprop="url">819. Most Common Word</a>
               
             
           </h1>
@@ -466,24 +466,12 @@
                 
               
 
-              <time title="Created: 2020-07-02 17:22:24" itemprop="dateCreated datePublished" datetime="2020-07-02T17:22:24-07:00">2020-07-02</time>
+              <time title="Created: 2020-07-02 17:38:26 / Modified: 19:22:22" itemprop="dateCreated datePublished" datetime="2020-07-02T17:38:26-07:00">2020-07-02</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2020-07-05 21:41:04" itemprop="dateModified" datetime="2020-07-05T21:41:04-07:00">2020-07-05</time>
               
             
           </span>
@@ -516,9 +504,8 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/partition-labels/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702172254.png" alt></p>
-<p><strong>Approach: Greedy</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">partitionLabels</span><span class="params">(String S)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] last=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;S.length();i++)&#123;</span><br><span class="line">            last[S.charAt(i)-<span class="string">'a'</span>]=i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> j=<span class="number">0</span>,anchor=<span class="number">0</span>;</span><br><span class="line">        List&lt;Integer&gt; ans=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;S.length();i++)&#123;</span><br><span class="line">            j=Math.max(j,last[S.charAt(i)-<span class="string">'a'</span>]);</span><br><span class="line">            <span class="keyword">if</span>(i==j)&#123;</span><br><span class="line">                ans.add(i-anchor+<span class="number">1</span>);</span><br><span class="line">                anchor=i+<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200705214053.png" alt></p>
+            <p><a href="https://leetcode.com/problems/most-common-word/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702173906.png" alt></p>
+<p><a href="https://leetcode.com/problems/most-common-word/discuss/123973/Simple-Java-Solution" target="_blank" rel="noopener">link</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">mostCommonWord</span><span class="params">(String paragraph, String[] banned)</span> </span>&#123;</span><br><span class="line">        String[] words = paragraph.toLowerCase().split(<span class="string">"\\W+"</span>);</span><br><span class="line">        HashMap&lt;String, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(String word : words) map.put(word, map.getOrDefault(word, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">for</span>(String word : banned) <span class="keyword">if</span>(map.containsKey(word)) map.remove(word);</span><br><span class="line">        String res = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">for</span>(String word : map.keySet())</span><br><span class="line">            <span class="keyword">if</span>(res == <span class="keyword">null</span> || map.get(word) &gt; map.get(res))</span><br><span class="line">                res = word;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -564,7 +551,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/72/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/72/">72</a><span class="page-number current">73</span><a class="page-number" href="/page/74/">74</a><span class="space">&hellip;</span><a class="page-number" href="/page/231/">231</a><a class="extend next" rel="next" href="/page/74/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/72/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/72/">72</a><span class="page-number current">73</span><a class="page-number" href="/page/74/">74</a><span class="space">&hellip;</span><a class="page-number" href="/page/232/">232</a><a class="extend next" rel="next" href="/page/74/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -608,7 +595,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">231</span>
+                    <span class="site-state-item-count">232</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
