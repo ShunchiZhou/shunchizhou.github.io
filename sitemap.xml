@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/08/14/Cisco/</loc>
+    
+    <lastmod>2020-08-14T21:43:48.811Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/Interviews/index.html</loc>
+    
+    <lastmod>2020-08-14T21:42:41.345Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/08/14/394-Decode-String/</loc>
     
     <lastmod>2020-08-14T21:15:02.130Z</lastmod>
@@ -460,13 +474,6 @@
     <loc>http://yoursite.com/2020/07/08/683-K-Empty-Slots/</loc>
     
     <lastmod>2020-07-09T06:12:28.872Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/Interviews/index.html</loc>
-    
-    <lastmod>2020-07-09T05:54:44.203Z</lastmod>
     
   </url>
   
