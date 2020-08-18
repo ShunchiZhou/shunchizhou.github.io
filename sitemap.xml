@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/08/18/206-Reverse-Linked-List/</loc>
+    
+    <lastmod>2020-08-18T14:08:57.960Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-08-15T01:30:27.889Z</lastmod>
+    <lastmod>2020-08-18T13:47:48.152Z</lastmod>
     
   </url>
   
