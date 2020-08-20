@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/08/18/206-Reverse-Linked-List/</loc>
+    <loc>http://yoursite.com/2020/08/20/95-Unique-Binary-Search-Trees-II/</loc>
     
-    <lastmod>2020-08-18T14:08:57.960Z</lastmod>
+    <lastmod>2020-08-20T17:21:52.452Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-08-18T13:47:48.152Z</lastmod>
+    <lastmod>2020-08-20T16:36:03.911Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/14/21-Merge-Two-Sorted-Lists/</loc>
+    
+    <lastmod>2020-08-18T16:54:44.211Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/18/206-Reverse-Linked-List/</loc>
+    
+    <lastmod>2020-08-18T14:08:57.960Z</lastmod>
     
   </url>
   
@@ -530,13 +544,6 @@
     <loc>http://yoursite.com/2020/07/07/348-Design-Tic-Tac-Toe/</loc>
     
     <lastmod>2020-07-08T20:02:02.284Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/14/21-Merge-Two-Sorted-Lists/</loc>
-    
-    <lastmod>2020-07-08T06:00:45.451Z</lastmod>
     
   </url>
   
