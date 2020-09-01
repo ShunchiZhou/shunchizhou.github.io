@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/08/27/283-Move-Zeroes/</loc>
+    <loc>http://yoursite.com/2020/09/01/169-Majority-Element/</loc>
     
-    <lastmod>2020-08-27T17:59:46.539Z</lastmod>
+    <lastmod>2020-09-01T16:33:26.839Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-08-27T17:15:38.411Z</lastmod>
+    <lastmod>2020-09-01T16:16:11.927Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/09/01/617-Merge-Two-Binary-Trees/</loc>
+    
+    <lastmod>2020-09-01T16:13:14.103Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/27/283-Move-Zeroes/</loc>
+    
+    <lastmod>2020-08-27T17:59:46.539Z</lastmod>
     
   </url>
   
