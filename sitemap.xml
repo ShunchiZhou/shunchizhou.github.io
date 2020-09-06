@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/09/04/543-Diameter-of-Binary-Tree/</loc>
+    <loc>http://yoursite.com/2020/09/06/136-Single-Number/</loc>
     
-    <lastmod>2020-09-05T06:08:31.914Z</lastmod>
+    <lastmod>2020-09-06T17:59:51.217Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-09-05T06:06:29.427Z</lastmod>
+    <lastmod>2020-09-06T17:52:09.168Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/09/04/543-Diameter-of-Binary-Tree/</loc>
+    
+    <lastmod>2020-09-05T06:08:31.914Z</lastmod>
     
   </url>
   
