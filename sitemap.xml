@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/09/11/101-Symmetric-Tree/</loc>
+    <loc>http://yoursite.com/2020/09/15/94-Binary-Tree-Inorder-Traversal/</loc>
     
-    <lastmod>2020-09-11T18:24:44.726Z</lastmod>
+    <lastmod>2020-09-16T13:15:12.174Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-09-11T16:47:50.561Z</lastmod>
+    <lastmod>2020-09-15T20:02:48.433Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/09/14/104-Maximum-Depth-of-Binary-Tree/</loc>
+    
+    <lastmod>2020-09-14T18:48:55.269Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/09/11/101-Symmetric-Tree/</loc>
+    
+    <lastmod>2020-09-11T18:24:44.726Z</lastmod>
     
   </url>
   

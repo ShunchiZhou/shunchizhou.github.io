@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">250</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">252</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/09/223-Rectangle-Area/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/10/1-Two-Sum/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/06/09/223-Rectangle-Area/" class="post-title-link" itemprop="url">223. Rectangle Area</a>
+                <a href="/2020/06/10/1-Two-Sum/" class="post-title-link" itemprop="url">1. Two Sum</a>
               
             
           </h1>
@@ -466,12 +466,24 @@
                 
               
 
-              <time title="Created: 2020-06-09 22:06:10 / Modified: 22:08:22" itemprop="dateCreated datePublished" datetime="2020-06-09T22:06:10-07:00">2020-06-09</time>
+              <time title="Created: 2020-06-10 10:56:52" itemprop="dateCreated datePublished" datetime="2020-06-10T10:56:52-07:00">2020-06-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-07-04 16:39:23" itemprop="dateModified" datetime="2020-07-04T16:39:23-07:00">2020-07-04</time>
               
             
           </span>
@@ -504,8 +516,9 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/rectangle-area/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200609220653.png" alt></p>
-<p><a href="https://leetcode.com/problems/rectangle-area/discuss/62138/My-Java-solution-Sum-of-areas-Overlapped-area" target="_blank" rel="noopener">Explanation</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">computeArea</span><span class="params">(<span class="keyword">int</span> A, <span class="keyword">int</span> B, <span class="keyword">int</span> C, <span class="keyword">int</span> D, <span class="keyword">int</span> E, <span class="keyword">int</span> F, <span class="keyword">int</span> G, <span class="keyword">int</span> H)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> areaRectA=(C-A)*(D-B);</span><br><span class="line">        <span class="keyword">int</span> areaRectB=(G-E)*(H-F);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> left=Math.max(A,E);</span><br><span class="line">        <span class="keyword">int</span> right=Math.min(C,G);</span><br><span class="line">        <span class="keyword">int</span> top=Math.min(D,H);</span><br><span class="line">        <span class="keyword">int</span> bottom=Math.max(B,F);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// If overlap</span></span><br><span class="line">        <span class="keyword">int</span> overlap=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(left&lt;right&amp;&amp;bottom&lt;top) overlap=(right-left)*(top-bottom);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> areaRectA+areaRectB-overlap;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+            <p><a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200610105735.png" alt></p>
+<p><strong>Approach: One-pass Hash Table, Time complexity : O(n)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        Map&lt;Integer,Integer&gt; map=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">            <span class="keyword">int</span> complement=target-nums[i];</span><br><span class="line">            <span class="keyword">if</span>(map.containsKey(complement)) <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;map.get(complement),i&#125;;</span><br><span class="line">            map.put(nums[i],i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200704163917.png" alt></p>
 
           
         
@@ -551,7 +564,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/161/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/161/">161</a><span class="page-number current">162</span><a class="page-number" href="/page/163/">163</a><span class="space">&hellip;</span><a class="page-number" href="/page/250/">250</a><a class="extend next" rel="next" href="/page/163/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/161/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/161/">161</a><span class="page-number current">162</span><a class="page-number" href="/page/163/">163</a><span class="space">&hellip;</span><a class="page-number" href="/page/252/">252</a><a class="extend next" rel="next" href="/page/163/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -595,7 +608,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">250</span>
+                    <span class="site-state-item-count">252</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

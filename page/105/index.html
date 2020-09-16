@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">250</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">252</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/01/49-Group-Anagrams/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/01/amazon-components-assembly/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/01/49-Group-Anagrams/" class="post-title-link" itemprop="url">49. Group Anagrams</a>
+                <a href="/2020/07/01/amazon-components-assembly/" class="post-title-link" itemprop="url">Amazon components assembly</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-07-01 01:29:10" itemprop="dateCreated datePublished" datetime="2020-07-01T01:29:10-07:00">2020-07-01</time>
+              <time title="Created: 2020-07-01 15:20:19" itemprop="dateCreated datePublished" datetime="2020-07-01T15:20:19-07:00">2020-07-01</time>
             
 
             
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-07-15 13:39:51" itemprop="dateModified" datetime="2020-07-15T13:39:51-07:00">2020-07-15</time>
+                <time title="Modified: 2020-07-02 17:18:26" itemprop="dateModified" datetime="2020-07-02T17:18:26-07:00">2020-07-02</time>
               
             
           </span>
@@ -516,12 +516,7 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/group-anagrams/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200701012947.png" alt></p>
-<p><strong>Approach 1: Categorize by Sorted String, Time Complexity: O(NKlogK)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;String&gt;&gt; groupAnagrams(String[] strs) &#123;</span><br><span class="line">        Map&lt;String,List&lt;String&gt;&gt; map=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(String str:strs)&#123;</span><br><span class="line">            <span class="keyword">char</span>[] chs=str.toCharArray();</span><br><span class="line">            Arrays.sort(chs);</span><br><span class="line">            String newStr=<span class="keyword">new</span> String(chs);</span><br><span class="line">            <span class="keyword">if</span>(!map.containsKey(newStr)) map.put(newStr,<span class="keyword">new</span> ArrayList(Arrays.asList(str)));</span><br><span class="line">            <span class="keyword">else</span> map.get(newStr).add(str);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ArrayList(map.values());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200715133946.png" alt></p>
-<p><strong>Approach 2: Categorize by Count, Time Complexity: O(NK)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;String&gt;&gt; groupAnagrams(String[] strs) &#123;</span><br><span class="line">        <span class="keyword">if</span> (strs.length == <span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">new</span> ArrayList();</span><br><span class="line">        Map&lt;String, List&gt; ans = <span class="keyword">new</span> HashMap&lt;String, List&gt;();</span><br><span class="line">        <span class="keyword">int</span>[] count = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">for</span> (String s : strs) &#123;</span><br><span class="line">            Arrays.fill(count, <span class="number">0</span>);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">char</span> c : s.toCharArray()) count[c - <span class="string">'a'</span>]++;</span><br><span class="line"></span><br><span class="line">            StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; i++) sb.append(count[i]);</span><br><span class="line">            </span><br><span class="line">            String key = sb.toString();</span><br><span class="line">            <span class="keyword">if</span> (!ans.containsKey(key)) ans.put(key, <span class="keyword">new</span> ArrayList());</span><br><span class="line">            ans.get(key).add(s);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ArrayList(ans.values());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200715133924.png" alt></p>
-
+            <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">第一题：零件组装题。题目意思就是有一堆零件，每个零件的尺寸和组装需要的时间是一样的。输入各个零件的尺寸的list，要求输出最短的总的 accumulated 组装时间。这么说估计也很难描述清楚，直接上例子：</span></span><br><span class="line"><span class="comment">比如输入的list是 &#123;8， 4， 6， 12&#125;。</span></span><br><span class="line"><span class="comment">1. 先选 4 和 6组装到一起，形成 size 为 10 的新零件。目前为止耗时为10。零件的 list 变为 &#123;8， 10， 12&#125;</span></span><br><span class="line"><span class="comment">2. 再选 8 和 10 组装到一起，形成 size 为 18 的新零件。目前为止耗时为 10 + 18 = 28。零件的 list 变为 &#123;12， 18&#125;</span></span><br><span class="line"><span class="comment">3. 最后 把 12 和 18 组装到一起，形成 size 为 30 的新零件。目前为止耗时为 10 + 18 + 30 = 58。</span></span><br><span class="line"><span class="comment">最后输出 58 就可以了。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">解题思路：把所有零件先放到 min-heap (PriorityQueue for Java)中。然后每次 poll 两个最小的，加起来形成新零件，然后放回到min-heap中。如此循环直至 min-heap 中只有一个零件为止。在循环过程中记录总的累积时间就行了。这个题一定要秒掉，为后面的第二题赢得时间。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">import</span> java.util.PriorityQueue;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">minAssembleTime</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a.length==<span class="number">1</span>) <span class="keyword">return</span> a[<span class="number">0</span>];</span><br><span class="line">        PriorityQueue&lt;Integer&gt; q=<span class="keyword">new</span> PriorityQueue&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i:a ) q.offer(i);</span><br><span class="line">        <span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(q.size()&gt;<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> m=q.poll();</span><br><span class="line">            <span class="keyword">int</span> n=q.poll();</span><br><span class="line">            res+=m+n;</span><br><span class="line">            q.offer(m+n);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] a=&#123;<span class="number">8</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">12</span>&#125;;</span><br><span class="line">        System.out.println(Solution.minAssembleTime(a));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -566,7 +561,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/104/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/104/">104</a><span class="page-number current">105</span><a class="page-number" href="/page/106/">106</a><span class="space">&hellip;</span><a class="page-number" href="/page/250/">250</a><a class="extend next" rel="next" href="/page/106/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/104/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/104/">104</a><span class="page-number current">105</span><a class="page-number" href="/page/106/">106</a><span class="space">&hellip;</span><a class="page-number" href="/page/252/">252</a><a class="extend next" rel="next" href="/page/106/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -610,7 +605,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">250</span>
+                    <span class="site-state-item-count">252</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
