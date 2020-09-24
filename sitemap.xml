@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/14/15-3Sum/</loc>
+    
+    <lastmod>2020-09-24T22:05:53.233Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/09/21/438-Find-All-Anagrams-in-a-String/</loc>
     
     <lastmod>2020-09-22T02:44:21.479Z</lastmod>
@@ -1153,13 +1160,6 @@
     <loc>http://yoursite.com/2020/06/14/16-3Sum-Closest/</loc>
     
     <lastmod>2020-06-15T03:05:20.734Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/14/15-3Sum/</loc>
-    
-    <lastmod>2020-06-15T02:58:27.036Z</lastmod>
     
   </url>
   
