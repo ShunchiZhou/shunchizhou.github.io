@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/10/06/75-Sort-Colors/</loc>
+    
+    <lastmod>2020-10-06T19:01:32.748Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2020-10-06T18:56:37.116Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/06/14/15-3Sum/</loc>
     
     <lastmod>2020-09-24T22:05:53.233Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/2020/09/21/438-Find-All-Anagrams-in-a-String/</loc>
     
     <lastmod>2020-09-22T02:44:21.479Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-09-22T02:06:42.042Z</lastmod>
     
   </url>
   
