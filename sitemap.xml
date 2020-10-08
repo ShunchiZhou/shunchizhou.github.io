@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/10/06/75-Sort-Colors/</loc>
+    <loc>http://yoursite.com/2020/10/08/279-Perfect-Squares/</loc>
     
-    <lastmod>2020-10-06T19:01:32.748Z</lastmod>
+    <lastmod>2020-10-08T17:09:51.666Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2020-10-06T18:56:37.116Z</lastmod>
+    <lastmod>2020-10-08T16:57:19.673Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/10/06/75-Sort-Colors/</loc>
+    
+    <lastmod>2020-10-06T19:01:32.748Z</lastmod>
     
   </url>
   
