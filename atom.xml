@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-01T08:23:06.559Z</updated>
+  <updated>2021-01-04T02:12:31.850Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,20 @@
     <link href="http://yoursite.com/2029/09/01/welcome/"/>
     <id>http://yoursite.com/2029/09/01/welcome/</id>
     <published>2029-09-01T07:00:03.000Z</published>
-    <updated>2020-06-01T08:23:06.559Z</updated>
+    <updated>2021-01-04T02:12:31.850Z</updated>
     
-    <content type="html"><![CDATA[<!-- <center>**This is Shunchi Zhou, glad to see you here!**</center> --><p><img src="/uploads/Shunchi_Zhou_resume.png" alt></p><p><a href="https://shunchizhou.com/resume/" target="_blank" rel="noopener"><span style="color: #6495ED">Full Version</span></a><br><a href="/uploads/Shunchi_Zhou_Resume_2020.pdf"><span style="color: #6495ED">Download Resume</span></a></p>]]></content>
+    <content type="html"><![CDATA[<!-- <center>**This is Shunchi Zhou, glad to see you here!**</center> --><!--![](/uploads/Shunchi_Zhou_resume.png)[<span style="color: #6495ED">Full Version</span>](https://shunchizhou.com/resume/)[<span style="color: #6495ED">Download Resume</span>](/uploads/Shunchi_Zhou_Resume_2020.pdf)-->]]></content>
     
     <summary type="html">
     
       
       
         &lt;!-- &lt;center&gt;**This is Shunchi Zhou, glad to see you here!**&lt;/center&gt; --&gt;
-&lt;p&gt;&lt;img src=&quot;/uploads/Shunchi_Zhou_resume.png&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href
+&lt;!--
+
+![](/uploads/Shunchi_Zhou_resume.png)
+
+[&lt;span style=&quot;color: 
       
     
     </summary>
@@ -41,8 +44,8 @@
   
   <entry>
     <title>230. Kth Smallest Element in a BST</title>
-    <link href="http://yoursite.com/2020/10/20/230-Kth-Smallest-Element-in-a-BST/"/>
-    <id>http://yoursite.com/2020/10/20/230-Kth-Smallest-Element-in-a-BST/</id>
+    <link href="http://yoursite.com/2020/10/21/230-Kth-Smallest-Element-in-a-BST/"/>
+    <id>http://yoursite.com/2020/10/21/230-Kth-Smallest-Element-in-a-BST/</id>
     <published>2020-10-20T20:31:18.000Z</published>
     <updated>2020-10-20T20:35:36.672Z</updated>
     
@@ -63,8 +66,8 @@
   
   <entry>
     <title>279. Perfect Squares</title>
-    <link href="http://yoursite.com/2020/10/08/279-Perfect-Squares/"/>
-    <id>http://yoursite.com/2020/10/08/279-Perfect-Squares/</id>
+    <link href="http://yoursite.com/2020/10/09/279-Perfect-Squares/"/>
+    <id>http://yoursite.com/2020/10/09/279-Perfect-Squares/</id>
     <published>2020-10-08T16:56:51.000Z</published>
     <updated>2020-10-08T17:09:51.666Z</updated>
     
@@ -84,8 +87,8 @@
   
   <entry>
     <title>75. Sort Colors</title>
-    <link href="http://yoursite.com/2020/10/06/75-Sort-Colors/"/>
-    <id>http://yoursite.com/2020/10/06/75-Sort-Colors/</id>
+    <link href="http://yoursite.com/2020/10/07/75-Sort-Colors/"/>
+    <id>http://yoursite.com/2020/10/07/75-Sort-Colors/</id>
     <published>2020-10-06T18:56:05.000Z</published>
     <updated>2020-10-06T19:01:32.748Z</updated>
     
@@ -105,8 +108,8 @@
   
   <entry>
     <title>438. Find All Anagrams in a String</title>
-    <link href="http://yoursite.com/2020/09/21/438-Find-All-Anagrams-in-a-String/"/>
-    <id>http://yoursite.com/2020/09/21/438-Find-All-Anagrams-in-a-String/</id>
+    <link href="http://yoursite.com/2020/09/22/438-Find-All-Anagrams-in-a-String/"/>
+    <id>http://yoursite.com/2020/09/22/438-Find-All-Anagrams-in-a-String/</id>
     <published>2020-09-22T02:06:16.000Z</published>
     <updated>2020-09-22T02:44:21.479Z</updated>
     
@@ -147,8 +150,8 @@
   
   <entry>
     <title>94. Binary Tree Inorder Traversal</title>
-    <link href="http://yoursite.com/2020/09/15/94-Binary-Tree-Inorder-Traversal/"/>
-    <id>http://yoursite.com/2020/09/15/94-Binary-Tree-Inorder-Traversal/</id>
+    <link href="http://yoursite.com/2020/09/16/94-Binary-Tree-Inorder-Traversal/"/>
+    <id>http://yoursite.com/2020/09/16/94-Binary-Tree-Inorder-Traversal/</id>
     <published>2020-09-15T20:02:17.000Z</published>
     <updated>2020-09-16T13:15:12.174Z</updated>
     
@@ -168,8 +171,8 @@
   
   <entry>
     <title>104. Maximum Depth of Binary Tree</title>
-    <link href="http://yoursite.com/2020/09/14/104-Maximum-Depth-of-Binary-Tree/"/>
-    <id>http://yoursite.com/2020/09/14/104-Maximum-Depth-of-Binary-Tree/</id>
+    <link href="http://yoursite.com/2020/09/15/104-Maximum-Depth-of-Binary-Tree/"/>
+    <id>http://yoursite.com/2020/09/15/104-Maximum-Depth-of-Binary-Tree/</id>
     <published>2020-09-14T18:44:21.000Z</published>
     <updated>2020-09-14T18:48:55.269Z</updated>
     
@@ -189,8 +192,8 @@
   
   <entry>
     <title>101. Symmetric Tree</title>
-    <link href="http://yoursite.com/2020/09/11/101-Symmetric-Tree/"/>
-    <id>http://yoursite.com/2020/09/11/101-Symmetric-Tree/</id>
+    <link href="http://yoursite.com/2020/09/12/101-Symmetric-Tree/"/>
+    <id>http://yoursite.com/2020/09/12/101-Symmetric-Tree/</id>
     <published>2020-09-11T16:47:17.000Z</published>
     <updated>2020-09-11T18:24:44.726Z</updated>
     
@@ -210,8 +213,8 @@
   
   <entry>
     <title>160. Intersection of Two Linked Lists</title>
-    <link href="http://yoursite.com/2020/09/09/160-Intersection-of-Two-Linked-Lists/"/>
-    <id>http://yoursite.com/2020/09/09/160-Intersection-of-Two-Linked-Lists/</id>
+    <link href="http://yoursite.com/2020/09/10/160-Intersection-of-Two-Linked-Lists/"/>
+    <id>http://yoursite.com/2020/09/10/160-Intersection-of-Two-Linked-Lists/</id>
     <published>2020-09-09T22:27:24.000Z</published>
     <updated>2020-09-09T23:11:13.845Z</updated>
     
@@ -231,8 +234,8 @@
   
   <entry>
     <title>581. Shortest Unsorted Continuous Subarray</title>
-    <link href="http://yoursite.com/2020/09/09/581-Shortest-Unsorted-Continuous-Subarray/"/>
-    <id>http://yoursite.com/2020/09/09/581-Shortest-Unsorted-Continuous-Subarray/</id>
+    <link href="http://yoursite.com/2020/09/10/581-Shortest-Unsorted-Continuous-Subarray/"/>
+    <id>http://yoursite.com/2020/09/10/581-Shortest-Unsorted-Continuous-Subarray/</id>
     <published>2020-09-09T21:48:03.000Z</published>
     <updated>2020-09-09T22:04:09.398Z</updated>
     
@@ -252,8 +255,8 @@
   
   <entry>
     <title>234. Palindrome Linked List</title>
-    <link href="http://yoursite.com/2020/09/09/234-Palindrome-Linked-List/"/>
-    <id>http://yoursite.com/2020/09/09/234-Palindrome-Linked-List/</id>
+    <link href="http://yoursite.com/2020/09/10/234-Palindrome-Linked-List/"/>
+    <id>http://yoursite.com/2020/09/10/234-Palindrome-Linked-List/</id>
     <published>2020-09-09T17:34:36.000Z</published>
     <updated>2020-09-09T18:35:52.013Z</updated>
     
@@ -273,8 +276,8 @@
   
   <entry>
     <title>136. Single Number</title>
-    <link href="http://yoursite.com/2020/09/06/136-Single-Number/"/>
-    <id>http://yoursite.com/2020/09/06/136-Single-Number/</id>
+    <link href="http://yoursite.com/2020/09/07/136-Single-Number/"/>
+    <id>http://yoursite.com/2020/09/07/136-Single-Number/</id>
     <published>2020-09-06T17:51:37.000Z</published>
     <updated>2020-09-06T17:59:51.217Z</updated>
     
@@ -294,8 +297,8 @@
   
   <entry>
     <title>543. Diameter of Binary Tree</title>
-    <link href="http://yoursite.com/2020/09/04/543-Diameter-of-Binary-Tree/"/>
-    <id>http://yoursite.com/2020/09/04/543-Diameter-of-Binary-Tree/</id>
+    <link href="http://yoursite.com/2020/09/05/543-Diameter-of-Binary-Tree/"/>
+    <id>http://yoursite.com/2020/09/05/543-Diameter-of-Binary-Tree/</id>
     <published>2020-09-05T06:06:07.000Z</published>
     <updated>2020-09-05T06:08:31.914Z</updated>
     
@@ -315,8 +318,8 @@
   
   <entry>
     <title>169. Majority Element</title>
-    <link href="http://yoursite.com/2020/09/01/169-Majority-Element/"/>
-    <id>http://yoursite.com/2020/09/01/169-Majority-Element/</id>
+    <link href="http://yoursite.com/2020/09/02/169-Majority-Element/"/>
+    <id>http://yoursite.com/2020/09/02/169-Majority-Element/</id>
     <published>2020-09-01T16:15:51.000Z</published>
     <updated>2020-09-01T16:33:26.839Z</updated>
     
@@ -357,8 +360,8 @@
   
   <entry>
     <title>283. Move Zeroes</title>
-    <link href="http://yoursite.com/2020/08/27/283-Move-Zeroes/"/>
-    <id>http://yoursite.com/2020/08/27/283-Move-Zeroes/</id>
+    <link href="http://yoursite.com/2020/08/28/283-Move-Zeroes/"/>
+    <id>http://yoursite.com/2020/08/28/283-Move-Zeroes/</id>
     <published>2020-08-27T17:13:58.000Z</published>
     <updated>2020-08-27T17:59:46.539Z</updated>
     
@@ -378,8 +381,8 @@
   
   <entry>
     <title>448. Find All Numbers Disappeared in an Array</title>
-    <link href="http://yoursite.com/2020/08/20/448-Find-All-Numbers-Disappeared-in-an-Array/"/>
-    <id>http://yoursite.com/2020/08/20/448-Find-All-Numbers-Disappeared-in-an-Array/</id>
+    <link href="http://yoursite.com/2020/08/21/448-Find-All-Numbers-Disappeared-in-an-Array/"/>
+    <id>http://yoursite.com/2020/08/21/448-Find-All-Numbers-Disappeared-in-an-Array/</id>
     <published>2020-08-20T17:31:55.000Z</published>
     <updated>2020-08-20T18:25:08.407Z</updated>
     
@@ -399,8 +402,8 @@
   
   <entry>
     <title>95. Unique Binary Search Trees II</title>
-    <link href="http://yoursite.com/2020/08/20/95-Unique-Binary-Search-Trees-II/"/>
-    <id>http://yoursite.com/2020/08/20/95-Unique-Binary-Search-Trees-II/</id>
+    <link href="http://yoursite.com/2020/08/21/95-Unique-Binary-Search-Trees-II/"/>
+    <id>http://yoursite.com/2020/08/21/95-Unique-Binary-Search-Trees-II/</id>
     <published>2020-08-20T16:35:49.000Z</published>
     <updated>2020-08-20T17:30:48.944Z</updated>
     
