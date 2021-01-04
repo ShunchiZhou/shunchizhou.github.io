@@ -43,6 +43,27 @@
   </entry>
   
   <entry>
+    <title>70. Climbing Stairs</title>
+    <link href="http://yoursite.com/2021/01/04/70-Climbing-Stairs/"/>
+    <id>http://yoursite.com/2021/01/04/70-Climbing-Stairs/</id>
+    <published>2021-01-04T07:46:09.000Z</published>
+    <updated>2021-01-04T07:49:40.080Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/climbing-stairs/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20210104154752.png" alt></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">climbStairs</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(n==<span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span>[] memo=<span class="keyword">new</span> <span class="keyword">int</span>[n+<span class="number">1</span>];        </span><br><span class="line">        memo[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">        memo[<span class="number">2</span>]=<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">3</span>;i&lt;=n;i++)&#123;</span><br><span class="line">            memo[i]=memo[i-<span class="number">1</span>]+memo[i-<span class="number">2</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> memo[n];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20210104154934.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/climbing-stairs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubuserc
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>230. Kth Smallest Element in a BST</title>
     <link href="http://yoursite.com/2020/10/20/230-Kth-Smallest-Element-in-a-BST/"/>
     <id>http://yoursite.com/2020/10/20/230-Kth-Smallest-Element-in-a-BST/</id>
@@ -414,27 +435,6 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/unique-binary-search-trees-ii/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://r
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>206. Reverse Linked List</title>
-    <link href="http://yoursite.com/2020/08/18/206-Reverse-Linked-List/"/>
-    <id>http://yoursite.com/2020/08/18/206-Reverse-Linked-List/</id>
-    <published>2020-08-17T22:47:02.000Z</published>
-    <updated>2020-08-18T14:08:57.960Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818064821.png" alt></p><p><strong>Approach #2 (Recursive) [Accepted]</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="keyword">null</span>||head.next==<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> head;</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode p=reverseList(head.next);</span><br><span class="line">        head.next.next=head;</span><br><span class="line">        head.next=<span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">return</span> p;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818070853.png" alt></p><p><strong>Approach #1 (Iterative) [Accepted]</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        ListNode prev=<span class="keyword">null</span>,curr=head;</span><br><span class="line">        <span class="keyword">while</span>(curr!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            ListNode nextNode=curr.next;</span><br><span class="line">            curr.next=prev;</span><br><span class="line">            prev=curr;</span><br><span class="line">            curr=nextNode;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> prev;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818070839.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reverse-linked-list/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubu
       
     
     </summary>
