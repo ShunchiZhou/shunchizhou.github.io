@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
+    
+    <lastmod>2021-01-04T02:45:06.668Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2029/09/01/welcome/</loc>
     
     <lastmod>2021-01-04T02:12:31.850Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://yoursite.com/2020/10/21/230-Kth-Smallest-Element-in-a-BST/</loc>
     
     <lastmod>2020-10-20T20:35:36.672Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
-    
-    <lastmod>2020-10-20T16:55:46.415Z</lastmod>
     
   </url>
   
