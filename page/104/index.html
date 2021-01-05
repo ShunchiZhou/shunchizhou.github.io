@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">259</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">260</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/692-Top-K-Frequent-Words/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/347-Top-K-Frequent-Elements/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -441,7 +441,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/02/692-Top-K-Frequent-Words/" class="post-title-link" itemprop="url">692. Top K Frequent Words</a>
+                <a href="/2020/07/02/347-Top-K-Frequent-Elements/" class="post-title-link" itemprop="url">347. Top K Frequent Elements</a>
               
             
           </h1>
@@ -466,7 +466,7 @@
                 
               
 
-              <time title="Created: 2020-07-02 16:37:35" itemprop="dateCreated datePublished" datetime="2020-07-02T16:37:35+08:00">2020-07-02</time>
+              <time title="Created: 2020-07-02 17:00:05" itemprop="dateCreated datePublished" datetime="2020-07-02T17:00:05+08:00">2020-07-02</time>
             
 
             
@@ -483,7 +483,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-07-06 12:02:14" itemprop="dateModified" datetime="2020-07-06T12:02:14+08:00">2020-07-06</time>
+                <time title="Modified: 2020-07-03 08:01:40" itemprop="dateModified" datetime="2020-07-03T08:01:40+08:00">2020-07-03</time>
               
             
           </span>
@@ -508,7 +508,7 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                <span title="Symbols count in article">5k</span>
+                <span title="Symbols count in article">2.8k</span>
               
 
               
@@ -542,11 +542,8 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/top-k-frequent-words/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702163946.png" alt></p>
-<p><strong>Approach #1: Sorting [Accepted], Time Complexity: O(NlogN)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">topKFrequent</span><span class="params">(String[] words, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        Map&lt;String, Integer&gt; count = <span class="keyword">new</span> HashMap();</span><br><span class="line">        <span class="keyword">for</span> (String word: words) &#123;</span><br><span class="line">            count.put(word, count.getOrDefault(word, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        List&lt;String&gt; candidates = <span class="keyword">new</span> ArrayList(count.keySet());</span><br><span class="line">        Collections.sort(candidates, (w1, w2) -&gt; count.get(w1).equals(count.get(w2)) ?</span><br><span class="line">                w1.compareTo(w2) : count.get(w2) - count.get(w1));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> candidates.subList(<span class="number">0</span>, k);</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200705210153.png" alt></p>
-<p><strong>Approach #2: Heap [Accepted], Time Complexity: O(Nlogk)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">topKFrequent</span><span class="params">(String[] words, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        Map&lt;String,Integer&gt; count=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(String word:words) count.put(word, count.getOrDefault(word,<span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">        </span><br><span class="line">        PriorityQueue&lt;String&gt; heap=<span class="keyword">new</span> PriorityQueue&lt;String&gt;(</span><br><span class="line">        (w1,w2)-&gt;count.get(w1).equals(count.get(w2))?w2.compareTo(w1):count.get(w1)-count.get(w2)</span><br><span class="line">        );</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(String word:count.keySet())&#123;</span><br><span class="line">            heap.offer(word);</span><br><span class="line">            <span class="keyword">if</span>(heap.size()&gt;k) heap.poll();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        List&lt;String&gt; ans=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">while</span>(!heap.isEmpty()) ans.add(heap.poll());</span><br><span class="line">        Collections.reverse(ans);</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200705210157.png" alt></p>
+            <p><a href="https://leetcode.com/problems/top-k-frequent-elements/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702170044.png" alt></p>
+<p><strong>HashMap + Heap, Time complexity: O(Nlogk)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] topKFrequent(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        Map&lt;Integer,Integer&gt; count=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:nums) count.put(i,count.getOrDefault(i,<span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">        PriorityQueue&lt;Integer&gt; minHeap=<span class="keyword">new</span> PriorityQueue&lt;&gt;(</span><br><span class="line">            (o1,o2)-&gt;count.get(o1)-count.get(o2)</span><br><span class="line">        );</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:count.keySet())&#123;</span><br><span class="line">            minHeap.offer(i);</span><br><span class="line">            <span class="keyword">if</span>(minHeap.size()&gt;k) minHeap.poll();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span>[] topk=<span class="keyword">new</span> <span class="keyword">int</span>[k];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=k-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--) topk[i]=minHeap.poll(); </span><br><span class="line">        <span class="keyword">return</span> topk;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -592,7 +589,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/103/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/103/">103</a><span class="page-number current">104</span><a class="page-number" href="/page/105/">105</a><span class="space">&hellip;</span><a class="page-number" href="/page/259/">259</a><a class="extend next" rel="next" href="/page/105/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/103/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/103/">103</a><span class="page-number current">104</span><a class="page-number" href="/page/105/">105</a><span class="space">&hellip;</span><a class="page-number" href="/page/260/">260</a><a class="extend next" rel="next" href="/page/105/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -636,7 +633,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">259</span>
+                    <span class="site-state-item-count">260</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -748,7 +745,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">380k</span>
+    <span title="Symbols count total">382k</span>
   
 
   
