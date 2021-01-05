@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2021/01/05/Stack-Implementation/</loc>
+    
+    <lastmod>2021-01-05T15:18:03.360Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2021-01-05T15:16:56.821Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/28/559-Maximum-Depth-of-N-ary-Tree/</loc>
     
     <lastmod>2021-01-04T08:29:21.563Z</lastmod>
@@ -341,13 +355,6 @@
     <loc>http://yoursite.com/2020/03/25/307-Range-Sum-Query-Mutable/</loc>
     
     <lastmod>2020-07-16T21:25:54.429Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2020-07-16T18:16:14.848Z</lastmod>
     
   </url>
   
