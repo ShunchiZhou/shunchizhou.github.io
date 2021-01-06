@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/Curricula/index.html</loc>
+    
+    <lastmod>2021-01-06T06:40:56.630Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/27/CSE510/</loc>
+    
+    <lastmod>2021-01-06T06:40:15.430Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/09/01/CSE575/</loc>
+    
+    <lastmod>2021-01-06T06:38:23.517Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/09/01/CSE515/</loc>
+    
+    <lastmod>2021-01-06T06:38:03.353Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
     
     <lastmod>2021-01-06T03:34:29.194Z</lastmod>
@@ -1129,13 +1157,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/06/27/CSE510-Database-Mgmt-Sys-Implementn/</loc>
-    
-    <lastmod>2020-06-28T03:45:28.781Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2020/06/21/Permutation-Heap-s-algorithm/</loc>
     
     <lastmod>2020-06-22T00:03:32.064Z</lastmod>
@@ -1874,20 +1895,6 @@
     <loc>http://yoursite.com/uploads/CSE512.html</loc>
     
     <lastmod>2020-03-03T18:46:21.110Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/CSE515/index.html</loc>
-    
-    <lastmod>2020-03-03T17:38:30.779Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/CSE575/index.html</loc>
-    
-    <lastmod>2019-09-18T00:33:21.000Z</lastmod>
     
   </url>
   
