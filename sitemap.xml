@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
+    
+    <lastmod>2021-01-06T03:34:29.194Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/DSA/index.html</loc>
     
     <lastmod>2021-01-06T03:01:11.594Z</lastmod>
@@ -817,13 +824,6 @@
     <loc>http://yoursite.com/2020/07/01/Prim%E2%80%99s-Algorithm-%E2%80%93-Minimum-Spanning-Tree-MST/</loc>
     
     <lastmod>2020-07-05T23:00:55.869Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
-    
-    <lastmod>2020-07-05T21:46:07.623Z</lastmod>
     
   </url>
   
