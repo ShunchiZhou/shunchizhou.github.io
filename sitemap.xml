@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/06/10/1-Two-Sum/</loc>
+    
+    <lastmod>2021-01-08T13:43:00.477Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/Resume/index.html</loc>
+    
+    <lastmod>2021-01-07T03:57:52.914Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/Curricula/index.html</loc>
     
     <lastmod>2021-01-06T06:55:27.540Z</lastmod>
@@ -894,20 +908,6 @@
     <loc>http://yoursite.com/2020/06/14/167-Two-Sum-II-Input-array-is-sorted/</loc>
     
     <lastmod>2020-07-04T23:52:52.903Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/Resume/index.html</loc>
-    
-    <lastmod>2020-07-04T23:45:05.459Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/06/10/1-Two-Sum/</loc>
-    
-    <lastmod>2020-07-04T23:39:23.280Z</lastmod>
     
   </url>
   
