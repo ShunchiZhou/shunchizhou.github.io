@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/06/12/4-Median-of-Two-Sorted-Arrays/</loc>
+    <loc>http://yoursite.com/2021/01/14/Dijkstra%E2%80%99s-%E2%80%93-Shortest-Path-Algorithm-SPT-%E2%80%93-Adjacency-Matrix-%E2%80%93-Java-Implementation/</loc>
     
-    <lastmod>2021-01-08T14:20:12.329Z</lastmod>
+    <lastmod>2021-01-14T07:21:14.624Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/DSA/index.html</loc>
+    
+    <lastmod>2021-01-14T07:19:48.767Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2021-01-08T13:52:28.784Z</lastmod>
+    <lastmod>2021-01-08T14:30:40.622Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/06/12/4-Median-of-Two-Sorted-Arrays/</loc>
+    
+    <lastmod>2021-01-08T14:20:12.329Z</lastmod>
     
   </url>
   
@@ -61,13 +75,6 @@
     <loc>http://yoursite.com/2020/07/01/Kruskal%E2%80%99s-Minimum-Spanning-Tree-Algorithm/</loc>
     
     <lastmod>2021-01-06T03:34:29.194Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/DSA/index.html</loc>
-    
-    <lastmod>2021-01-06T03:01:11.594Z</lastmod>
     
   </url>
   
