@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode HashMap + Heap, Time complexity: O(Nlogk)123456789101112131415161718class Solution &amp;#123;    public int[] topKFrequent(int[] nums, int k) &amp;#123;        Map&amp;lt;Integer,Integer&amp;gt; count=new Ha">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702170044.png">
-<meta property="og:updated_time" content="2020-07-03T00:01:40.656Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200702170044.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="347. Top K Frequent Elements">
 <meta name="twitter:description" content="LeetCode HashMap + Heap, Time complexity: O(Nlogk)123456789101112131415161718class Solution &amp;#123;    public int[] topKFrequent(int[] nums, int k) &amp;#123;        Map&amp;lt;Integer,Integer&amp;gt; count=new Ha">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702170044.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200702170044.png">
 
 
 
@@ -507,7 +507,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-07-03 08:01:40" itemprop="dateModified" datetime="2020-07-03T08:01:40+08:00">2020-07-03</time>
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -571,7 +571,7 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/top-k-frequent-elements/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200702170044.png" alt></p>
+        <p><a href="https://leetcode.com/problems/top-k-frequent-elements/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200702170044.png" alt></p>
 <p><strong>HashMap + Heap, Time complexity: O(Nlogk)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] topKFrequent(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        Map&lt;Integer,Integer&gt; count=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:nums) count.put(i,count.getOrDefault(i,<span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">        PriorityQueue&lt;Integer&gt; minHeap=<span class="keyword">new</span> PriorityQueue&lt;&gt;(</span><br><span class="line">            (o1,o2)-&gt;count.get(o1)-count.get(o2)</span><br><span class="line">        );</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:count.keySet())&#123;</span><br><span class="line">            minHeap.offer(i);</span><br><span class="line">            <span class="keyword">if</span>(minHeap.size()&gt;k) minHeap.poll();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span>[] topk=<span class="keyword">new</span> <span class="keyword">int</span>[k];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=k-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--) topk[i]=minHeap.poll(); </span><br><span class="line">        <span class="keyword">return</span> topk;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       

@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode link1234567891011121314151617public class Codec &amp;#123;    Map&amp;lt;Integer,String&amp;gt; map=new HashMap&amp;lt;&amp;gt;();    String host=&quot;http://tinyurl.com/&quot;;    // Encodes a URL to a shortened URL.">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200805082944.png">
-<meta property="og:updated_time" content="2020-08-05T15:30:19.620Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200805082944.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="535. Encode and Decode TinyURL">
 <meta name="twitter:description" content="LeetCode link1234567891011121314151617public class Codec &amp;#123;    Map&amp;lt;Integer,String&amp;gt; map=new HashMap&amp;lt;&amp;gt;();    String host=&quot;http://tinyurl.com/&quot;;    // Encodes a URL to a shortened URL.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200805082944.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200805082944.png">
 
 
 
@@ -490,12 +490,24 @@
                 
               
 
-              <time title="Created: 2020-08-05 08:28:58 / Modified: 23:30:19" itemprop="dateCreated datePublished" datetime="2020-08-05T08:28:58+08:00">2020-08-05</time>
+              <time title="Created: 2020-08-05 08:28:58" itemprop="dateCreated datePublished" datetime="2020-08-05T08:28:58+08:00">2020-08-05</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -559,7 +571,7 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/encode-and-decode-tinyurl/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200805082944.png" alt></p>
+        <p><a href="https://leetcode.com/problems/encode-and-decode-tinyurl/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200805082944.png" alt></p>
 <p><a href="https://leetcode.com/problems/encode-and-decode-tinyurl/discuss/100276/Easy-solution-in-java-5-line-code." target="_blank" rel="noopener">link</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Codec</span> </span>&#123;</span><br><span class="line">    Map&lt;Integer,String&gt; map=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    String host=<span class="string">"http://tinyurl.com/"</span>;</span><br><span class="line">    <span class="comment">// Encodes a URL to a shortened URL.</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">encode</span><span class="params">(String longUrl)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> key=longUrl.hashCode();</span><br><span class="line">        map.put(key,longUrl);</span><br><span class="line">        <span class="keyword">return</span> host+key;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// Decodes a shortened URL to its original URL.</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">decode</span><span class="params">(String shortUrl)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> map.get(Integer.valueOf(shortUrl.replace(host,<span class="string">""</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Your Codec object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment">// Codec codec = new Codec();</span></span><br><span class="line"><span class="comment">// codec.decode(codec.encode(url));</span></span><br></pre></td></tr></table></figure></p>
 
       

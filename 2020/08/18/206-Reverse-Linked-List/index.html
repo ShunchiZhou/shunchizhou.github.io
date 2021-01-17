@@ -101,14 +101,14 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode Approach #2 (Recursive) [Accepted]123456789101112131415161718192021/** * Definition for singly-linked list. * public class ListNode &amp;#123; *     int val; *     ListNode next; *     ListNode()">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818064821.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818070853.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818070839.png">
-<meta property="og:updated_time" content="2020-08-18T14:08:57.960Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200818064821.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200818070853.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200818070839.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.086Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="206. Reverse Linked List">
 <meta name="twitter:description" content="LeetCode Approach #2 (Recursive) [Accepted]123456789101112131415161718192021/** * Definition for singly-linked list. * public class ListNode &amp;#123; *     int val; *     ListNode next; *     ListNode()">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818064821.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200818064821.png">
 
 
 
@@ -492,12 +492,24 @@
                 
               
 
-              <time title="Created: 2020-08-18 06:47:02 / Modified: 22:08:57" itemprop="dateCreated datePublished" datetime="2020-08-18T06:47:02+08:00">2020-08-18</time>
+              <time title="Created: 2020-08-18 06:47:02" itemprop="dateCreated datePublished" datetime="2020-08-18T06:47:02+08:00">2020-08-18</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -561,11 +573,11 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818064821.png" alt></p>
+        <p><a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200818064821.png" alt></p>
 <p><strong>Approach #2 (Recursive) [Accepted]</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="keyword">null</span>||head.next==<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> head;</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode p=reverseList(head.next);</span><br><span class="line">        head.next.next=head;</span><br><span class="line">        head.next=<span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">return</span> p;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818070853.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200818070853.png" alt></p>
 <p><strong>Approach #1 (Iterative) [Accepted]</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        ListNode prev=<span class="keyword">null</span>,curr=head;</span><br><span class="line">        <span class="keyword">while</span>(curr!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            ListNode nextNode=curr.next;</span><br><span class="line">            curr.next=prev;</span><br><span class="line">            prev=curr;</span><br><span class="line">            curr=nextNode;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> prev;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200818070839.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200818070839.png" alt></p>
 
       
     </div>

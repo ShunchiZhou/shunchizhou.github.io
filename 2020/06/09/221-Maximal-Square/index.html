@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode DP: dp(i,j)=min(dp(i−1,j),dp(i−1,j−1),dp(i,j−1))+1123456789101112131415161718192021class Solution &amp;#123;    public int maximalSquare(char[][] matrix) &amp;#123;        if(matrix.length==0) return">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200609123012.png">
-<meta property="og:updated_time" content="2020-06-10T03:01:46.856Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200609123012.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.085Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="221. Maximal Square">
 <meta name="twitter:description" content="LeetCode DP: dp(i,j)=min(dp(i−1,j),dp(i−1,j−1),dp(i,j−1))+1123456789101112131415161718192021class Solution &amp;#123;    public int maximalSquare(char[][] matrix) &amp;#123;        if(matrix.length==0) return">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200609123012.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200609123012.png">
 
 
 
@@ -507,7 +507,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-06-10 11:01:46" itemprop="dateModified" datetime="2020-06-10T11:01:46+08:00">2020-06-10</time>
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -571,7 +571,7 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/maximal-square/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200609123012.png" alt></p>
+        <p><a href="https://leetcode.com/problems/maximal-square/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200609123012.png" alt></p>
 <p><strong>DP: dp(i,j)=min(dp(i−1,j),dp(i−1,j−1),dp(i,j−1))+1</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maximalSquare</span><span class="params">(<span class="keyword">char</span>[][] matrix)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(matrix.length==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> rowNum=matrix.length;</span><br><span class="line">        <span class="keyword">int</span> colNum=matrix[<span class="number">0</span>].length;</span><br><span class="line">        <span class="keyword">int</span>[][] dp=<span class="keyword">new</span> <span class="keyword">int</span>[rowNum+<span class="number">1</span>][colNum+<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">int</span> maxEdgeLen=<span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// i: length of row; j: length of colomn.</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=rowNum;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=colNum;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(matrix[i-<span class="number">1</span>][j-<span class="number">1</span>]==<span class="string">'1'</span>)&#123;</span><br><span class="line">                    dp[i][j]=Math.min(Math.min(dp[i-<span class="number">1</span>][j],dp[i][j-<span class="number">1</span>]),dp[i-<span class="number">1</span>][j-<span class="number">1</span>])+<span class="number">1</span>;</span><br><span class="line">                    maxEdgeLen=Math.max(dp[i][j],maxEdgeLen);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxEdgeLen*maxEdgeLen;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       

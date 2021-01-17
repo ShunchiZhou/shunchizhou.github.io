@@ -502,7 +502,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-05-25 01:50:39" itemprop="dateModified" datetime="2020-05-25T01:50:39+08:00">2020-05-25</time>
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -527,7 +527,7 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                <span title="Symbols count in article">3.5k</span>
+                <span title="Symbols count in article">3.4k</span>
               
 
               
@@ -561,7 +561,7 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/reverse-words-in-a-string-ii/" target="_blank" rel="noopener">https://leetcode.com/problems/reverse-words-in-a-string-ii/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200524105024.png" alt></p>
+            <p><a href="https://leetcode.com/problems/reverse-words-in-a-string-ii/" target="_blank" rel="noopener">https://leetcode.com/problems/reverse-words-in-a-string-ii/</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200524105024.png" alt></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">reverse</span><span class="params">(<span class="keyword">char</span>[] s,<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">        <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">            <span class="keyword">char</span> tmp=s[r];</span><br><span class="line">            s[r--]=s[l];</span><br><span class="line">            s[l++]=tmp;</span><br><span class="line">            <span class="comment">// l++;</span></span><br><span class="line">            <span class="comment">// r--;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">reverseWords</span><span class="params">(<span class="keyword">char</span>[] s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(s==<span class="keyword">null</span>||s.length==<span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">int</span> l=<span class="number">0</span>,r=s.length-<span class="number">1</span>;</span><br><span class="line">        reverse(s,l,r);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> j=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.length;i=j+<span class="number">1</span>)&#123;</span><br><span class="line">            j=i;</span><br><span class="line">            <span class="keyword">while</span>(j&lt;s.length&amp;&amp;s[j]!=<span class="string">' '</span>) j++;</span><br><span class="line">            reverse(s,i,j-<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         

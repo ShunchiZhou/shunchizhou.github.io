@@ -101,13 +101,13 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode 123456789101112131415161718class Solution &amp;#123;    private String sortedString(String str)&amp;#123;        char[] chs=str.toCharArray();        Arrays.sort(chs);        return new String(chs);">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200921190728.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200921194419.png">
-<meta property="og:updated_time" content="2020-09-22T02:44:21.479Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200921190728.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200921194419.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.088Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="438. Find All Anagrams in a String">
 <meta name="twitter:description" content="LeetCode 123456789101112131415161718class Solution &amp;#123;    private String sortedString(String str)&amp;#123;        char[] chs=str.toCharArray();        Arrays.sort(chs);        return new String(chs);">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200921190728.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200921190728.png">
 
 
 
@@ -508,7 +508,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-09-22 10:44:21" itemprop="dateModified" datetime="2020-09-22T10:44:21+08:00">2020-09-22</time>
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -540,7 +540,7 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                <span title="Symbols count in article">6.4k</span>
+                <span title="Symbols count in article">6.3k</span>
               
 
               
@@ -572,10 +572,10 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200921190728.png" alt></p>
+        <p><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200921190728.png" alt></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">sortedString</span><span class="params">(String str)</span></span>&#123;</span><br><span class="line">        <span class="keyword">char</span>[] chs=str.toCharArray();</span><br><span class="line">        Arrays.sort(chs);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> String(chs);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">findAnagrams</span><span class="params">(String s, String p)</span> </span>&#123;</span><br><span class="line">        String sortedP=sortedString(p);</span><br><span class="line">        <span class="keyword">int</span> strLen=p.length();</span><br><span class="line">        List&lt;Integer&gt; res=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=s.length()-strLen;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(sortedString(s.substring(i,i+strLen)).equals(sortedP))&#123;</span><br><span class="line">                res.add(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>constant-time slice: Bitmasks or Rabin-Karp</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// rolling hash algorithm</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">findAnagrams</span><span class="params">(String s, String p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> sLen=s.length(),pLen=p.length();</span><br><span class="line">        <span class="keyword">if</span>(sLen&lt;pLen) <span class="keyword">return</span> <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span>[] pCount=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">int</span>[] sCount=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;pLen;i++)&#123;</span><br><span class="line">            pCount[(<span class="keyword">int</span>)(p.charAt(i)-<span class="string">'a'</span>)]++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        List&lt;Integer&gt; res=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;sLen;i++)&#123;</span><br><span class="line">            sCount[(<span class="keyword">int</span>)(s.charAt(i)-<span class="string">'a'</span>)]++;</span><br><span class="line">            <span class="keyword">if</span>(i&gt;=pLen)&#123;</span><br><span class="line">                sCount[(<span class="keyword">int</span>)(s.charAt(i-pLen)-<span class="string">'a'</span>)]--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(Arrays.equals(pCount,sCount))&#123;</span><br><span class="line">                res.add(i-pLen+<span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200921194419.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200921194419.png" alt></p>
 
       
     </div>

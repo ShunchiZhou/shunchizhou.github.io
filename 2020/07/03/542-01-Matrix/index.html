@@ -101,13 +101,13 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode linkBFS12345678910111213141516171819202122232425262728class Solution &amp;#123;    public int[][] updateMatrix(int[][] matrix) &amp;#123;        Queue&amp;lt;int[]&amp;gt; queue=new LinkedList&amp;lt;&amp;gt;();">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200703172930.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200703173352.png">
-<meta property="og:updated_time" content="2020-07-04T00:34:43.216Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200703172930.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200703173352.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.088Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="542. 01 Matrix">
 <meta name="twitter:description" content="LeetCode linkBFS12345678910111213141516171819202122232425262728class Solution &amp;#123;    public int[][] updateMatrix(int[][] matrix) &amp;#123;        Queue&amp;lt;int[]&amp;gt; queue=new LinkedList&amp;lt;&amp;gt;();">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200703172930.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200703172930.png">
 
 
 
@@ -508,7 +508,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-07-04 08:34:43" itemprop="dateModified" datetime="2020-07-04T08:34:43+08:00">2020-07-04</time>
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -572,9 +572,9 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/01-matrix/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200703172930.png" alt></p>
+        <p><a href="https://leetcode.com/problems/01-matrix/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200703172930.png" alt></p>
 <p><a href="https://leetcode.com/problems/01-matrix/discuss/101021/Java-Solution-BFS" target="_blank" rel="noopener">link</a><br><strong>BFS</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[][] updateMatrix(<span class="keyword">int</span>[][] matrix) &#123;</span><br><span class="line">        Queue&lt;<span class="keyword">int</span>[]&gt; queue=<span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">        <span class="keyword">int</span> R=matrix.length,C=matrix[<span class="number">0</span>].length;</span><br><span class="line">        <span class="keyword">boolean</span>[][] visited=<span class="keyword">new</span> <span class="keyword">boolean</span>[R][C];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;R;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;C;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(matrix[i][j]==<span class="number">0</span>)&#123;</span><br><span class="line">                    visited[i][j]=<span class="keyword">true</span>;</span><br><span class="line">                    queue.offer(<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;i,j&#125;);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[][] dirs=&#123;&#123;-<span class="number">1</span>,<span class="number">0</span>&#125;,&#123;<span class="number">1</span>,<span class="number">0</span>&#125;,&#123;<span class="number">0</span>,-<span class="number">1</span>&#125;,&#123;<span class="number">0</span>,<span class="number">1</span>&#125;&#125;;</span><br><span class="line">        <span class="keyword">while</span>(!queue.isEmpty())&#123;</span><br><span class="line">            <span class="keyword">int</span>[] pos=queue.poll();</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span>[] d:dirs)&#123;</span><br><span class="line">                <span class="keyword">int</span> newX=pos[<span class="number">0</span>]+d[<span class="number">0</span>];</span><br><span class="line">                <span class="keyword">int</span> newY=pos[<span class="number">1</span>]+d[<span class="number">1</span>];</span><br><span class="line">                <span class="keyword">if</span>(newX&lt;<span class="number">0</span>||newX&gt;=R||newY&lt;<span class="number">0</span>||newY&gt;=C||visited[newX][newY]) <span class="keyword">continue</span>;</span><br><span class="line">                visited[newX][newY]=<span class="keyword">true</span>;</span><br><span class="line">                matrix[newX][newY]=matrix[pos[<span class="number">0</span>]][pos[<span class="number">1</span>]]+<span class="number">1</span>;</span><br><span class="line">                queue.offer(<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;newX,newY&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> matrix;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200703173352.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200703173352.png" alt></p>
 
       
     </div>

@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="https://leetcode.com/problems/largest-number/ Explanation1234567891011121314151617class Solution &amp;#123;    public String largestNumber(int[] nums) &amp;#123;        if(nums==null||nums.length==0) return &quot;">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200523123836.png">
-<meta property="og:updated_time" content="2020-05-23T19:43:30.151Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200523123836.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.088Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="179. Largest Number">
 <meta name="twitter:description" content="https://leetcode.com/problems/largest-number/ Explanation1234567891011121314151617class Solution &amp;#123;    public String largestNumber(int[] nums) &amp;#123;        if(nums==null||nums.length==0) return &quot;">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200523123836.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200523123836.png">
 
 
 
@@ -507,7 +507,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-05-24 03:43:30" itemprop="dateModified" datetime="2020-05-24T03:43:30+08:00">2020-05-24</time>
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -571,7 +571,7 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/largest-number/" target="_blank" rel="noopener">https://leetcode.com/problems/largest-number/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200523123836.png" alt></p>
+        <p><a href="https://leetcode.com/problems/largest-number/" target="_blank" rel="noopener">https://leetcode.com/problems/largest-number/</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200523123836.png" alt></p>
 <p><a href="https://leetcode.com/problems/largest-number/discuss/53158/My-Java-Solution-to-share" target="_blank" rel="noopener">Explanation</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">largestNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums==<span class="keyword">null</span>||nums.length==<span class="number">0</span>) <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">int</span> len=nums.length;</span><br><span class="line">        String[] strs=<span class="keyword">new</span> String[len];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            strs[i]=String.valueOf(nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        Arrays.sort(strs,(s1,s2)-&gt;(s2+s1).compareTo(s1+s2));</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(strs[<span class="number">0</span>].charAt(<span class="number">0</span>)==<span class="string">'0'</span>) <span class="keyword">return</span> <span class="string">"0"</span>;</span><br><span class="line">        </span><br><span class="line">        StringBuilder res=<span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span>(String s:strs) res.append(s);</span><br><span class="line">        <span class="keyword">return</span> res.toString();    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       

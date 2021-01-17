@@ -101,13 +101,13 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode Greedy, Two Pointers, Slicing Window12345678910111213141516class Solution &amp;#123;    public int jump(int[] nums) &amp;#123;        int len=nums.length;        if(len&amp;lt;2) return 0;        int max">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200630205719.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708173453.png">
-<meta property="og:updated_time" content="2020-07-09T01:11:36.820Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200630205719.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200708173453.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.086Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="45. Jump Game II">
 <meta name="twitter:description" content="LeetCode Greedy, Two Pointers, Slicing Window12345678910111213141516class Solution &amp;#123;    public int jump(int[] nums) &amp;#123;        int len=nums.length;        if(len&amp;lt;2) return 0;        int max">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200630205719.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200630205719.png">
 
 
 
@@ -508,7 +508,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-07-09 09:11:36" itemprop="dateModified" datetime="2020-07-09T09:11:36+08:00">2020-07-09</time>
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -540,7 +540,7 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                <span title="Symbols count in article">4.8k</span>
+                <span title="Symbols count in article">4.7k</span>
               
 
               
@@ -572,9 +572,9 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/jump-game-ii/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200630205719.png" alt></p>
+        <p><a href="https://leetcode.com/problems/jump-game-ii/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200630205719.png" alt></p>
 <p><strong>Greedy, Two Pointers, Slicing Window</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">jump</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len=nums.length;</span><br><span class="line">        <span class="keyword">if</span>(len&lt;<span class="number">2</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> maxPos=nums[<span class="number">0</span>],maxSteps=nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">int</span> jumps=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;len;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(maxSteps&lt;i)&#123;</span><br><span class="line">                jumps++;</span><br><span class="line">                maxSteps=maxPos;</span><br><span class="line">            &#125;</span><br><span class="line">            maxPos=Math.max(maxPos,i+nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jumps;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708173453.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200708173453.png" alt></p>
 <p><strong>Brute Force, Time Complexity: O(2^N)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">class Solution &#123;</span></span><br><span class="line"><span class="comment">    public int jump(int[] nums) &#123;</span></span><br><span class="line"><span class="comment">        int len=nums.length;</span></span><br><span class="line"><span class="comment">        Integer[] minStep=new Integer[len];</span></span><br><span class="line"><span class="comment">        minStep[0]=0;</span></span><br><span class="line"><span class="comment">        for(int i=1;i&lt;len;i++)&#123;</span></span><br><span class="line"><span class="comment">            for(int j=i;j&lt;i+nums[i-1];j++)&#123;</span></span><br><span class="line"><span class="comment">                if(minStep[j]==null) minStep[j]=minStep[i-1]+1;</span></span><br><span class="line"><span class="comment">                minStep[j]=Math.min(minStep[i-1]+1,minStep[j]);</span></span><br><span class="line"><span class="comment">                if(j==len-1) return minStep[len-1];</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return minStep[len-1];</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;*/</span></span><br></pre></td></tr></table></figure></p>
 
       

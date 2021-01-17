@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode 1234567891011121314// Time: O(N)class Solution &amp;#123;    public List&amp;lt;Boolean&amp;gt; kidsWithCandies(int[] candies, int extraCandies) &amp;#123;        int max=Integer.MIN_VALUE;        for(int ca">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200727143429.png">
-<meta property="og:updated_time" content="2020-07-28T06:22:42.963Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200727143429.png">
+<meta property="og:updated_time" content="2021-01-17T14:42:38.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="1431. Kids With the Greatest Number of Candies">
 <meta name="twitter:description" content="LeetCode 1234567891011121314// Time: O(N)class Solution &amp;#123;    public List&amp;lt;Boolean&amp;gt; kidsWithCandies(int[] candies, int extraCandies) &amp;#123;        int max=Integer.MIN_VALUE;        for(int ca">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200727143429.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200727143429.png">
 
 
 
@@ -507,7 +507,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-07-28 14:22:42" itemprop="dateModified" datetime="2020-07-28T14:22:42+08:00">2020-07-28</time>
+                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
               
             
           </span>
@@ -539,7 +539,7 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                <span title="Symbols count in article">2.4k</span>
+                <span title="Symbols count in article">2.3k</span>
               
 
               
@@ -571,7 +571,7 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200727143429.png" alt></p>
+        <p><a href="https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200727143429.png" alt></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Time: O(N)</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Boolean&gt; <span class="title">kidsWithCandies</span><span class="params">(<span class="keyword">int</span>[] candies, <span class="keyword">int</span> extraCandies)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> max=Integer.MIN_VALUE;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> candy:candies) max=Math.max(candy,max);</span><br><span class="line">        List&lt;Boolean&gt; res=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;candies.length;i++)&#123;</span><br><span class="line">            candies[i]=max-candies[i]; </span><br><span class="line">            <span class="keyword">if</span>(candies[i]&lt;=extraCandies) res.add(<span class="keyword">true</span>);</span><br><span class="line">            <span class="keyword">else</span> res.add(<span class="keyword">false</span>);</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
