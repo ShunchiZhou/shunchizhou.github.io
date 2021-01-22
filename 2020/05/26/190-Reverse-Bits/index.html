@@ -101,14 +101,14 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="https://leetcode.com/problems/reverse-bits/ Approach 1: Bit by Bit\Explanation123456789101112public class Solution &amp;#123;    // you need treat n as an unsigned value    public int reverseBits(int n) &amp;">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200526105344.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200526105456.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200526114346.png">
-<meta property="og:updated_time" content="2021-01-17T14:42:38.090Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526105344.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526105456.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526114346.png">
+<meta property="og:updated_time" content="2021-01-22T04:40:03.533Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="190. Reverse Bits">
 <meta name="twitter:description" content="https://leetcode.com/problems/reverse-bits/ Approach 1: Bit by Bit\Explanation123456789101112public class Solution &amp;#123;    // you need treat n as an unsigned value    public int reverseBits(int n) &amp;">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200526105344.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526105344.png">
 
 
 
@@ -509,7 +509,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
+                <time title="Modified: 2021-01-22 12:40:03" itemprop="dateModified" datetime="2021-01-22T12:40:03+08:00">2021-01-22</time>
               
             
           </span>
@@ -573,11 +573,11 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/reverse-bits/" target="_blank" rel="noopener">https://leetcode.com/problems/reverse-bits/</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200526105344.png" alt></p>
+        <p><a href="https://leetcode.com/problems/reverse-bits/" target="_blank" rel="noopener">https://leetcode.com/problems/reverse-bits/</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526105344.png" alt></p>
 <p><strong>Approach 1: Bit by Bit</strong>\<br><a href="https://leetcode.com/problems/reverse-bits/discuss/54746/Java-Solution-and-Optimization" target="_blank" rel="noopener">Explanation</a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// you need treat n as an unsigned value</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverseBits</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">32</span>;i++)&#123;</span><br><span class="line">            res+=n&amp;<span class="number">1</span>;</span><br><span class="line">            n&gt;&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(i&lt;<span class="number">31</span>) res&lt;&lt;=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200526105456.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526105456.png" alt></p>
 <p><strong>Approach 3: Mask and Shift</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// you need treat n as an unsigned value</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverseBits</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        n = n &gt;&gt;&gt; <span class="number">16</span> | n &lt;&lt; <span class="number">16</span>;</span><br><span class="line">        n = (n &amp; <span class="number">0xff00ff00</span>) &gt;&gt;&gt; <span class="number">8</span> | (n &amp; <span class="number">0x00ff00ff</span>) &lt;&lt; <span class="number">8</span>;</span><br><span class="line">        n = (n &amp; <span class="number">0xf0f0f0f0</span>) &gt;&gt;&gt; <span class="number">4</span> | (n &amp; <span class="number">0x0f0f0f0f</span>) &lt;&lt; <span class="number">4</span>;</span><br><span class="line">        n = (n &amp; <span class="number">0xcccccccc</span>) &gt;&gt;&gt; <span class="number">2</span> | (n &amp; <span class="number">0x33333333</span>) &lt;&lt; <span class="number">2</span>;</span><br><span class="line">        n = (n &amp; <span class="number">0xaaaaaaaa</span>) &gt;&gt;&gt; <span class="number">1</span> | (n &amp; <span class="number">0x55555555</span>) &lt;&lt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> n;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200526114346.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200526114346.png" alt></p>
 
       
     </div>

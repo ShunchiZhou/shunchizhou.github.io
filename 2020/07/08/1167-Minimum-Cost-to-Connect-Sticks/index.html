@@ -101,13 +101,13 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode Greedy, Min heap, PriorityQueue123456789101112131415class Solution &amp;#123;    public int connectSticks(int[] sticks) &amp;#123;        PriorityQueue&amp;lt;Integer&amp;gt; q=new PriorityQueue&amp;lt;&amp;gt;();">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200708203842.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200708204758.png">
-<meta property="og:updated_time" content="2021-01-17T14:42:38.085Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708203842.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708204758.png">
+<meta property="og:updated_time" content="2021-01-22T04:40:03.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="1167. Minimum Cost to Connect Sticks">
 <meta name="twitter:description" content="LeetCode Greedy, Min heap, PriorityQueue123456789101112131415class Solution &amp;#123;    public int connectSticks(int[] sticks) &amp;#123;        PriorityQueue&amp;lt;Integer&amp;gt; q=new PriorityQueue&amp;lt;&amp;gt;();">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200708203842.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708203842.png">
 
 
 
@@ -508,7 +508,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
+                <time title="Modified: 2021-01-22 12:40:03" itemprop="dateModified" datetime="2021-01-22T12:40:03+08:00">2021-01-22</time>
               
             
           </span>
@@ -572,9 +572,9 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/minimum-cost-to-connect-sticks/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200708203842.png" alt></p>
+        <p><a href="https://leetcode.com/problems/minimum-cost-to-connect-sticks/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708203842.png" alt></p>
 <p><strong>Greedy, Min heap, PriorityQueue</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">connectSticks</span><span class="params">(<span class="keyword">int</span>[] sticks)</span> </span>&#123;</span><br><span class="line">        PriorityQueue&lt;Integer&gt; q=<span class="keyword">new</span> PriorityQueue&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i:sticks) q.offer(i);</span><br><span class="line">        <span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(q.size()&gt;<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">int</span> a=q.poll();</span><br><span class="line">            <span class="keyword">int</span> b=q.poll();</span><br><span class="line">            <span class="keyword">int</span> sum=a+b;</span><br><span class="line">            res+=sum;</span><br><span class="line">            q.offer(sum);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200708204758.png" alt></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200708204758.png" alt></p>
 
       
     </div>

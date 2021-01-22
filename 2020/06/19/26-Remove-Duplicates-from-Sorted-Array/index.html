@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode Approach: Two Pointers, Time complextiy : O(n)12345678910class Solution &amp;#123;    public int removeDuplicates(int[] nums) &amp;#123;        if(nums.length&amp;lt;2) return 1;        int j=0;        f">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200619163703.png">
-<meta property="og:updated_time" content="2021-01-17T14:42:38.089Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200619163703.png">
+<meta property="og:updated_time" content="2021-01-22T04:40:03.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="26. Remove Duplicates from Sorted Array">
 <meta name="twitter:description" content="LeetCode Approach: Two Pointers, Time complextiy : O(n)12345678910class Solution &amp;#123;    public int removeDuplicates(int[] nums) &amp;#123;        if(nums.length&amp;lt;2) return 1;        int j=0;        f">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200619163703.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200619163703.png">
 
 
 
@@ -507,7 +507,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
+                <time title="Modified: 2021-01-22 12:40:03" itemprop="dateModified" datetime="2021-01-22T12:40:03+08:00">2021-01-22</time>
               
             
           </span>
@@ -571,7 +571,7 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200619163703.png" alt></p>
+        <p><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200619163703.png" alt></p>
 <p><strong>Approach: Two Pointers, Time complextiy : O(n)</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">removeDuplicates</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums.length&lt;<span class="number">2</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> j=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i]!=nums[i-<span class="number">1</span>]) nums[++j]=nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ++j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       

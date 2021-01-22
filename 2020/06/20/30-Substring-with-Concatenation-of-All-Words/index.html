@@ -101,12 +101,12 @@
 <meta property="og:site_name" content="Hi, this is Shunchi!">
 <meta property="og:description" content="LeetCode String, Hash Tablelink)12345678910111213141516171819202122232425262728293031class Solution &amp;#123;	static List&amp;lt;Integer&amp;gt; findSubstring(String s, String[] words) &amp;#123;        if(s.length(">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200620153635.png">
-<meta property="og:updated_time" content="2021-01-17T14:42:38.086Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200620153635.png">
+<meta property="og:updated_time" content="2021-01-22T04:40:03.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30. Substring with Concatenation of All Words">
 <meta name="twitter:description" content="LeetCode String, Hash Tablelink)12345678910111213141516171819202122232425262728293031class Solution &amp;#123;	static List&amp;lt;Integer&amp;gt; findSubstring(String s, String[] words) &amp;#123;        if(s.length(">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200620153635.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200620153635.png">
 
 
 
@@ -507,7 +507,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2021-01-17 22:42:38" itemprop="dateModified" datetime="2021-01-17T22:42:38+08:00">2021-01-17</time>
+                <time title="Modified: 2021-01-22 12:40:03" itemprop="dateModified" datetime="2021-01-22T12:40:03+08:00">2021-01-22</time>
               
             
           </span>
@@ -571,7 +571,7 @@
       
 
       
-        <p><a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://cdn.jsdelivr.net/gh/ShunchiZhou/Pictures_Bed/img/20200620153635.png" alt></p>
+        <p><a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200620153635.png" alt></p>
 <p><strong>String, Hash Table</strong><a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/13658/Easy-Two-Map-Solution-(C%2B%2BJava" target="_blank" rel="noopener">link</a>)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">static</span> List&lt;Integer&gt; <span class="title">findSubstring</span><span class="params">(String s, String[] words)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(s.length()==<span class="number">0</span>||words.length==<span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">new</span> ArrayList();</span><br><span class="line">        </span><br><span class="line">		Map&lt;String,Integer&gt; initial=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">		<span class="keyword">for</span>(String ss:words) initial.put(ss, initial.getOrDefault(ss, <span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> len_array=words.length;</span><br><span class="line">		<span class="keyword">int</span> len_single=words[<span class="number">0</span>].length();</span><br><span class="line">		<span class="keyword">int</span> len_str=s.length();</span><br><span class="line">		</span><br><span class="line">		List&lt;Integer&gt; ls=<span class="keyword">new</span> ArrayList&lt;&gt;();  </span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len_str-len_array*len_single+<span class="number">1</span>;i++)&#123;</span><br><span class="line">			Map&lt;String,Integer&gt; check=<span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">			<span class="keyword">int</span> j=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">while</span>(j&lt;len_array)&#123;</span><br><span class="line">				String word=s.substring(i+j*len_single,i+(j+<span class="number">1</span>)*len_single);</span><br><span class="line">				<span class="keyword">if</span>(initial.containsKey(word))&#123;</span><br><span class="line">					check.put(word, check.getOrDefault(word,<span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">					<span class="keyword">if</span>(check.get(word)&gt;initial.getOrDefault(word,<span class="number">0</span>)) <span class="keyword">break</span>;</span><br><span class="line">				&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				j++;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(j==len_array) ls.add(i);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ls;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
