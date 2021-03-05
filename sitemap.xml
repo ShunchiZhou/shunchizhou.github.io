@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/09/Insertion-sort/</loc>
+    
+    <lastmod>2021-03-05T05:43:31.229Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/05/06/142-Linked-List-Cycle-II/</loc>
     
     <lastmod>2021-03-05T05:01:12.831Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>http://yoursite.com/2020/06/12/5-Longest-Palindromic-Substring/</loc>
     
     <lastmod>2021-01-25T05:16:54.309Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/05/09/Insertion-sort/</loc>
-    
-    <lastmod>2021-01-25T04:31:08.759Z</lastmod>
     
   </url>
   
