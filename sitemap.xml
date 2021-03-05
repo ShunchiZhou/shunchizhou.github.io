@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/27/113-Path-Sum-II/</loc>
+    
+    <lastmod>2021-03-05T03:14:27.453Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/26/109-Convert-Sorted-List-to-Binary-Search-Tree/</loc>
     
     <lastmod>2021-03-05T02:47:35.145Z</lastmod>
@@ -983,13 +990,6 @@
   
   <url>
     <loc>http://yoursite.com/2020/04/04/119-Pascal-s-Triangle-II/</loc>
-    
-    <lastmod>2021-01-22T04:40:03.040Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/03/27/113-Path-Sum-II/</loc>
     
     <lastmod>2021-01-22T04:40:03.040Z</lastmod>
     
