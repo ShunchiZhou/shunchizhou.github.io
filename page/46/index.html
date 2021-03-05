@@ -256,7 +256,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">265</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">266</span></a>
 
   </li>
         
@@ -440,7 +440,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/79-Word-Search/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/295-Find-Median-from-Data-Stream/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShunchiZhou">
@@ -460,7 +460,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2020/07/16/79-Word-Search/" class="post-title-link" itemprop="url">79. Word Search</a>
+                <a href="/2020/07/16/295-Find-Median-from-Data-Stream/" class="post-title-link" itemprop="url">295. Find Median from Data Stream</a>
               
             
           </h1>
@@ -485,7 +485,7 @@
                 
               
 
-              <time title="Created: 2020-07-16 07:51:44" itemprop="dateCreated datePublished" datetime="2020-07-16T07:51:44+08:00">2020-07-16</time>
+              <time title="Created: 2020-07-16 09:26:32" itemprop="dateCreated datePublished" datetime="2020-07-16T09:26:32+08:00">2020-07-16</time>
             
 
             
@@ -527,7 +527,7 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                <span title="Symbols count in article">5k</span>
+                <span title="Symbols count in article">4.8k</span>
               
 
               
@@ -561,9 +561,9 @@
       
         
           
-            <p><a href="https://leetcode.com/problems/word-search/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200716075343.png" alt></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">boolean</span>[][] visited;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">exist</span><span class="params">(<span class="keyword">char</span>[][] board, String word)</span> </span>&#123;</span><br><span class="line">        visited=<span class="keyword">new</span> <span class="keyword">boolean</span>[board.length][board[<span class="number">0</span>].length];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;board.length;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;board[i].length;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(search(board,word,i,j,<span class="number">0</span>)) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">search</span><span class="params">(<span class="keyword">char</span>[][] board, String word, <span class="keyword">int</span> i, <span class="keyword">int</span> j, <span class="keyword">int</span> index)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(index==word.length()) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(i&gt;=board.length || i&lt;<span class="number">0</span> ||j&gt;=board[i].length || j&lt;<span class="number">0</span> ||board[i][j]!=word.charAt(index) ||visited[i][j])&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125; </span><br><span class="line">        </span><br><span class="line">        visited[i][j]=<span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span>(search(board,word,i-<span class="number">1</span>,j,index+<span class="number">1</span>) ||</span><br><span class="line">           search(board,word,i+<span class="number">1</span>,j,index+<span class="number">1</span>) ||</span><br><span class="line">           search(board,word,i,j-<span class="number">1</span>,index+<span class="number">1</span>) ||</span><br><span class="line">           search(board,word,i,j+<span class="number">1</span>,index+<span class="number">1</span>))&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125; </span><br><span class="line">        </span><br><span class="line">        visited[i][j]=<span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200716080152.png" alt></p>
+            <p><a href="https://leetcode.com/problems/find-median-from-data-stream/" target="_blank" rel="noopener">LeetCode</a><br><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200716092726.png" alt></p>
+<p><strong>Two Heaps</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MedianFinder</span> </span>&#123;</span><br><span class="line">    PriorityQueue&lt;Integer&gt; minheap=<span class="keyword">null</span>;</span><br><span class="line">    PriorityQueue&lt;Integer&gt; maxheap=<span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/** initialize your data structure here. */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MedianFinder</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        minheap=<span class="keyword">new</span> PriorityQueue&lt;&gt;();</span><br><span class="line">        maxheap=<span class="keyword">new</span> PriorityQueue&lt;&gt;(Collections.reverseOrder());</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addNum</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(maxheap.isEmpty()||num&lt;maxheap.peek())&#123;</span><br><span class="line">            maxheap.offer(num);</span><br><span class="line">        &#125;<span class="keyword">else</span> minheap.offer(num);</span><br><span class="line">        <span class="keyword">if</span>(Math.abs(maxheap.size()-minheap.size())&lt;=<span class="number">1</span>) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">if</span>(maxheap.size()&gt;minheap.size()) minheap.offer(maxheap.poll());</span><br><span class="line">        <span class="keyword">else</span> maxheap.offer(minheap.poll());</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">findMedian</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(maxheap.size()&gt;minheap.size()) <span class="keyword">return</span> maxheap.peek();</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(minheap.size()&gt;maxheap.size()) <span class="keyword">return</span> minheap.peek();</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">double</span>)(maxheap.peek()+minheap.peek())/<span class="number">2.0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MedianFinder object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MedianFinder obj = new MedianFinder();</span></span><br><span class="line"><span class="comment"> * obj.addNum(num);</span></span><br><span class="line"><span class="comment"> * double param_2 = obj.findMedian();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://raw.githubusercontent.com/ShunchiZhou/Pictures_Bed/master/img/20200716100406.png" alt></p>
 
           
         
@@ -609,7 +609,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/45/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/45/">45</a><span class="page-number current">46</span><a class="page-number" href="/page/47/">47</a><span class="space">&hellip;</span><a class="page-number" href="/page/265/">265</a><a class="extend next" rel="next" href="/page/47/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/45/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/45/">45</a><span class="page-number current">46</span><a class="page-number" href="/page/47/">47</a><span class="space">&hellip;</span><a class="page-number" href="/page/266/">266</a><a class="extend next" rel="next" href="/page/47/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -653,7 +653,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">265</span>
+                    <span class="site-state-item-count">266</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
