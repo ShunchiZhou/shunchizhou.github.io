@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/03/131-Palindrome-Partitioning/</loc>
+    
+    <lastmod>2021-03-11T08:58:46.506Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/LeetCode_Notes/index.html</loc>
     
-    <lastmod>2021-03-11T07:49:19.447Z</lastmod>
+    <lastmod>2021-03-11T08:15:42.048Z</lastmod>
     
   </url>
   
@@ -605,13 +612,6 @@
   
   <url>
     <loc>http://yoursite.com/2020/06/14/13-Roman-to-Integer/</loc>
-    
-    <lastmod>2021-01-22T04:40:03.041Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/05/03/131-Palindrome-Partitioning/</loc>
     
     <lastmod>2021-01-22T04:40:03.041Z</lastmod>
     
