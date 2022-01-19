@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/favicon.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/favicon.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/favicon.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/uploads/favicon.png?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Insertion Sort: ref.1 | recursion version ShellSort: ref.1  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Insertion sort">
+<meta property="og:url" content="http://yoursite.com/2020/05/09/Insertion-sort/index.html">
+<meta property="og:site_name" content="Hi, this is Shunchi!">
+<meta property="og:description" content="Insertion Sort: ref.1 | recursion version ShellSort: ref.1  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-05-09T01:48:40.000Z">
+<meta property="article:modified_time" content="2021-03-05T05:43:31.229Z">
+<meta property="article:author" content="ShunchiZhou">
+<meta name="twitter:card" content="summary">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Hi, this is Shunchi!" type="application/atom+xml"/>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/05/09/Insertion-sort/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Insertion sort | Hi, this is Shunchi!</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hi, this is Shunchi!</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br/>Tags<span class="badge">0</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives<span class="badge">267</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br/>Categories<span class="badge">0</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-curricula">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/Curricula/" rel="section"><i class="menu-item-icon fa fa-fw fa-clipboard"></i> <br/>Curricula</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-dsa">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/DSA/" rel="section"><i class="menu-item-icon fa fa-fw fa-clipboard"></i> <br/>DSA</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-leetcode_notes">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/LeetCode_Notes/" rel="section"><i class="menu-item-icon fa fa-fw fa-clipboard"></i> <br/>LeetCode_Notes</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-interviews">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/Interviews/" rel="section"><i class="menu-item-icon fa fa-fw fa-clipboard"></i> <br/>Interviews</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-general">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/General/" rel="section"><i class="menu-item-icon fa fa-fw fa-clipboard"></i> <br/>General</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-resume">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/Resume/" rel="section"><i class="menu-item-icon fa fa-fw fa-address-card"></i> <br/>Resume</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/Insertion-sort/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ShunchiZhou"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="/uploads/trees.jpg"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hi, this is Shunchi!"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Insertion sort
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2020-05-09 09:48:40" itemprop="dateCreated datePublished" datetime="2020-05-09T09:48:40+08:00">2020-05-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2021-03-05 13:43:31" itemprop="dateModified" datetime="2021-03-05T13:43:31+08:00">2021-03-05</time>
+              
+            
+          </span>
+
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <ul>
+<li>Insertion Sort: <a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/insertion-sort/">ref.1</a> | <a target="_blank" rel="noopener" href="https://www.baeldung.com/java-insertion-sort">recursion version</a></li>
+<li>ShellSort: <a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/shellsort/">ref.1</a></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//insertion sorting has 4 main different methods, including:</span></span><br><span class="line"><span class="comment">//1. direct insertion sorting</span></span><br><span class="line"><span class="comment">//2. binary insertion sorting</span></span><br><span class="line"><span class="comment">//3. 2way insertion sorting(cpp implementation)</span></span><br><span class="line"><span class="comment">//4. shell sorting</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Insertion_sort</span></span>&#123;</span><br><span class="line">	<span class="comment">// ---------------------------------------------insetion sorting</span></span><br><span class="line">	<span class="comment">// direct insertion sorting</span></span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertion_sort</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.length; ++i) &#123;</span><br><span class="line">            <span class="keyword">int</span> key = nums[i];</span><br><span class="line">            <span class="keyword">int</span> j = i - <span class="number">1</span>;</span><br><span class="line">            <span class="comment">/*</span></span><br><span class="line"><span class="comment">             * Move elements of nums[0..i-1], that are greater than key, to one position</span></span><br><span class="line"><span class="comment">             * ahead of their current position</span></span><br><span class="line"><span class="comment">             */</span></span><br><span class="line">            <span class="keyword">while</span> (j &gt;= <span class="number">0</span> &amp;&amp; nums[j] &gt; key) &#123;</span><br><span class="line">                nums[j + <span class="number">1</span>] = nums[j];</span><br><span class="line">                j = j - <span class="number">1</span>; </span><br><span class="line">            &#125;</span><br><span class="line">            nums[j + <span class="number">1</span>] = key;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">/* // insertion sorting recursion version</span></span><br><span class="line"><span class="comment">	static void insertionSortRecursive(int[] input, int r) &#123;</span></span><br><span class="line"><span class="comment">        if (r &lt;= 0) return;</span></span><br><span class="line"><span class="comment">        insertionSortRecursive(input, r - 1);</span></span><br><span class="line"><span class="comment">        int key = input[r];</span></span><br><span class="line"><span class="comment">        int j = r - 1;</span></span><br><span class="line"><span class="comment">        while (j &gt;= 0 &amp;&amp; input[j] &gt; key) &#123;</span></span><br><span class="line"><span class="comment">            input[j + 1] = input[j];</span></span><br><span class="line"><span class="comment">            j = j - 1;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        input[j + 1] = key;</span></span><br><span class="line"><span class="comment">    &#125;*/</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// binary insertion sorting</span></span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">binary_insertion_sort</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> temp = nums[i];</span><br><span class="line">			<span class="keyword">int</span> low = <span class="number">0</span>;</span><br><span class="line">			<span class="keyword">int</span> high = i - <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">while</span> (low &lt;= high) &#123;</span><br><span class="line">				<span class="keyword">int</span> mid = (low + high) / <span class="number">2</span>;</span><br><span class="line">				<span class="keyword">if</span> (nums[mid] &gt; temp)</span><br><span class="line">					high = mid - <span class="number">1</span>;</span><br><span class="line">				<span class="keyword">else</span></span><br><span class="line">					low = mid + <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = i - <span class="number">1</span>; j &gt;= high + <span class="number">1</span>; j--) &#123;</span><br><span class="line">				nums[j + <span class="number">1</span>] = nums[j];</span><br><span class="line">			&#125;</span><br><span class="line">			nums[high + <span class="number">1</span>] = temp;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// ---------------------------------------------shell sorting</span></span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">shellSort</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> gap = nums.length / <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">while</span> (gap &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i = gap; i &lt; nums.length; i++) &#123;<span class="comment">// Start with the largest gap and work down to a gap of 1</span></span><br><span class="line">				<span class="keyword">int</span> tmp = nums[i];<span class="comment">// save a[i] in temp and make a hole at position i</span></span><br><span class="line">				<span class="keyword">int</span> j = i - gap;<span class="comment">// 前一个</span></span><br><span class="line">				<span class="keyword">while</span> (j &gt;= <span class="number">0</span> &amp;&amp; nums[j] &gt; tmp) &#123;<span class="comment">// Do a gapped insertion sort for this gap size.</span></span><br><span class="line">					nums[j + gap] = nums[j];</span><br><span class="line">					j = j - gap;</span><br><span class="line">				&#125;</span><br><span class="line">				nums[j + gap] = tmp;</span><br><span class="line">			&#125;</span><br><span class="line">			gap = gap / <span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//*********************************************</span></span><br><span class="line">	<span class="comment">//main function</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[][] new_array=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>][<span class="number">10</span>];</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++)&#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">10</span>;j++) &#123;</span><br><span class="line">				new_array[i][j]=(<span class="keyword">int</span>)(Math.random()*<span class="number">9</span>+<span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.print(<span class="string">&quot;the original array is: &quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">0</span>])System.out.print(i);</span><br><span class="line">		System.out.println();	</span><br><span class="line">		System.out.print(<span class="string">&quot;after insertion sorting: &quot;</span>);	</span><br><span class="line">		insertion_sort(new_array[<span class="number">0</span>]);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">0</span>])System.out.print(i);</span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.println();</span><br><span class="line">		</span><br><span class="line">		System.out.print(<span class="string">&quot;the original array is: &quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">1</span>])System.out.print(i);</span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.print(<span class="string">&quot;after binary insertion sorting: &quot;</span>);	</span><br><span class="line">		binary_insertion_sort(new_array[<span class="number">1</span>]);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">1</span>])System.out.print(i);</span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.println();</span><br><span class="line">		</span><br><span class="line">		System.out.print(<span class="string">&quot;the original array is: &quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">2</span>])System.out.print(i);</span><br><span class="line">		System.out.println();	</span><br><span class="line">		System.out.print(<span class="string">&quot;after Shell sorting: &quot;</span>);	</span><br><span class="line">		shellSort(new_array[<span class="number">2</span>]);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:new_array[<span class="number">2</span>])System.out.print(i);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Appendix: 2way_insertion_sorting</strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n = <span class="number">8</span>;</span><br><span class="line">	<span class="keyword">int</span> num[<span class="number">8</span>] = &#123; <span class="number">49</span>,<span class="number">38</span>,<span class="number">65</span>,<span class="number">97</span>,<span class="number">76</span>,<span class="number">13</span>,<span class="number">27</span>,<span class="number">49</span> &#125;;        <span class="comment">// 待排序数组</span></span><br><span class="line">	<span class="keyword">int</span> temp[<span class="number">8</span>] = &#123; <span class="number">0</span> &#125;;                             <span class="comment">// 辅助数组</span></span><br><span class="line">	<span class="keyword">int</span> final_num = <span class="number">0</span>;                               <span class="comment">// 尾指针（非真实指针，只代表数组下标）</span></span><br><span class="line">	<span class="keyword">int</span> first_num = <span class="number">0</span>;                               <span class="comment">// 头指针（同上，且开始均指向0）</span></span><br><span class="line"></span><br><span class="line">	temp[<span class="number">0</span>] = num[<span class="number">0</span>];                                <span class="comment">// 先确定第一个位置，并以此为判断依据</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; ++i)                      <span class="comment">// 从第二个数开始插入排序</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (temp[final_num] &lt; num[i])                <span class="comment">// 如果待插数字比尾部数字还大，则插在尾部 </span></span><br><span class="line">													 <span class="comment">// 数字后面，并把尾部指针向后移动一位</span></span><br><span class="line">		&#123;</span><br><span class="line">			final_num = (final_num + <span class="number">1</span> + n) % n;</span><br><span class="line">			temp[final_num] = num[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (temp[first_num] &gt; num[i])           <span class="comment">// 如果待插数字比头部数字还小，则插在头部</span></span><br><span class="line">													 <span class="comment">// 数字后面，并把头部指针向前移动一位</span></span><br><span class="line">		&#123;</span><br><span class="line">			first_num = (first_num - <span class="number">1</span> + n) % n;</span><br><span class="line">			temp[first_num] = num[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (temp[<span class="number">0</span>] &lt;= num[i])                  <span class="comment">// 如果比头部数字大，比尾部数字小</span></span><br><span class="line">													 <span class="comment">// 则比较该数字是否比辅助数组的第一个数大</span></span><br><span class="line">													 <span class="comment">// 如果大的话，从final_num往前找，找到</span></span><br><span class="line">													 <span class="comment">// 位置后插进去，否则与上述步骤相反</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">int</span> k = (final_num + <span class="number">1</span> + n) % n;</span><br><span class="line">			<span class="keyword">while</span> (temp[((k - <span class="number">1</span>) + n) % n] &gt; num[i])</span><br><span class="line">			&#123;</span><br><span class="line">				temp[(k + n) % n] = temp[(k - <span class="number">1</span> + n) % n];</span><br><span class="line">				k = (k - <span class="number">1</span> + n) % n;</span><br><span class="line">			&#125;</span><br><span class="line">			temp[(k + n) % n] = num[i];</span><br><span class="line">			final_num = (final_num + <span class="number">1</span> + n) % n;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">int</span> k = (first_num - <span class="number">1</span> + n) % n;</span><br><span class="line">			<span class="keyword">while</span> (temp[((k + <span class="number">1</span>) + n) % n] &lt; num[i])</span><br><span class="line">			&#123;</span><br><span class="line">				temp[(k + n) % n] = temp[(k + <span class="number">1</span> + n) % n];</span><br><span class="line">				k = (k + <span class="number">1</span> + n) % n;</span><br><span class="line">			&#125;</span><br><span class="line">			temp[(k + n) % n] = num[i];</span><br><span class="line">			first_num = (first_num - <span class="number">1</span> + n) % n;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)                  <span class="comment">// 每次排序都输出辅助数组序列</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;%d\t&quot;</span>, temp[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;first=%d final=%d\n&quot;</span>, first_num, final_num);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)                      <span class="comment">// 根据辅助数组确定新序列</span></span><br><span class="line">	&#123;</span><br><span class="line">		num[i] = temp[(first_num + i) % n];</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d\t&quot;</span>, num[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+              <div>
+                
+
+<script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css">
+
+
+  
+
+
+<div class="likely">
+	
+ 	 	<div class="twitter">Tweet</div>
+	
+ 	 	<div class="facebook">Share</div>
+	
+ 	 	<div class="linkedin">Link</div>
+	
+ 	 	<div class="gplus">Plus</div>
+	
+ 	 	<div class="vkontakte">Share</div>
+	
+ 	 	<div class="odnoklassniki">Class</div>
+	
+ 	 	<div class="telegram">Send</div>
+	
+ 	 	<div class="whatsapp">Send</div>
+	
+ 	 	<div class="pinterest">Pin</div>
+	
+</div>
+
+              </div>
+            
+            
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/08/146-LRU-Cache/" rel="next" title="146. LRU Cache">
+                <i class="fa fa-chevron-left"></i> 146. LRU Cache
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/05/09/Swapping-sort/" rel="prev" title="Swapping sort">
+                Swapping sort <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+      
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/trees.jpg"
+                alt="ShunchiZhou"/>
+            
+              <p class="site-author-name" itemprop="name">ShunchiZhou</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">267</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/ShunchiZhou" title="GitHub &rarr; https://github.com/ShunchiZhou" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:excsimonzsc@gmail.com" title="E-Mail &rarr; mailto:excsimonzsc@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://shunchizhou.com/LeetCode/" title="Gitbook &rarr; https://shunchizhou.com/LeetCode/" rel="noopener" target="_blank"><i class="fa fa-fw fa-archive"></i>Gitbook</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/shunchi-zhou/" title="Linkedin &rarr; https://www.linkedin.com/in/shunchi-zhou/" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i>Linkedin</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-cog"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ShunchiZhou</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by Hexo v5.4.0</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+  <script id="dsq-count-scr" src="https://shunchizhou.disqus.com/count.js" async></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script>
+  
+    bookmark.scrollToMark('auto', "#more");
+  
+  </script>
+
+
+  
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('Copied');
+        else $(this).text('Copy failed');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('Copy');
+      }, 300);
+    }).append(e);
+  })
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+  
+
+  
+
+</body>
+</html>
